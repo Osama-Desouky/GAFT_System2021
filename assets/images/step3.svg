@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30.3" height="30.3" viewBox="0 0 30.3 30.3">
+  <g id="step3" transform="translate(0.15 0.15)">
+    <g id="vuesax_outline_building-4" data-name="vuesax/outline/building-4">
+      <g id="building-4">
+        <path id="Vector" d="M.938,1.875h27.5a.944.944,0,0,0,.938-.937A.944.944,0,0,0,28.438,0H.938A.944.944,0,0,0,0,.938.944.944,0,0,0,.938,1.875Z" transform="translate(0.313 26.563)" fill="#bbb" stroke="#bbb" stroke-width="0.3"/>
+        <path id="Vector-2" data-name="Vector" d="M.938,7.45a.944.944,0,0,0,.938-.937V.938A.944.944,0,0,0,.938,0,.944.944,0,0,0,0,.938V6.513A.936.936,0,0,0,.938,7.45Z" transform="translate(4.337 21)" fill="#bbb" stroke="#bbb" stroke-width="0.3"/>
+        <path id="Vector-3" data-name="Vector" d="M3.688,10.212A3.686,3.686,0,0,0,7.375,6.525V3.688A3.688,3.688,0,0,0,0,3.688V6.525A3.686,3.686,0,0,0,3.688,10.212Zm0-8.325A1.814,1.814,0,0,1,5.5,3.7V6.537a1.813,1.813,0,0,1-3.625,0V3.7A1.814,1.814,0,0,1,3.688,1.888Z" transform="translate(1.562 12.663)" fill="#bbb" stroke="#bbb" stroke-width="0.3"/>
+        <path id="Vector-4" data-name="Vector" d="M.938,25.612a.944.944,0,0,0,.938-.937V4.713c0-1.988.837-2.838,2.787-2.838H12.45c1.962,0,2.813.85,2.813,2.838V24.675a.938.938,0,0,0,1.875,0V4.713C17.137,1.675,15.475,0,12.45,0H4.662C1.65,0,0,1.675,0,4.713V24.675A.944.944,0,0,0,.938,25.612Z" transform="translate(11.188 2.825)" fill="#bbb" stroke="#bbb" stroke-width="0.3"/>
+        <path id="Vector-5" data-name="Vector" d="M.938,1.875H7.125A.944.944,0,0,0,8.063.938.944.944,0,0,0,7.125,0H.938A.944.944,0,0,0,0,.938.944.944,0,0,0,.938,1.875Z" transform="translate(15.625 9.375)" fill="#bbb" stroke="#bbb" stroke-width="0.3"/>
+        <path id="Vector-6" data-name="Vector" d="M.938,1.875H7.125A.944.944,0,0,0,8.063.938.944.944,0,0,0,7.125,0H.938A.944.944,0,0,0,0,.938.944.944,0,0,0,.938,1.875Z" transform="translate(15.625 14.063)" fill="#bbb" stroke="#bbb" stroke-width="0.3"/>
+        <path id="Vector-7" data-name="Vector" d="M.938,6.563a.944.944,0,0,0,.938-.937V.938A.944.944,0,0,0,.938,0,.944.944,0,0,0,0,.938V5.625A.944.944,0,0,0,.938,6.563Z" transform="translate(18.75 21.875)" fill="#bbb" stroke="#bbb" stroke-width="0.3"/>
+        <path id="Vector-8" data-name="Vector" d="M30,0H0V30H30Z" fill="none" stroke="#bbb" stroke-width="0.3" opacity="0"/>
+      </g>
+    </g>
+  </g>
+</svg>

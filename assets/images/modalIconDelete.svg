@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="132" height="132" viewBox="0 0 132 132">
+  <g id="modalIconDelete" transform="translate(-893 -516)">
+    <circle id="Ellipse_11743" data-name="Ellipse 11743" cx="66" cy="66" r="66" transform="translate(893 516)" fill="rgba(213,49,58,0.05)"/>
+    <g id="trash-2-outline" transform="translate(923.5 531.5)">
+      <g id="trash-2-outline-2" data-name="trash-2-outline" transform="translate(-12)">
+        <g id="trash-2">
+          <rect id="Rectangle_16293" data-name="Rectangle 16293" width="99" height="99" transform="translate(0.5 0.5)" fill="#d5313a" opacity="0"/>
+          <path id="Path_59950" data-name="Path 59950" d="M80.375,18.5H59.75V11.616A9.983,9.983,0,0,0,49.438,2H37.063A9.983,9.983,0,0,0,26.75,11.616V18.5H6.125a4.125,4.125,0,0,0,0,8.25H10.25V72.129A12.375,12.375,0,0,0,22.625,84.5h41.25A12.375,12.375,0,0,0,76.25,72.129V26.754h4.125a4.125,4.125,0,0,0,0-8.25ZM35,11.616c0-.66.866-1.361,2.063-1.361H49.438c1.2,0,2.063.7,2.063,1.361V18.5H35ZM68,72.129a4.125,4.125,0,0,1-4.125,4.125H22.625A4.125,4.125,0,0,1,18.5,72.129V26.754H68Z" transform="translate(6.25 6.246)" fill="#d5313a"/>
+          <path id="Path_59951" data-name="Path 59951" d="M12.125,35.75a4.125,4.125,0,0,0,4.125-4.125v-16.5a4.125,4.125,0,0,0-8.25,0v16.5A4.125,4.125,0,0,0,12.125,35.75Z" transform="translate(25 34.375)" fill="#d5313a"/>
+          <path id="Path_59952" data-name="Path 59952" d="M18.125,35.75a4.125,4.125,0,0,0,4.125-4.125v-16.5a4.125,4.125,0,0,0-8.25,0v16.5A4.125,4.125,0,0,0,18.125,35.75Z" transform="translate(43.75 34.375)" fill="#d5313a"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

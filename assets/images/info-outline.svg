@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="info-outline" transform="translate(12 12)">
+    <g id="info-outline-2" data-name="info-outline" transform="translate(-12 -12)">
+      <g id="info">
+        <rect id="Rectangle_16325" data-name="Rectangle 16325" width="24" height="24" transform="translate(24 24) rotate(180)" fill="#d5313a" opacity="0"/>
+        <path id="Path_59994" data-name="Path 59994" d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" fill="#d5313a"/>
+        <circle id="Ellipse_11739" data-name="Ellipse 11739" cx="1" cy="1" r="1" transform="translate(11 7)" fill="#d5313a"/>
+        <path id="Path_59995" data-name="Path 59995" d="M12,10a1,1,0,0,0-1,1v5a1,1,0,0,0,2,0V11A1,1,0,0,0,12,10Z" fill="#d5313a"/>
+      </g>
+    </g>
+  </g>
+</svg>

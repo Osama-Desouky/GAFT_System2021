@@ -1,0 +1,52 @@
+body {
+    font-family: $font-en;
+    // color: $color-default;
+    direction: $direction;
+    text-align: $start-direction;
+  }
+  html[dir="rtl"] body {
+    font-family: $font-ar;
+  }
+  *,
+  *:focus,
+  *:active,
+  button:focus {
+    outline: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+
+  h4 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  // label{
+  //   font-family: Roboto;
+  //   font-size: 18px;
+  //   font-weight: $w-bold;
+  //    color: $black-color;
+  //    line-height: 28px;
+  // }
+
+ 
+  ul.blue-dots {
+    list-style: none;
+    line-height: 32px;
+    li::before {
+      content: "";
+      // background-color: $primary-color;
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-#{$end-direction}: 10px;
+    }
+  }
+  ol {
+    list-style: decimal;
+    line-height: 32px;
+    li {
+      padding-#{$start-direction}: 10px;
+    }
+  }

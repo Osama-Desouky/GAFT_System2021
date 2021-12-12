@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="downloadIcon" transform="translate(-955 -882)">
+    <circle id="Ellipse_11736" data-name="Ellipse 11736" cx="11" cy="11" r="11" transform="translate(955 882)" fill="#0071e2" opacity="0.2"/>
+    <g id="upload-outline" transform="translate(963 890) rotate(180)">
+      <g id="upload-outline-2" data-name="upload-outline" transform="translate(-12 -12)">
+        <g id="upload">
+          <rect id="Rectangle_16260" data-name="Rectangle 16260" width="18" height="18" transform="translate(18 17) rotate(180)" fill="#0071e2" opacity="0"/>
+          <rect id="Rectangle_16261" data-name="Rectangle 16261" width="12" height="1.5" rx="0.75" transform="translate(15 4.5) rotate(180)" fill="#0071e2"/>
+          <rect id="Rectangle_16262" data-name="Rectangle 16262" width="3" height="1.5" rx="0.75" transform="translate(15 3) rotate(90)" fill="#0071e2"/>
+          <rect id="Rectangle_16263" data-name="Rectangle 16263" width="3" height="1.5" rx="0.75" transform="translate(4.5 3) rotate(90)" fill="#0071e2"/>
+          <path id="Path_59920" data-name="Path 59920" d="M7.75,12.752A.75.75,0,0,1,7.3,11.4l3-2.25a.75.75,0,0,1,.885,0l3,2.115a.75.75,0,1,1-.87,1.223L10.75,10.682,8.2,12.6a.75.75,0,0,1-.45.15Z" transform="translate(-1.75 -2.252)" fill="#0071e2"/>
+          <path id="Path_59921" data-name="Path 59921" d="M11.75,18.5a.75.75,0,0,1-.75-.75v-6a.75.75,0,0,1,1.5,0v6A.75.75,0,0,1,11.75,18.5Z" transform="translate(-2.75 -2.75)" fill="#0071e2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

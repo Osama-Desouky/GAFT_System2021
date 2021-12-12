@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.2" height="24.2" viewBox="0 0 24.2 24.2">
+  <g id="recovery-convert" transform="translate(0.1 0.1)">
+    <g id="vuesax_outline_recovery-convert" data-name="vuesax/outline/recovery-convert">
+      <g id="recovery-convert-2" data-name="recovery-convert">
+        <path id="Vector" d="M6.67,10.6H3.94C1.25,10.6,0,9.35,0,6.66V3.93C0,1.25,1.25,0,3.94,0H6.67c2.68,0,3.94,1.25,3.94,3.94V6.67C10.6,9.35,9.35,10.6,6.67,10.6ZM3.94,1.5c-1.87,0-2.44.57-2.44,2.44V6.67c0,1.87.57,2.44,2.44,2.44H6.67c1.87,0,2.44-.57,2.44-2.44V3.94c0-1.87-.57-2.44-2.44-2.44Z" transform="translate(4.75 8.65)" fill="#757575" stroke="#707070" stroke-width="0.2"/>
+        <path id="Vector-2" data-name="Vector" d="M6.66,10.6H5.95a.755.755,0,0,1-.75-.75V7.83c0-1.87-.57-2.44-2.44-2.44H.75A.755.755,0,0,1,0,4.64v-.7C0,1.26,1.25,0,3.94,0H6.67c2.68,0,3.94,1.25,3.94,3.94V6.67C10.6,9.35,9.35,10.6,6.66,10.6ZM1.5,3.9H2.77c2.68,0,3.94,1.25,3.94,3.94V9.11c1.84-.01,2.4-.58,2.4-2.44V3.94c0-1.87-.57-2.44-2.44-2.44H3.94C2.08,1.5,1.51,2.06,1.5,3.9Z" transform="translate(8.65 4.75)" fill="#757575" stroke="#707070" stroke-width="0.2"/>
+        <path id="Vector-3" data-name="Vector" d="M.746,8.51A.752.752,0,0,1,.1,8.13a.764.764,0,0,1,.01-.76l1.05-1.75a.751.751,0,0,1,1.29.77l-.27.45A6.272,6.272,0,0,0,7.006.75a.75.75,0,0,1,1.5,0A7.78,7.78,0,0,1,.746,8.51Z" transform="translate(14.254 14.24)" fill="#757575" stroke="#707070" stroke-width="0.2"/>
+        <path id="Vector-4" data-name="Vector" d="M.75,8.5A.755.755,0,0,1,0,7.75,7.763,7.763,0,0,1,7.75,0,.752.752,0,0,1,8.4.38a.764.764,0,0,1-.01.76L7.34,2.89a.749.749,0,0,1-1.28-.78l.27-.45A6.261,6.261,0,0,0,1.5,7.75.755.755,0,0,1,.75,8.5Z" transform="translate(1.25 1.25)" fill="#757575" stroke="#707070" stroke-width="0.2"/>
+        <path id="Vector-5" data-name="Vector" d="M0,0H24V24H0Z" fill="none" stroke="#707070" stroke-width="0.2" opacity="0"/>
+      </g>
+    </g>
+  </g>
+</svg>

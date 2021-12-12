@@ -1,0 +1,89 @@
+@media (min-width: 1400px) {
+  .inner-container {
+    max-width: 1340px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 1650px) {
+  .inner-container {
+    max-width: 1640px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1400px) and (max-width:1701px) {
+  .inner-container-custom {
+    margin-right: 0;
+    max-width: 1440px;
+    > {
+      .row {
+        margin-right: -15px;
+        margin-left: 0;
+      }
+    }
+  }
+}
+@media (min-width: 1700px) and (max-width:2000px) {
+  .inner-container-custom {
+    margin-right: 0;
+    max-width: 1750px;
+    > {
+      .row {
+        margin-right: -15px;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+/* ----------- fixing global issue ----------- */
+@media (min-device-width: 1401px) and (max-device-width: 1700px) {
+  .container {
+    // border: 1px solid red;
+  }
+  .navbarCustom li a {
+    font-size: 14px;
+  }
+  //   .BGRegistration .rightBG .boxReq {
+  //       margin: 110px 70px 30px;
+  //   }
+  .BGRegistration .leftBG {
+    padding-right: 82px;
+  }
+
+}
+
+/* ----------- start mini labtop  ----------- */
+
+@media (min-device-width: 1025px) and (max-device-width: 1400px) {
+  .container {
+    border: 1px solid green;
+  }
+  .inner-container-custom {
+    margin-right: 0;
+    max-width: 1240px;
+    > {
+      .row {
+        margin-right: -30px;
+        margin-left: 0;
+      }
+    }
+  }
+}
+/* ----------- iPad ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+@media (max-width: 992px) {
+}
+/* ----------- end iPad ----------- */
+
+/* ----------- mobile ----------- */
+@media (max-width: 767px) {
+}
+/* ----------- end mobile ----------- */
+/* ----------- iPhone ----------- */
+@media (max-width: 374px) {
+}
+
+/* ----------- end iPhone ----------- */

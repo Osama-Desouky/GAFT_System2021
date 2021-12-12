@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- filepond CSS -->
+    <link rel="stylesheet" href="../assets/css/filepond.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!--  Font Awesome CSS -->
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <!-- custom style -->
+    <link rel="stylesheet" href="../assets/css/styleRTL.css">
+
+    <title> تعديل البيانات  </title>
+</head>
+
+<body>
+
+    <!-- { start menu } -->
+    <nav class="navbar navbarCustom navbar-expand-lg navbar-light">
+        <div class="container inner-container">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/images/logo-H.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">عن المعالجات التجارية </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">الدفاع عن الصادرات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">التوعية بالمعالجات التجارية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">متابعة التحقيقات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">الإعلانات و التعاميم</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="far fa-user-circle"></i>
+                            <span>مرحبا محمد</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">تعديل ملف الشخصي</a>
+                            <a class="dropdown-item" href="#">تسجيل خروج</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">شئ اخر</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- =-==-=-=-=-=-=-==-=-=-=-=-=-=-=-{ End menu }=-==-=-=-=-=-=-=-=-=-=-==-=-=-=-=- -->
+
+    <!-- { start investigation layout  } -->
+    <div class="investigationLayout">
+        <div class="container inner-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="headTitle35px">طلب حساب لتحقيق جديد</h1>
+                    <div class="greenBox">
+                        <div class="Gbox">
+                            <img src="../assets/images/greenBoxicon.png" alt="">
+                            <div class="Gtext">
+                                <p>نوع المعاملة</p>
+                                <p>صناعة محلية - إضافة شكوي جديدة</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end green section -->
+                    <div class="stepsSection">
+                        <a href="#" class="activeStep">
+                            <strong><img src="../assets/images/step1.svg" alt=""></strong>
+                            <span>البيانات الاساسية</span>
+                        </a>
+                        <a href="#" class="completedStep">
+                            <strong><img src="../assets/images/step2.svg" alt=""></strong>
+                            <span> الشركات المقترنة </span>
+                        </a>
+                        <a href="#">
+                            <strong><img src="../assets/images/step3.svg" alt=""></strong>
+                            <span> تمثيل الشركة </span>
+                        </a>
+                        <a href="#">
+                            <strong><img src="../assets/images/step4.svg" alt=""></strong>
+                            <span> شركات اخري تقدمت <br> بنفس الشكوي </span>
+                        </a>
+                    </div>
+
+                    <div class="EditDataLayout">
+                        <h1 class="cardTitle22px">تعديل بيانات الشركة 1</h1>
+                        <div class="cardInputs">
+                            <div class="span cardTitle22px">بيانات الشركة1</div>
+                            <div class="boxInputs">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="InputGroup">
+                                            <label class="label" for=""> اسم الشركة المعنية </label>
+                                            <input class="inputStyle" type="text" placeholder="  اسم الشركة المعنية كما في أوراق الثبوت ">
+                                        </div>
+                                    </div>
+                                    <!-- end input -->
+                                    <div class="col-md-6">
+                                        <div class="InputGroup">
+                                            <label class="label" for=""> الاسم باللغة الانجليزية </label>
+                                            <input class="inputStyle" type="text" placeholder="  الاسم باللغة الانجليزية ">
+                                        </div>
+                                    </div>
+                                    <!-- end input -->
+                                    <div class="col-md-6">
+                                        <div class="InputGroup">
+                                            <label class="label" for=""> اختصار الاسم الي حرفين </label>
+                                            <input class="inputStyle" type="text" placeholder="  اختصار الاسم الي حرفين ">
+                                        </div>
+                                    </div>
+                                    <!-- end input -->
+                                    <div class="col-md-6">
+                                        <div class="InputGroup">
+                                            <label class="label" for=""> رقم السجل التجاري </label>
+                                            <input class="inputStyle" type="number" placeholder="  رقم السجل التجاري ">
+                                        </div>
+                                    </div>
+                                    <!-- end input -->
+                                    <div class="col-md-6">
+                                        <div class="InputGroup">
+                                            <label class="label" for=""> رقم السجل الصناعي / الزراعي </label>
+                                            <input class="inputStyle" type="number" placeholder="  رقم السجل الصناعي / الزراعي ">
+                                        </div>
+                                    </div>
+                                    <!-- end input -->
+                                    <div class="col-md-6">
+                                        <div class="InputGroup">
+                                            <label class="label" for=""> الموقع الالكتروني </label>
+                                            <input class="inputStyle" type="email" placeholder="  الموقع الالكتروني ">
+                                        </div>
+                                    </div>
+                                    <!-- end input -->
+                                    <div class="col-md-6">
+                                        <div class="InputGroup">
+                                            <label class="label" for=""> البريد الالكتروني لاستقبال التنبيهات </label>
+                                            <input class="inputStyle" type="email" placeholder="  البريد الالكتروني لاستقبال التنبيهات ">
+                                        </div>
+                                    </div>
+                                    <!-- end input -->
+                                </div>
+                                <!-- end row -->
+                            </div>
+                        </div>
+                        <!-- end card 2 -->
+                    <div class="cardInputs">
+                        <span class="cardTitle22px"> صاحب الصلاحية بالتوقيع</span>
+                        <div class="boxInputs">
+                            <div class="InputGroup">
+                                <label class="label" for="">اسم صاحب الصلاحية</label>
+                                <input class="inputStyle" type="text" placeholder="اسم الشركة المعنية كما في أوراق الثبوت">
+                            </div>
+                            <!-- end input -->
+                            <div class="InputGroup">
+                                <label class="label" for="">وظيفته</label>
+                                <input class="inputStyle" type="text" placeholder="وظيفته">
+                            </div>
+                            <!-- end input -->
+                            <div class="InputGroup">
+                                <label class="label" for="">عنوانة</label>
+                                <input class="inputStyle" type="text" placeholder="عنوانة">
+                            </div>
+                            <!-- end input -->
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="InputGroup">
+                                        <label class="label" for="">رقم الهاتف</label>
+                                        <input class="inputStyle" type="number" placeholder="رقم الهاتف">
+                                    </div>
+                                </div>
+                                <!-- end input -->
+                                <div class="col-md-6">
+                                    <div class="InputGroup">
+                                        <label class="label" for="">البريد الالكتروني</label>
+                                        <input class="inputStyle" type="email" placeholder="البريد الالكتروني">
+                                    </div>
+                                </div>
+                                <!-- end input -->
+
+                            </div>
+                            <!-- end row of 3 input -->
+                        </div>
+                        <!-- end card of inputs -->
+                    </div>
+                    <!-- end card -->
+
+                    <div class="cardInputs filesUpload">
+                        <div class="span cardTitle22px">صاحب الصلاحية بالتوقيع</div>
+                        <div class="boxInputs">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="cardLabel18px">
+                                        ولا تتعدي 5 ميجا لكل ملف بحد اقصي pdf , docx تاكد من ان تكون الملفات بصيغة 
+                                    </p>
+                                </div>
+                                 <!-- end notificatio -->
+                                 <div class="col-md-6">
+                                     <p class="label">السجل التجاري</p>
+                                    <input class="filePoundClass" type="file" name="filepond" required multiple />
+                                 </div>
+                                 <!-- end upload -->
+                                 <div class="col-md-6">
+                                     <p class="label">  السجل الصناعي / الزراعي / أخرى....</p>
+                                    <input class="filePoundClass" type="file" name="filepond" required multiple />
+                                 </div>
+                                 <!-- end upload -->
+                                 <div class="col-md-6">
+                                     <p class="label"> خطاب التعهد موثق</p>
+                                    <input class="filePoundClass" type="file" name="filepond" required multiple />
+                                    <a href="#" class="downloadA">
+                                        <img src="../assets/images/downloadIcon.svg" alt="">
+                                        <span>تحميل صيفة خطاب التعهد</span>
+                                    </a>
+                                 </div>
+                                 <!-- end upload -->
+                                 <div class="col-md-6">
+                                     <p class="label"> توكيل او تفويض موثق</p>
+                                    <input class="filePoundClass" type="file" name="filepond" required multiple />
+                                    <a href="#" class="downloadA">
+                                        <img src="../assets/images/downloadIcon.svg" alt="">
+                                        <span>تحميل صيفة التوكيل </span>
+                                    </a>
+                                 </div>
+                                 <!-- end upload -->
+                                 <div class="col-md-6">
+                                     <p class="label"> التوكيل او التفويض مترجم الي العربية او الإنجليزية <span>(اختياري)</span> </p>
+                                    <input class="filePoundClass" type="file" name="filepond" required multiple />
+                                    <p class="hint">
+                                        التوكيل او التفويض مترجم باللغة العربية او الإنجليزية في حالة كان التفويض <br> الأصلي بلغة اخري  
+                                    </p>
+                                 </div>
+                                 <!-- end upload -->
+                                 <div class="col-md-12">
+                                     <p class="hintLast">
+                                        نرجوا ارسال الصل التعهدات و التوكيلات الورقية علي صندوق بريد الهيئة عن طريق البريد المسجل 
+                                     </p>
+                                 </div>
+                                 <div class="col-md-12">
+                                    <div class="submtBtns">
+                                        <a class="saveEdit mainBtn" href="#">
+                                            <span>حفظ و تعديل</span>
+                                            <img src="../assets/images/save-outline22.svg" alt="">
+                                        </a>
+                                        <a class="mainBtn CloseIt" data-toggle="modal" data-target="#staticBackdrop2" href="#">
+                                            الغاء
+                                        </a>
+                                    </div>
+                                 </div>
+                                 <!-- end action -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end card -->
+                    <!-- Modal close -->
+                    <div class="modal deleteModel fade" id="staticBackdrop2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content"> 
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"> <i class="fas fa-times"></i></span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="iconDle">
+                                    <img src="../assets/images/EditDataCloseIcon.svg" alt="">
+                                </div>
+                                <!-- end icon delete -->
+                                <div class="textDeL">
+                                    <h3>هل تريد الغاء تعديلك الذي قمت به ؟ </h3>
+                                    <p>في حالة الغاء التعديل سوف تفقد جميع مدخلاتك الجديدة</p>
+                                </div>
+                                <!-- end text delete -->
+                                <div class="actionDel">
+                                    <a class="deleteAction changedColor" href="#">تجاهل التعديلات و الغاء</a>
+                                    <a class="closeDel" data-dismiss="modal" href="#">الرجوع</a>
+                                </div>
+                                <!-- end action delete -->
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- End Modal close -->
+                    </div>
+                    <!-- End edit data layout -->
+                    <!-- End steps section -->
+                </div>
+                <!-- end col 12 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- { End investigation layout  } -->
+
+    <!-- { start footer } -->
+    <footer class="footer">
+        <div class="container  inner-container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="rightText">
+                        <span>جميع الحقوق محفوظة - الهيئة العامة للتجارة الخارجية © 2021</span>
+                        <a href="#">سياسة الخصوصية</a>
+                        <a href="#">الشروط والأحكام</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="leftText">
+
+                        <a href="#">
+                            <span>gaft_sa@</span>
+                            <span class="hoverText">
+                                <!-- <img src="../assets/images/globe.svg" alt=""> -->
+                                <i class="fas fa-globe"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span>www.gaft.gov.sa</span>
+                            <span class="hoverText">
+                                <i class="fab fa-twitter"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- =-==-=-=-=-=-=-==-=-=-=--=-=-=-=-=-{ End menu }=-==-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=- -->
+    <!-- Start loader -->
+    <div class="loader">
+        <span class="loader-inner">
+            <img src="../assets/images/Spinner-2.gif" alt="">
+        </span>
+    </div>
+    <!-- End loader -->
+    <script src="../assets/js/jQueryV3.5.js"></script>
+    <script src="../assets/js/filepond.min.js"></script>
+    <script src="../assets/js/filepondJquery.js"></script>
+    <script src="../assets/js/FilePondPluginImagePreview.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
+
+
+<script>
+    $(function(){
+    
+      // First register any plugins
+    //   $.fn.filepond.registerPlugin(FilePondPluginImagePreview);
+  
+      // Turn input element into a pond
+      $('.filePoundClass').filepond({
+        labelIdle: `امسك ملفاتك و اتركها هنا او <span>تصفح</span>`,
+        imagePreviewHeight : 40
+      });
+  
+      // Set allowMultiple property to true
+      $('.filePoundClass').filepond('allowMultiple', true);
+    
+      // Listen for addfile event
+      $('.filePoundClass').on('FilePond:addfile', function(e) {
+          console.log('file added event', e);
+      });
+    
+
+
+      // Manually add a file using the addfile method
+    //   $('.filePoundClass').first().filepond('addFile', 'index.html').then(function(file){
+    //     console.log('file added', file);
+    //   });
+    
+    });
+  </script>
+</body>
+
+</html>

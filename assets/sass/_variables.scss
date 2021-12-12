@@ -1,0 +1,97 @@
+$font-ar: "DINNextLT";
+$font-en: "montserrat";
+
+$font-path: "../fonts/";
+$img-path: "../images/";
+
+// colors
+
+
+$p-color: #707070;
+$golden-color:#CCA079;
+$black-color: #012D29;
+$black-color-two:#1D1D1B;
+$light-blue-hover:#00FFE8;
+$dark-green: #007066;
+$light-grey: #9C9C9C;
+$headres-bg:#E5ECEC;
+$heading-color :#242424;
+/*
+font-family: "DINBold";
+font-family: "DINLight";
+font-family: "DINMedium";
+font-family: "DINRegular";
+
+*/
+
+.headTitle35px {
+    font-size: 35px;
+    // font-family: "DINMedium";
+    color: $golden-color;
+}
+.cardTitle22px {
+  font-size: 22px;
+  color: $dark-green;
+}
+.cardLabel18px {
+  font-size: 18px;
+  color: $black-color;
+}
+.subHeadTitle24px {
+  font-size: 24px;
+  color: $heading-color;
+  font-family: "DINBold";
+}
+.paragraph24px {
+  font-size: 24px;
+  line-height: 1.8;
+  color: $p-color;
+}
+.subParagraph14px {
+  font-size: 14px;
+  color: $p-color;
+  line-height: 1.8;
+}
+.label {
+  color: #BBBBBB;
+  font-size: 14px;
+  // font-family: "DINMedium";
+}
+.mainBtn {
+  width: 160px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $golden-color;
+  color: #fff;
+  font-size: 16px;
+  // font-family: "DINMedium";
+  border-radius: 50px;
+}
+
+
+$theme-colors: (
+  // "primary": $primary-color,
+  // "warning": $orange-color,
+  // "success": $green-color,
+  // "gray": $gray-color,
+  // "red": $red-color
+);
+
+// font weight
+$w-thin: 100; // (Hairline)
+$w-extra-light: 200; // (Ultra Light)
+$w-light: 300;
+$w-normal: 400; // (Regular)
+$w-medium: 500;
+$w-semi-bold: 600; // (Semi Bold)
+$w-bold: 700;
+$w-extra-bold: 800; // (Ultra Bold)
+$w-black: 900; //(Heavy)
+
+
+
+//more 
+
+$raduis-normal : 8px;
