@@ -1,0 +1,12 @@
+<svg id="money-time" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="vuesax_outline_money-time" data-name="vuesax/outline/money-time">
+    <g id="money-time-2" data-name="money-time">
+      <path id="Vector" d="M2.438,4.875A2.438,2.438,0,1,1,4.875,2.438,2.442,2.442,0,0,1,2.438,4.875Zm0-3.75A1.313,1.313,0,1,0,3.75,2.438,1.319,1.319,0,0,0,2.438,1.125Z" transform="translate(6.563 6.563)" fill="#fff"/>
+      <path id="Vector-2" data-name="Vector" d="M.563,4.875A.567.567,0,0,1,0,4.313V.563A.567.567,0,0,1,.563,0a.567.567,0,0,1,.563.563v3.75A.567.567,0,0,1,.563,4.875Z" transform="translate(13.313 6.563)" fill="#fff"/>
+      <path id="Vector-3" data-name="Vector" d="M3.563,7.125A3.563,3.563,0,1,1,7.125,3.563,3.566,3.566,0,0,1,3.563,7.125Zm0-6A2.438,2.438,0,1,0,6,3.563,2.442,2.442,0,0,0,3.563,1.125Z" transform="translate(0.188 9.938)" fill="#fff"/>
+      <path id="Vector-4" data-name="Vector" d="M.559,2.8A.56.56,0,0,1,.274,1.762l.57-.345a.193.193,0,0,0,.09-.158v-.7a.563.563,0,0,1,1.125,0v.7a1.322,1.322,0,0,1-.637,1.125l-.57.345A.586.586,0,0,1,.559,2.8Z" transform="translate(2.44 12.008)" fill="#fff"/>
+      <path id="Vector-5" data-name="Vector" d="M11.813,13.125H5.438a.563.563,0,0,1,0-1.125h6.375C13.958,12,15,10.957,15,8.813v-4.5c0-2.145-1.042-3.187-3.187-3.187h-7.5c-2.145,0-3.187,1.043-3.187,3.188v4.65a.567.567,0,0,1-.562.563A.567.567,0,0,1,0,8.963V4.313A3.928,3.928,0,0,1,4.313,0h7.5a3.928,3.928,0,0,1,4.313,4.313v4.5A3.928,3.928,0,0,1,11.813,13.125Z" transform="translate(0.938 2.438)" fill="#fff"/>
+      <path id="Vector-6" data-name="Vector" d="M0,0H18V18H0Z" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

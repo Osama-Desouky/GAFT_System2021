@@ -44,5 +44,47 @@ $( document ).ready(function() {
     //   $(this).addClass('visitedLink')
     // })
 
+    // progress bar calc with number
+    $(".progress-bar-custom").each(function(){
+      let minValue = $(this).attr("aria-valuenow")
+      let maxValue = $(this).attr("aria-valuemax")
+      let percentageValue  = (minValue / maxValue) * 100
+
+     console.log(minValue,maxValue);
+     console.log(percentageValue);
+     $(this).attr('aria-valuenow', percentageValue).css('width', percentageValue+'%');
+    })
+
 });
 
+
+
+// function check_percentage(){
+//   let percentage = document.querySelector('.percentage');
+//   let percentageValue =  +percentage.textContent;
+//   let title = document.querySelector('h1');
+  
+//   setTimeout(function(){
+//     if (percentageValue < 100) {
+//       update_percentage(); 
+    
+//     } else {
+//       // percentage.textContent = 100;   
+//       // title.textContent = 'Done!'; 
+//       // title.style.color = '#568259';
+//     }
+//   }, 100)
+// }
+
+// function update_percentage(){   
+//   let percentage = document.querySelector('.percentage');
+//   let percentageValue =  +percentage.textContent;
+//   let progress = document.querySelector('.progress');
+   
+//   percentage.textContent = percentageValue + Math.ceil(Math.random() * 5);
+//   progress.setAttribute('style', `width:${percentageValue + Math.ceil(Math.random() * 5)}%`);
+ 
+//   check_percentage();
+// }
+
+// check_percentage();

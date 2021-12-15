@@ -943,11 +943,6 @@ a:hover {
   padding-right: 7px;
 }
 
-.investigationLayout .stepsSection a.activeStep {
-  pointer-events: unset;
-  text-decoration: unset;
-}
-
 .investigationLayout .stepsSection a.activeStep strong {
   background-color: rgba(0, 112, 102, 0.15);
 }
@@ -1527,8 +1522,11 @@ a:hover {
 }
 
 .layoutLargSide {
-  padding-top: 45px;
   min-height: 850px;
+}
+
+.layoutLargSide > .tableCardSystem:first-child {
+  margin-top: 45px;
 }
 
 .layoutLargSide.layoutableXDV2 {
@@ -1562,6 +1560,215 @@ a:hover {
 
 .layoutLargSide .tableCardSystem .headingTB a {
   min-width: 83px;
+}
+
+.layoutLargSide .progressCheckingNum .checkingTempNum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+}
+
+.layoutLargSide .progressCheckingNum .checkingTempNum .subHeadTitle24px, .layoutLargSide .progressCheckingNum .checkingTempNum .modalCustomStyle .modal-dialog .modal-title, .modalCustomStyle .modal-dialog .layoutLargSide .progressCheckingNum .checkingTempNum .modal-title {
+  color: #007066;
+}
+
+.layoutLargSide .progressCheckingNum .checkingTempNum .tempMun span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #007066;
+}
+
+.layoutLargSide .progressCheckingNum .checkingTempNum .tempMun span:last-of-type {
+  background-color: #fff;
+  padding: 3px 8px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 4px;
+  margin-right: 14px;
+}
+
+.layoutLargSide .TabParent {
+  border: unset;
+  padding: 0;
+  background-color: #ebe4dd85;
+  border-radius: 50px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+}
+
+.layoutLargSide .TabParent li {
+  padding-right: 24px;
+}
+
+.layoutLargSide .TabParent li:first-of-type {
+  padding-right: 0px;
+}
+
+.layoutLargSide .TabParent li a {
+  font-size: 20px;
+  font-weight: 500;
+  color: #CCA079;
+  background: transparent;
+  padding: 16px 26px;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.layoutLargSide .TabParent li a.active {
+  color: #CCA079;
+  background: #fff;
+}
+
+.layoutLargSide .tabsParentSection {
+  margin-bottom: 141px;
+}
+
+.layoutLargSide .tabParentFromChild {
+  border: unset;
+  padding: 0;
+  margin-bottom: 24px;
+  margin-top: 23px;
+}
+
+.layoutLargSide .tabParentFromChild li {
+  padding-right: 30px;
+}
+
+.layoutLargSide .tabParentFromChild li:first-of-type {
+  padding-right: 0px;
+}
+
+.layoutLargSide .tabParentFromChild li a {
+  font-size: 20px;
+  font-weight: 500;
+  color: #007066;
+  background-color: #fff;
+  padding: 23px;
+  min-width: 247px;
+  display: inline-block;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+}
+
+.layoutLargSide .tabParentFromChild li a img {
+  max-width: 30px;
+}
+
+.layoutLargSide .tabParentFromChild li a.active {
+  color: #007066;
+  background-color: rgba(0, 112, 102, 0.2);
+}
+
+.layoutLargSide .tabParentFromChild li a.active img {
+  -webkit-filter: invert(6%) sepia(31%) saturate(1524%) hue-rotate(130deg) brightness(60%) contrast(101%);
+          filter: invert(6%) sepia(31%) saturate(1524%) hue-rotate(130deg) brightness(60%) contrast(101%);
+}
+
+.layoutLargSide .tabLastChild {
+  border: unset;
+  padding: 0;
+}
+
+.layoutLargSide .tabLastChild a {
+  border-radius: 0;
+}
+
+.layoutLargSide .tabLastChild + .tab-content .cardInTab {
+  border-radius: 5px 0 5px 5px;
+}
+
+.layoutLargSide .tabLastChild li:first-of-type a {
+  border-radius: 0px 8px 0px 0px;
+}
+
+.layoutLargSide .tabLastChild li:last-of-type a {
+  border-radius: 8px 0px 0px 0px;
+}
+
+.layoutLargSide .tabLastChild li a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #BBBBBB;
+  background-color: rgba(187, 187, 187, 0.1);
+  padding: 11px 25px;
+  display: inline-block;
+}
+
+.layoutLargSide .tabLastChild li a.active {
+  color: #fff;
+  background: #CCA079;
+}
+
+.layoutLargSide .cardInTab {
+  background-color: #fff;
+  padding: 27px 24px 13px 135px;
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+
+.layoutLargSide .cardInTab .subHeadTitle24px, .layoutLargSide .cardInTab .modalCustomStyle .modal-dialog .modal-title, .modalCustomStyle .modal-dialog .layoutLargSide .cardInTab .modal-title {
+  margin-bottom: 27px;
+  color: #007066;
+}
+
+.layoutLargSide .cardInTab .cardUl {
+  list-style: none;
+  padding: 0;
+}
+
+.layoutLargSide .cardInTab .cardUl li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.layoutLargSide .cardInTab .cardUl li span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 260px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #012D29;
+}
+
+.layoutLargSide .cardInTab .cardUl li p {
+  margin: 0;
+  background-color: #F6F6F6;
+  width: 100%;
+  font-size: 16px;
+  color: #1D1D1B;
+  padding: 12px 24px;
+  border-radius: 6px;
+}
+
+.layoutLargSide .cardInTab .actionBtns {
+  text-align: left;
+  margin: 7px 0 20px;
+}
+
+.layoutLargSide .cardInTab .actionBtns a span {
+  padding: 0 9px 0 0px;
+}
+
+.layoutLargSide .cardInTab .actionBtns a:last-of-type {
+  margin-left: 0px;
 }
 
 .tableCardSystem .table td, .table th {
@@ -1652,6 +1859,165 @@ a:hover {
 
 .changedColor {
   background-color: #012d29 !important;
+}
+
+.progressSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 0 24px;
+}
+
+.progressSection span {
+  font-size: 18px;
+  color: #CCA079;
+  font-weight: bold;
+}
+
+.progressSection .progress {
+  width: 95%;
+  height: 4px;
+  margin-top: 5px;
+  background-color: rgba(204, 160, 121, 0.4);
+}
+
+.progressSection .progress .progress-bar {
+  background-color: #cca079;
+}
+
+.menuSystem {
+  min-height: 976px;
+  background-color: #F8F8F8;
+  margin: 0;
+}
+
+.menuSystem .backAndTitle {
+  padding: 20px 23px 10px 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menuSystem .backAndTitle a {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.menuSystem .backAndTitle p {
+  background-color: rgba(204, 160, 121, 0.2);
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #CCA079;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 12px 24px;
+  margin-right: 13px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.menuSystem .backAndTitle p span {
+  margin-right: 8px;
+}
+
+.menuSystem .menuActions {
+  margin: 0;
+  padding: 0px 23px 50px 23px;
+  list-style: none;
+}
+
+.menuSystem .menuActions .progressSection {
+  padding: 9px 0 0;
+}
+
+.menuSystem .menuActions .progressSection .progress {
+  width: 85%;
+  height: 3px;
+}
+
+.menuSystem .menuActions li a {
+  width: 100%;
+  padding: 7px 24px 11px 24px;
+  background: #007066;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 12px;
+}
+
+.menuSystem .menuActions li a img {
+  max-width: 20px;
+  padding-top: 5px;
+}
+
+.menuSystem .menuActions li a span {
+  font-size: 18px;
+  color: #fff;
+  padding-right: 12px;
+}
+
+.menuSystem .menuActions li.DoneAction a {
+  background-color: rgba(0, 112, 102, 0.2);
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.menuSystem .menuActions li.DoneAction a img {
+  -webkit-filter: invert(69%) sepia(31%) saturate(1524%) hue-rotate(130deg) brightness(69%) contrast(101%);
+          filter: invert(69%) sepia(31%) saturate(1524%) hue-rotate(130deg) brightness(69%) contrast(101%);
+}
+
+.menuSystem .menuActions li.DoneAction a span {
+  color: #007066;
+}
+
+.menuSystem .menuActions li.CloseAction a {
+  background-color: #BBBBBB;
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.menuSystem .menuActions li.CloseAction .progressSection span {
+  color: #BBBBBB;
+}
+
+.menuSystem .menuActions li.CloseAction .progressSection .progress {
+  background-color: #BBBBBB;
+}
+
+.menuSystem .menuActions li.CloseAction .progressSection .progress .progress-bar {
+  background-color: #BBBBBB;
+}
+
+.backBtn {
+  width: 57px;
+  height: 52px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background: #A1A1A1;
+  border-radius: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (min-width: 1400px) {

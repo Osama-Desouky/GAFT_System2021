@@ -657,8 +657,8 @@ a:hover {
         padding-right: 7px;
       }
       &.activeStep {
-        pointer-events: unset;
-        text-decoration: unset;
+        // pointer-events: unset;
+        // text-decoration: unset;
         strong {
           background-color: rgba(0, 112, 102, 0.15);
           img {
@@ -1091,6 +1091,7 @@ a:hover {
   display: flex;
   align-items: center;
 }
+
 .menuListSide {
   min-height: 976px;
   background-color: #F8F8F8 ;
@@ -1168,8 +1169,13 @@ a:hover {
 }
 
 .layoutLargSide {
-  padding-top: 45px;
+
   min-height: 850px;
+  >.tableCardSystem {
+		&:first-child {
+      margin-top: 45px;
+		}
+	}
   &.layoutableXDV2 {
     max-width: 1360px;
     margin: 0 auto;
@@ -1192,6 +1198,186 @@ a:hover {
       }
     }
   }
+
+  .progressCheckingNum {
+    .checkingTempNum {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 20px;
+      .subHeadTitle24px {
+        color: $dark-green;
+      } 
+      .tempMun {
+        span {
+          font-size: 12px;
+          font-weight: bold;
+          color: $dark-green;
+          &:last-of-type {
+            background-color: #fff;
+            padding: 3px 8px;
+            display: inline-flex;
+            border-radius: 4px;
+            margin-right: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .TabParent {
+    border: unset;
+    padding: 0;
+    background-color: #ebe4dd85;
+    border-radius: 50px;
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+    li {
+      padding-right: 24px;
+      &:first-of-type {
+        padding-right: 0px;
+      }
+      a {
+        font-size: 20px;
+        font-weight: 500;
+        color: #CCA079;
+        background: transparent;
+        padding: 16px 26px;
+        border-radius: 50px;
+        display: inline-block;
+        &.active {
+          color: #CCA079;
+           background: #fff;
+        }
+      }
+    }
+  }
+  .tabsParentSection {
+    margin-bottom: 141px;
+  }
+  .tabParentFromChild {
+    border: unset;
+    padding: 0;
+    margin-bottom: 24px;
+    margin-top: 23px;
+    // box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+    li {
+      padding-right: 30px;
+      &:first-of-type {
+        padding-right: 0px;
+      }
+      a {
+        font-size: 20px;
+        font-weight: 500;
+        color: $dark-green;
+        background-color: #fff;
+        padding: 23px;
+        min-width: 247px;
+        display: inline-block;
+        border-radius: 8px;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+        img {
+          max-width: 30px;
+        
+        }
+        &.active {
+          color: $dark-green;
+          background-color: rgba(0, 112, 102, 0.2);
+          img {
+            filter: invert(6%) sepia(31%) saturate(1524%) hue-rotate(130deg) brightness(60%) contrast(101%);
+          }
+        }
+      }
+    }
+  }
+  .tabLastChild {
+    border: unset;
+    padding: 0;
+    a { 
+      border-radius: 0;
+    }
+     &+.tab-content {
+       .cardInTab {
+        border-radius: 5px 0 5px 5px;
+       }
+        
+     }
+    li {
+      &:first-of-type {
+        a {
+          border-radius: 0px 8px 0px 0px;
+        }
+      }
+      &:last-of-type {
+        a {
+          border-radius: 8px 0px 0px 0px;
+        }
+      }
+      a {
+        font-size: 18px;
+        font-weight: 500;
+        color: $colorBBBBBB;
+        background-color: rgba(187 , 187 , 187 , 0.1);
+        padding: 11px 25px;
+        display: inline-block;
+        &.active {
+          color: #fff;
+           background: $golden-color; 
+        }
+      }
+    }
+  }
+  .cardInTab {
+    background-color: #fff;
+    padding: 27px 24px 13px 135px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    .subHeadTitle24px {
+      margin-bottom: 27px;
+      color: $dark-green;
+    }
+    .cardUl {
+      list-style: none;
+      padding: 0;
+      li {
+        display: flex;
+        margin-bottom: 20px;
+        span {
+          display: inline-flex;
+          min-width: 260px;
+          align-items: center;
+          font-size: 18px;
+          font-weight: 500;
+          color: #012D29;
+        }
+        p {
+          margin: 0;
+          background-color: #F6F6F6;
+          width: 100%;
+          font-size: 16px;
+          color: #1D1D1B;
+          padding: 12px 24px;
+          border-radius: 6px;
+        }
+      }
+    }
+    .actionBtns {
+      text-align: $end-direction;
+      // padding-#{$end-direction}: 7%;
+      margin: 7px 0 20px;
+      
+      a {
+        span {
+          padding: 0 9px 0 0px;
+        }
+        &:last-of-type {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+
 }
 
 
@@ -1279,4 +1465,129 @@ a:hover {
 .changedColor {
   background-color: #012d29 !important;
 }
+.progressSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0 24px;
 
+  span {
+    font-size: 18px;
+    color: $golden-color;
+    font-weight: bold;
+  }
+  .progress {
+    width: 95%;
+    height: 4px;
+    margin-top: 5px;
+    background-color:rgba(204, 160, 121, .4);
+    .progress-bar {
+      background-color:rgba(204, 160, 121, 1);
+    }
+  }
+
+
+}
+
+.menuSystem {
+  min-height: 976px;
+  background-color: #F8F8F8 ;
+  margin: 0;
+  .backAndTitle {
+    padding: 20px 23px 10px 23px;
+    display: flex;
+    align-items: center;
+    a {
+      flex-shrink: 0;
+    }
+    p {
+      background-color: rgba(204, 160, 121, 0.2);
+      margin: 0;
+      font-size: 20px;
+      font-weight: 500;
+      color: $golden-color;
+      display: inline-flex;     
+      padding: 12px 24px;
+      margin-#{$start-direction}: 13px;
+      border-radius: 8px;
+      width: 100%;
+      span {
+        margin-#{$start-direction}: 8px;
+      }
+    }
+  }
+  
+  .menuActions {
+    margin: 0;
+    padding: 0px 23px 50px 23px;
+    list-style: none;
+    .progressSection {
+      padding: 9px 0 0;
+      .progress {
+        width: 85%;
+        height: 3px;
+      }
+    }
+    li {
+      a {
+        width: 100%;
+        padding: 7px 24px 11px 24px;
+        background: $dark-green;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        margin-top: 12px;
+        img {
+          max-width: 20px;
+          padding-top: 5px;
+        }
+        span {
+          font-size: 18px;
+          color: #fff;
+          padding-#{$start-direction}: 12px;
+        }
+      }
+      &.DoneAction {
+        a {
+          background-color: rgba(0, 112, 102, 0.2);
+          img {
+            filter: invert(69%) sepia(31%) saturate(1524%) hue-rotate(130deg) brightness(69%) contrast(101%);
+          }
+          span {
+            color: $dark-green;
+          }
+          pointer-events: none;
+          text-decoration: none;
+        }
+      }
+      &.CloseAction {
+         a {
+          background-color: #BBBBBB;
+          pointer-events: none;
+          text-decoration: none;
+         }
+         .progressSection {
+          span {
+            color: #BBBBBB;
+          }
+          .progress {
+            background-color: #BBBBBB;
+           .progress-bar {
+            background-color: #BBBBBB;
+            }
+          }
+        }
+      }
+    }
+
+  }
+} 
+.backBtn {
+  width: 57px;
+  height: 52px;
+  display: inline-flex;
+  background: #A1A1A1;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+}
