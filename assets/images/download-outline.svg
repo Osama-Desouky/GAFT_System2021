@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="download-outline" transform="translate(12 11) rotate(180)">
+    <g id="upload-outline" transform="translate(-12 -13)">
+      <g id="upload" transform="translate(0 0)">
+        <rect id="Rectangle_16260" data-name="Rectangle 16260" width="24" height="24" transform="translate(24 24) rotate(180)" fill="#0071e2" opacity="0"/>
+        <rect id="Rectangle_16261" data-name="Rectangle 16261" width="16" height="2" rx="1" transform="translate(20 7.333) rotate(180)" fill="#0071e2"/>
+        <rect id="Rectangle_16262" data-name="Rectangle 16262" width="4" height="2" rx="1" transform="translate(20 5.333) rotate(90)" fill="#0071e2"/>
+        <rect id="Rectangle_16263" data-name="Rectangle 16263" width="4" height="2" rx="1" transform="translate(6 5.333) rotate(90)" fill="#0071e2"/>
+        <path id="Path_59920" data-name="Path 59920" d="M8,14a1,1,0,0,1-.6-1.8l4-3a1,1,0,0,1,1.18,0l4,2.82a1,1,0,1,1-1.16,1.63L12,11.24,8.6,13.8A1,1,0,0,1,8,14Z" transform="translate(0 1.333)" fill="#0071e2"/>
+        <path id="Path_59921" data-name="Path 59921" d="M12,21a1,1,0,0,1-1-1V12a1,1,0,0,1,2,0v8A1,1,0,0,1,12,21Z" transform="translate(0 1.333)" fill="#0071e2"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="plus-accr" transform="translate(12 12)">
+    <g id="plus" transform="translate(-12 -12)">
+      <g id="plus-2" data-name="plus">
+        <rect id="Rectangle_16471" data-name="Rectangle 16471" width="30" height="30" transform="translate(30 30) rotate(180)" opacity="0"/>
+        <path id="Path_60182" data-name="Path 60182" d="M22.75,12.75h-7.5V5.25a1.25,1.25,0,0,0-2.5,0v7.5H5.25a1.25,1.25,0,0,0,0,2.5h7.5v7.5a1.25,1.25,0,0,0,2.5,0v-7.5h7.5a1.25,1.25,0,0,0,0-2.5Z" transform="translate(1 1)"/>
+      </g>
+    </g>
+  </g>
+</svg>

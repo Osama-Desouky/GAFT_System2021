@@ -134,6 +134,27 @@ a:hover {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
+
+select {
+  background-color: #f1f0ef;
+  height: 45px;
+  border-radius: 8px;
+  border: unset;
+  width: 100%;
+  padding: 12px 24px;
+  margin-bottom: 14px;
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  appearance:none;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #bbbbbb;
+  position: relative;
+  background-image: url(../images/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: 24px 12px;
+}
+
 // ----- End Global -----
 
 // ----- End PRELOADING -----
@@ -876,6 +897,7 @@ a:hover {
     }
 }
 .actionBtns {
+  text-align: $end-direction;
     a {
         min-width: 110px;
         height: 47px;
@@ -883,32 +905,36 @@ a:hover {
         border-radius: 8px;
         align-items: center;
         padding: 12px 16px;
+        margin-#{$start-direction}: 24px;
         span {
             font-size: 18px;
             margin-top: -4px;
         }
         &.addCompBtn  {
             background-color: rgba(0, 112, 102, 0.2);
-            margin-#{$end-direction}: 7px;
             span {
                 color: rgba(0, 112, 102, 1);
-                padding: 0 5px;
+                padding: 0 9px;
             }
 
         }
-        &.SkipBtn  {
+        &.sendBtn  {
             background-color: rgba(204, 160, 121, 0.2);
             span {
                 color: rgba(204, 160, 121, 1);
-                padding-#{$end-direction}: 15px;
+                padding-#{$start-direction}: 9px;
             }
-            i {
-                color: rgba(204, 160, 121, 1);
-                margin-top: 3px;
+        }
+        &.closeBtn  {
+            background-color: rgba(213, 49, 58, 0.2);
+            span {
+                color: rgba(213, 49, 58, 1);
+                padding-#{$start-direction}: 9px;
             }
         }
     }
 }
+
 .modalCustomStyle {
     .modal-dialog {
         max-width: 1094px;
@@ -1337,31 +1363,7 @@ a:hover {
       margin-bottom: 27px;
       color: $dark-green;
     }
-    .cardUl {
-      list-style: none;
-      padding: 0;
-      li {
-        display: flex;
-        margin-bottom: 20px;
-        span {
-          display: inline-flex;
-          min-width: 260px;
-          align-items: center;
-          font-size: 18px;
-          font-weight: 500;
-          color: #012D29;
-        }
-        p {
-          margin: 0;
-          background-color: #F6F6F6;
-          width: 100%;
-          font-size: 16px;
-          color: #1D1D1B;
-          padding: 12px 24px;
-          border-radius: 6px;
-        }
-      }
-    }
+
     .actionBtns {
       text-align: $end-direction;
       // padding-#{$end-direction}: 7%;
@@ -1590,4 +1592,246 @@ a:hover {
   border-radius: 8px;
   align-items: center;
   justify-content: center;
+}
+
+.boxView {
+  background-color: #fff;
+  border-radius: 8px 0px 8px 8px;
+  padding: 24px;
+  .cardUl {
+    margin-bottom: 0;
+    li {
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .customRadio {
+    display: flex;
+    margin-bottom: 24px;
+    form {
+      display: flex;
+    }
+    p {
+      &:first-of-type {
+        margin-#{$end-direction}: 24px;
+      }
+    }
+    [type="radio"] {
+      &:checked {
+        + {
+          label {
+            background-color: rgba(0, 112, 102, 0.2);
+            color: $dark-green;
+            &:before {
+              border: 1px solid $dark-green;
+            }
+            &:after {
+              background: $dark-green;
+            }
+          }
+        }
+      }
+      &:not(:checked) {
+        + {
+          label {
+            &:after {
+              background: $dark-green;
+            }
+          }
+        }
+      }
+    }
+  }
+  .filePoundClass {
+    cursor: pointer;
+    .filepond--drop-label {
+      justify-content: flex-end;
+      padding-#{$start-direction}: 24px;
+    }
+  }
+  .inputStyle {
+    background-color: #f1f0ef;
+    margin-bottom: 0px;
+  }
+  .InputGroup {
+    margin-bottom: 24px;
+  }
+  select {
+    margin-bottom: 0px;
+  }
+  .radioGroup {
+    form {
+      display: flex;
+      p {
+        &:first-of-type {
+          padding-#{$end-direction}: 24px;
+        }
+      }
+    }
+  }
+  .checkboxGroup {
+    margin-bottom: 9px;
+    form {
+      display: flex;
+      .form-radio-group {
+        padding-#{$end-direction}: 24px;
+      }
+    }
+  }
+
+}
+
+.actionCard {
+  display: flex;
+  a {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    box-shadow: 0 0px 5px rgba(0,0,0,.05);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+  }
+  .downloadBT {
+    background-color: rgba(0, 113, 226, 0.2);
+  }
+  .viewBT {
+    background-color: rgba(0, 112, 102, 0.2);
+  }
+}
+.accordion {
+  .cardTitle22px {
+    margin-bottom: 28px;
+  }
+  .card {
+    border: unset;
+    margin-bottom: 30px;
+    border-radius: 8px !important;
+    .card-header {
+      border: unset;
+      background-color: #fff;
+      padding: 21px 24px;
+      button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        border-bottom: 2px solid #bbbbbb6b;
+        padding-bottom: 17px;
+        &:hover,
+        &:focus {
+          box-shadow: unset;
+          text-decoration: unset;
+        }
+         span {
+          font-size: 24px;
+          color: $golden-color;
+          font-weight: 500;
+         }
+         img {
+           filter: invert(78%) sepia(18%) saturate(766%) hue-rotate(344deg) brightness(84%) contrast(89%);
+           transition: .4s;
+           transform: rotate(47deg);
+         }
+         &.collapsed {
+          border-bottom: 0px solid #bbbbbb6b;
+          padding-bottom: 0px;
+          span {
+            color: #000000;
+          }
+          img {
+            filter: unset;
+            transform: rotate(0deg);
+          }
+        }
+      }
+    } 
+  }
+  .card-body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: -10px;
+    .cardInputs {
+      margin-bottom: 24px;
+      .cardTitle22px { 
+        padding: 0px 14px;
+        margin-bottom:24px;
+        font-weight: bold;
+      }
+      .boxView {
+        padding: 0 24px;
+      }
+    }
+  }
+
+}
+
+.radioGroup {
+  padding: 0px;
+}
+
+.form-radio-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-radio-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-radio-group label {
+  position: relative;
+  cursor: pointer;
+    font-size: 16px;
+  color: $colorBBBBBB;
+  margin-bottom: 0;
+}
+
+.form-radio-group label:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 3px solid $colorBBBBBB;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-#{$end-direction}: 8px;
+  border-radius: 4px;
+}
+
+.form-radio-group input + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 6px;
+  #{$start-direction}: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid $colorBBBBBB;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.form-radio-group input:checked + label {
+ color: $golden-color;
+}
+.form-radio-group input:checked + label::before {
+
+  background-color: $golden-color;
+  border: 3px solid  $golden-color;
+
+}
+.form-radio-group input:checked + label:after {
+
+  border-color: #ffffff;
+
 }
