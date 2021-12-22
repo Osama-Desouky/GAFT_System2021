@@ -1460,11 +1460,13 @@ select {
   background-color: #CCA079;
 }
 
+.modal-body,
 .EditDataLayout {
   margin-bottom: 49px;
   background-color: #fff;
 }
 
+.modal-body > .cardTitle22px,
 .EditDataLayout > .cardTitle22px {
   font-size: 24px;
   font-weight: bold;
@@ -1472,14 +1474,20 @@ select {
   text-align: center;
 }
 
+.modal-body h1.cardTitle22px,
+.EditDataLayout h1.cardTitle22px {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 27px 25px 0px 25px;
+  text-align: center;
+}
+
+.modal-body .cardInputs,
 .EditDataLayout .cardInputs {
   margin-bottom: 0;
 }
 
-.EditDataLayout .cardInputs .cardTitle22px {
-  padding-bottom: 0;
-}
-
+.modal-body .submtBtns,
 .EditDataLayout .submtBtns {
   margin: 50px 0 12px 0;
   display: -webkit-box;
@@ -1490,15 +1498,18 @@ select {
           justify-content: space-between;
 }
 
+.modal-body .submtBtns .saveEdit,
 .EditDataLayout .submtBtns .saveEdit {
   background-color: #007066;
   width: 200px;
 }
 
+.modal-body .submtBtns .saveEdit span,
 .EditDataLayout .submtBtns .saveEdit span {
   padding: 0 4px;
 }
 
+.modal-body .submtBtns .CloseIt,
 .EditDataLayout .submtBtns .CloseIt {
   background-color: #012D29;
   width: 152px;
