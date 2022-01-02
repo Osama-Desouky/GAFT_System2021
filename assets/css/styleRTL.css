@@ -1037,6 +1037,37 @@ select {
   color: #cca079;
 }
 
+.investigationLayout .stepsSection.nav-pills {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.investigationLayout .stepsSection.nav-pills li a {
+  pointer-events: unset;
+  padding: 0;
+}
+
+.investigationLayout .stepsSection.nav-pills li a.active {
+  background-color: unset;
+}
+
+.investigationLayout .stepsSection.nav-pills li a.active strong {
+  background-color: rgba(0, 112, 102, 0.15);
+}
+
+.investigationLayout .stepsSection.nav-pills li a.active strong img {
+  -webkit-filter: invert(142%) sepia(31%) saturate(1524%) hue-rotate(130deg) brightness(101%) contrast(101%);
+          filter: invert(142%) sepia(31%) saturate(1524%) hue-rotate(130deg) brightness(101%) contrast(101%);
+}
+
+.investigationLayout .stepsSection.nav-pills li a.active span {
+  color: #007066;
+}
+
+.investigationLayout .tab-content {
+  min-height: 800px;
+}
+
 .investigationLayout .cardInputs {
   margin-bottom: 32px;
 }
@@ -1844,8 +1875,14 @@ select {
   padding-right: 6px;
 }
 
-.tableCardSystem .table tbody td .editB {
-  padding: 0 24px;
+.tableCardSystem .table tbody tr td:last-of-type {
+  min-width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .tableCardSystem .table-striped tbody tr:nth-of-type(even) {

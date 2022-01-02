@@ -706,6 +706,31 @@ select {
         }
       }
     }
+    &.nav-pills {
+      flex-wrap: nowrap;
+      li {
+        a {
+          pointer-events: unset;
+          padding: 0; 
+          &.active {
+            background-color: unset;
+            strong {
+              background-color: rgba(0, 112, 102, 0.15);
+              img {
+                filter: invert(142%) sepia(31%) saturate(1524%) hue-rotate(130deg)
+                  brightness(101%) contrast(101%);
+              }
+            }
+            span {
+              color: #007066;
+            }
+          }
+        }
+      }
+    }
+  }
+  .tab-content {
+    min-height: 800px;
   }
   .cardInputs {
       .row {
@@ -1414,9 +1439,13 @@ select {
   }
 }
 .tableCardSystem .table tbody td .editB {
-  padding:0 24px
+  // padding:0 24px
 }
-
+.tableCardSystem .table tbody  tr td:last-of-type {
+  min-width: 120px;
+    display: flex;
+    justify-content: space-between;
+}
 .tableCardSystem .table-striped tbody tr:nth-of-type(even) {
   background-color: #F8F8F8;
 }
