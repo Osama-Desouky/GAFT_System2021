@@ -73,7 +73,7 @@ font-family: "DINRegular";
   margin-bottom: 20px;
 }
 
-.cardUl li span {
+.cardUl li span, .cardUl li label {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -84,6 +84,7 @@ font-family: "DINRegular";
   font-size: 18px;
   font-weight: 500;
   color: #012D29;
+  margin-bottom: 0;
 }
 
 .cardUl li p {
