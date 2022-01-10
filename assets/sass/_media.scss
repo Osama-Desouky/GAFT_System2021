@@ -43,7 +43,7 @@
     // border: 1px solid red;
   }
   .navbarCustom li a {
-    font-size: 14px;
+    font-size: 13px;
   }
   //   .BGRegistration .rightBG .boxReq {
   //       margin: 110px 70px 30px;
@@ -52,6 +52,24 @@
     padding-right: 82px;
   }
 
+}
+
+@media (min-width: 1401px) and (max-width: 1700px) {
+
+  .navbarCustom li.dropdown a.nav-link {
+      width: 190px;
+      // border: 1px solid red
+  }
+
+  .navbarCustom .navbar-brand img {
+      height: 65px;
+      width: 250px;
+  }
+
+  .navbarCustom li a {
+      font-size: 12px;
+      padding-right: 10px !important;
+  }
 }
 
 /* ----------- start mini labtop  ----------- */

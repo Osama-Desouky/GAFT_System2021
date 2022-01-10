@@ -5,8 +5,15 @@ $(window).on("load",function() {
 })
 
 $( document ).ready(function() {
-    
 
+    $(".navbar .dropdown #navbarDropdown span").text(function(){
+      
+     let oldString = $(this).text().trim()
+      var newString = oldString.split('@', 1)[0];
+      $(this).html(document.createTextNode(newString));
+
+    })
+    
     // AO show and hide password 
     $(".toggle-password").click(function() {
         var input = $($(this).attr("toggle"));

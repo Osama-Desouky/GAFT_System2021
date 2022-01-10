@@ -1065,10 +1065,6 @@ select {
   color: #007066;
 }
 
-.investigationLayout .tab-content {
-  min-height: 800px;
-}
-
 .investigationLayout .cardInputs {
   margin-bottom: 32px;
 }
@@ -1290,7 +1286,7 @@ select {
   text-align: left;
 }
 
-.actionBtns a {
+.actionBtns a, .actionBtns button {
   min-width: 110px;
   height: 47px;
   display: -webkit-inline-box;
@@ -1304,34 +1300,34 @@ select {
   margin-right: 24px;
 }
 
-.actionBtns a span {
+.actionBtns a span, .actionBtns button span {
   font-size: 18px;
   margin-top: -4px;
 }
 
-.actionBtns a.addCompBtn {
+.actionBtns a.addCompBtn, .actionBtns button.addCompBtn {
   background-color: rgba(0, 112, 102, 0.2);
 }
 
-.actionBtns a.addCompBtn span {
+.actionBtns a.addCompBtn span, .actionBtns button.addCompBtn span {
   color: #007066;
   padding: 0 9px;
 }
 
-.actionBtns a.sendBtn {
+.actionBtns a.sendBtn, .actionBtns button.sendBtn {
   background-color: rgba(204, 160, 121, 0.2);
 }
 
-.actionBtns a.sendBtn span {
+.actionBtns a.sendBtn span, .actionBtns button.sendBtn span {
   color: #cca079;
   padding-right: 9px;
 }
 
-.actionBtns a.closeBtn {
+.actionBtns a.closeBtn, .actionBtns button.closeBtn {
   background-color: rgba(213, 49, 58, 0.2);
 }
 
-.actionBtns a.closeBtn span {
+.actionBtns a.closeBtn span, .actionBtns button.closeBtn span {
   color: #d5313a;
   padding-right: 9px;
 }
@@ -2390,6 +2386,153 @@ select {
   border-color: #ffffff;
 }
 
+/* fixing and adding style */
+textarea {
+  min-height: 150px;
+  resize: none;
+}
+
+.modalCustomStyle .customRadio label {
+  font-size: 17px;
+}
+
+.ui-widget-header {
+  border: 1px solid #f6f6f6;
+  background: #f6f6f6;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  text-align: center;
+  background: #f6f6f6;
+  color: #007066;
+}
+
+.ui-datepicker th span,
+.ui-datepicker th {
+  color: #007066;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+  border: 1px solid #f5ece4;
+  background: #f5ece4;
+  color: #c09772;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  border: 1px solid #007066;
+  background: #007066;
+  font-weight: normal;
+  color: #fff;
+}
+
+.ui-datepicker .ui-datepicker-title {
+  color: #007066;
+}
+
+.filepond--file-info .filepond--file-info-main {
+  font-size: 14px;
+}
+
+.filepond--file-action-button.filepond--action-remove-item svg {
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+}
+
+.filesUpload .cardLabel18px, .filesUpload .investigationLayout .cardInputs .boxInputs .label, .investigationLayout .cardInputs .boxInputs .filesUpload .label, .filesUpload .hintLast,
+.filesUpload .hint {
+  color: #a3a3a3;
+}
+
+.addCompany .addText + .actionBtns {
+  text-align: center;
+}
+
+.addCompany .addText + .actionBtns a.addCompBtn {
+  margin-right: 0px;
+}
+
+.actionBtns a.SkipBtn {
+  background-color: rgba(204, 160, 121, 0.2);
+}
+
+.actionBtns a.SkipBtn * {
+  color: #cca079;
+}
+
+.actionBtns a.SkipBtn span {
+  padding-left: 9px;
+}
+
+.validation-summary-errors ul {
+  list-style: none;
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 20px;
+}
+
+.validation-summary-errors ul li {
+  position: relative;
+  font-size: 18px;
+  color: #D5313A;
+  margin-bottom: 15px;
+}
+
+.validation-summary-errors ul li::before {
+  content: '';
+  position: absolute;
+  right: -40px;
+  top: 3px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../images/info-outline.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.navbarCustom li a.changeLang {
+  color: #CCA079 !important;
+  font-size: 14px;
+}
+
+.navbarCustom li a.changeLang img {
+  padding-right: 10px;
+}
+
+.actionBtns .sendBtn {
+  background-color: rgba(204, 160, 121, 0.2);
+  min-width: 110px;
+  height: 47px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 8px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 16px;
+  margin-right: 24px;
+}
+
+.actionBtns .sendBtn span {
+  color: #007066;
+  padding: 0 9px;
+  font-size: 18px;
+  margin-top: -4px;
+}
+
+/* end and adding style */
 @media (min-width: 1400px) {
   .inner-container {
     max-width: 1340px;
@@ -2430,10 +2573,24 @@ select {
 /* ----------- fixing global issue ----------- */
 @media (min-device-width: 1401px) and (max-device-width: 1700px) {
   .navbarCustom li a {
-    font-size: 14px;
+    font-size: 13px;
   }
   .BGRegistration .leftBG {
     padding-right: 82px;
+  }
+}
+
+@media (min-width: 1401px) and (max-width: 1700px) {
+  .navbarCustom li.dropdown a.nav-link {
+    width: 190px;
+  }
+  .navbarCustom .navbar-brand img {
+    height: 65px;
+    width: 250px;
+  }
+  .navbarCustom li a {
+    font-size: 12px;
+    padding-right: 10px !important;
   }
 }
 
