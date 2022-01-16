@@ -904,6 +904,7 @@ select {
   max-width: 1082px;
   margin: 0 auto;
   padding: 28px 0 0;
+  min-height: calc(100vh - 264px);
 }
 
 .investigationLayout .col-md-12 .headTitle35px {
@@ -1346,6 +1347,10 @@ select {
 
 .modalCustomStyle .modal-dialog .modal-body {
   padding: 0;
+}
+
+.modalCustomStyle .modal-dialog .modal-body .investigationLayout {
+  max-width: 1035px;
 }
 
 .modalCustomStyle .modal-dialog .cardInputs {
@@ -2530,6 +2535,45 @@ a.ui-button:active,
   padding: 0 9px;
   font-size: 18px;
   margin-top: -4px;
+}
+
+.ui-datepicker-prev::after,
+.ui-datepicker-next::after {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: 9999;
+  top: 2px;
+  right: 10px;
+  font-family: "Font Awesome 5 Free";
+  color: #007066;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.ui-datepicker-prev::after {
+  content: '\f104';
+}
+
+.ui-datepicker-next::after {
+  content: '\f105';
+}
+
+.ui-datepicker .ui-datepicker-next-hover,
+.ui-datepicker .ui-datepicker-prev-hover {
+  background: transparent !important;
+  font-weight: 600 !important;
+  border: unset !important;
+}
+
+.ui-datepicker .ui-datepicker-next-hover {
+  right: 2px !important;
+  top: 2px !important;
+}
+
+.ui-datepicker .ui-datepicker-prev-hover {
+  left: 2px !important;
+  top: 2px !important;
 }
 
 /* end and adding style */
