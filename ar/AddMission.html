@@ -513,7 +513,7 @@
                     </ul>
 
                     <div class="addAttSec">
-                        <a class="addCompBtn " href="#">
+                        <a class="addCompBtn addCompBtnsad" href="#">
                             <span>اضافة مهمة</span>
                             <img src="../assets/images/add-square-green.svg" alt="" />
                         </a>
@@ -582,6 +582,38 @@
 
 
     <script>
+         var count = 2
+        $(document).delegate(".addCompBtnsad", "click", function () {
+
+
+            let $asd = ` <li class="cloneT">
+                            <strong>${count++}</strong>
+                            <input type="text" placeholder="اسم الملف">
+                            <div>
+                                <input class="filePoundClass" type="file" name="filepond" required multiple />
+                            </div>
+                            <div>
+                                <input class="filePoundClass" type="file" name="filepond" required multiple />
+                            </div>
+                        </li>`
+            $('.missionUl').append($asd)
+            console.log($asd);
+            $('').addClass('asdasdasdsad')
+            $('.cloneT:last .filePoundClass').filepond({
+                labelIdle: `اترك الملف هنا او  <span>تصفح</span>`,
+                imagePreviewHeight: 40
+            });
+
+            // Set allowMultiple property to true
+            $('.cloneT:last .filePoundClass').filepond('allowMultiple', true);
+
+            // Listen for addfile event
+            $('.cloneT:last .filePoundClass').on('FilePond:addfile', function (e) {
+                console.log('file added event', e);
+            });
+
+        }
+        );
         $(function () {
             
             // Turn input element into a pond
