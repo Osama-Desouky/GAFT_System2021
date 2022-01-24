@@ -59,6 +59,17 @@ input::placeholder {
   font-size: 20px;
   margin-bottom: 12px;
 }
+.addCompBtn  {
+  display: flex;
+  img {
+    max-width: 24px;
+  }
+  span {
+    font-size: 16px;
+    color: $dark-green;
+    margin-#{$start-direction}: 3px;
+  }
+}
 .inputStyle {
   background-color: #fff;
   height: 45px;
@@ -186,6 +197,7 @@ select {
     img {
       height: 99px;
       width: 366px;
+      object-fit: contain;
     }
   }
   li {
@@ -1293,7 +1305,7 @@ select {
     border-radius: 50px;
     width: max-content;
     margin: 0 auto;
-    margin-bottom: 24px;
+    margin-bottom: 34px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
     li {
       padding-right: 24px;
@@ -1359,9 +1371,22 @@ select {
     a { 
       border-radius: 0;
     }
+
      &+.tab-content {
        .cardInTab {
         border-radius: 5px 0 5px 5px;
+        padding-top: 37px;
+        // padding-bottom: 0;
+        .cardUl {
+          li {
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+          }
+        }
+        .actionBtns {
+          margin: 37px 0 57px;
+        }
        }
         
      }
@@ -1417,7 +1442,6 @@ select {
   }
 
 }
-
 
 .tableCardSystem .table td, .table th {
   border: 0 solid #dee2e6;
@@ -1808,6 +1832,351 @@ select {
 
 }
 
+.filterSec {
+  label {
+    font-size: 14px;
+    font-weight: 500;
+    color: $golden-color;
+    padding-#{$end-direction}: 5px;
+    white-space: pre;
+    margin-bottom: 0;
+  }
+  .subHeadTitle24px {
+    color: #007066;
+    margin-bottom: 24px;
+  }
+  .searchSec {
+    display: flex;
+    justify-content: space-between;
+    .selectBoxSex,
+    .selectInput,
+    .searchBox {
+      display: flex;
+      align-items: center;
+    }
+
+    .searchBox {
+      label {
+        padding-#{$end-direction}: 21px;
+      }
+    }
+    .selectBoxSex {
+      .selectInput {
+        &:first-of-type {
+          padding-#{$end-direction}: 24px;
+        }
+        select {
+          background-image: url(../images/chevron-down-gold.png);
+          background-position: 10px 12px;
+          padding: 12px 24px 12px 30px;
+        }
+      }
+    }
+    .searchBox {
+      .inputStyle {
+        min-width: 255px;
+        background-image: url(../images/search-normal-outline.svg);
+        background-repeat: no-repeat;
+        background-position: 95% 14px;
+        padding-#{$start-direction}: 41px;
+      }
+    }
+
+  }
+  .dateAction {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    .Inputdate ,
+    .dateComp {
+      display: flex;
+      align-items: center;
+      label {
+        padding-#{$end-direction}:42px;
+      }
+    }
+    .dateComp {
+      .inputStyle {
+        min-width: 255px;
+      }
+      .Inputdate {
+        &:first-of-type {
+          padding-#{$end-direction}: 24px;
+        }
+      }
+    }
+    .actionBtn {
+      button {
+        @extend .buttonTwo
+      }
+    }
+  }
+}
+.actions {
+  text-align: $end-direction;
+  padding-top: 30px;
+  .addMissos {
+    span {
+      padding-#{$start-direction}: 6px;
+    }
+  }
+}
+.missionContent {
+  .boxView {
+    margin-top: 40px;
+    margin-bottom: 33px;
+    padding-bottom: 0;
+    border-radius: 8px;
+  }
+  .tableCardGreen {
+    border-radius: 0 0 8px 8px ;
+  }
+}
+.addMission {
+
+  background-color: #fff;
+  border-radius: 8px 8px 0 0;
+  padding: 24px;
+  textarea,
+  select,
+  input {
+    background-color: #f1f0ef;
+    margin-bottom: 24px;
+  }
+  select {
+    background-image: url(../images/arrowDownBlack.svg);
+    background-position: 28px 21px;
+  }
+  textarea {
+    border: unset;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 8px;
+    min-height: 78px;
+    &::placeholder {
+      color: #BBBBBB;
+    }
+  }
+  .subHeadTitle24px {
+    color: $dark-green;
+    margin-bottom: 13px;
+  }
+  .form-radio-group,
+  .InputGroup {
+    display: flex;
+    .label {
+      width: 130px;
+      flex-shrink: 0;
+    }
+  }
+}
+.tableCardGreen {
+	.table-responsive {
+		border-radius: 8px;
+		margin: 0;
+		border: 1px solid #fff;
+		background: #fff;
+	}
+	.table {
+		thead {
+			th {
+				color: #fff;
+        background-color: $dark-green;
+				&:first-of-type {
+					border-radius: 0 10px 0 0;
+				}
+				&:last-of-type {
+					border-radius: 10px 0 0 0;
+				}
+			}
+		}
+	}
+	.table-striped {
+		border: 1px solid #fff;
+		border-spacing: 0;
+		border-collapse: separate;
+		tbody {
+			tr {
+				&:last-of-type {
+					th {
+						border-radius: 0 0 10px 0;
+					}
+					td {
+						&:last-of-type {
+							border-radius: 0 0 0 10px;
+						}
+					}
+				}
+				&:nth-of-type(even) {
+					th {
+						background-color: #f1f0ef;
+					}
+					td {
+						background-color: #f1f0ef;
+					}
+					background-color: unset;
+				}
+			}
+		}
+	}
+}
+
+
+
+.AddMissionPopup {
+  padding: 0 35px;
+  margin-bottom: 14px;
+  .headTitle35px {
+    text-align: center;
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  .missionUl {
+    list-style: none;
+    padding: 0;
+    li {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      strong {
+          width: 50px;
+          font-size: 18px;
+          color: #8F8F8F;
+      }
+      .filepond--root,
+      input {
+        width: 200px;
+        // height: 35px;
+
+        .filepond--drop-label {
+          min-height: 30px;
+          height: 35px;
+        }
+      }
+      input {
+        background-color: #F6F6F6;
+        height: 35px;
+        border-radius: 8px;
+        border: unset;
+        padding: 12px 24px;
+        margin-bottom: 14px;
+        text-align: $start-direction;
+      }
+      &:first-of-type {
+        .spanCum {
+
+          font-size: 20px;
+          font-weight: 600;
+          color: $dark-green;
+          margin-bottom: 26px;
+          width: 200px;
+          &:first-of-type {
+            width: 50px;
+          }
+        }
+      }
+
+    }
+  }
+
+  .addAttSec {
+    text-align: right;
+    display: flex;
+    justify-content: end;
+  }
+  .actions {
+    text-align: center;
+    a ,
+    button {
+      border-radius: 50px;
+    }
+    .addMissos {
+      margin-#{$end-direction}: 20px;
+    }
+  }
+}
+.detailsMission {
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 22px;
+  padding: 24px 24px 0px;
+  .subHeadTitle24px {
+    color: #007066;
+    margin-bottom: 9px;
+  }
+  .brifeH {
+    font-size: 18px;
+    color: #8F8F8F;
+    margin-bottom: 20px;
+  }
+  .employeeBox {
+    display: flex;
+    margin-bottom: 15px;
+    .emBox {
+      margin-left: 25px;
+      img {
+        max-width: 30px;
+        margin-#{$end-direction}: 6px;
+      }
+      span {
+        font-size: 16px;
+        color: #1D1D1B;
+      }
+    }
+  }
+  .InputViewGroup {
+    display: flex;
+    align-items: center;
+    .label {
+      color: #012D29;
+      font-size: 20px;
+      margin-bottom: 12px;
+      margin-left: 6px;
+      max-width: 12%;
+      width: 100%;
+    }
+    p {
+      color: #1D1D1B;
+      font-size: 16px;
+      margin-bottom: 12px;
+      background: #F6F6F6;
+      width: 87%;
+      padding: 12px 24px;
+      border-radius: 8px;
+    }
+  }
+  .tableCardGreen {
+    padding: 15px 0 24px 0;
+
+    td {
+      a {
+        font-size: 18px;
+        color: #0071E2;
+        text-decoration: underline;
+        &:hover {
+          color: #0071E2;
+        }
+      }
+
+  
+    }
+  }
+
+}
+
+.widthMissionPopup  {
+  .modal-dialog {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+    max-width: 864px;
+  }
+}
+
+// 555555555555555
 .radioGroup {
   padding: 0px;
 }

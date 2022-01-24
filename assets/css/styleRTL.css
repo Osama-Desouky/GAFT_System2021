@@ -43,6 +43,10 @@ font-family: "DINRegular";
   font-size: 14px;
 }
 
+.filepond--root .filepond--credits {
+  display: none;
+}
+
 .mainBtn {
   width: 160px;
   height: 52px;
@@ -59,6 +63,46 @@ font-family: "DINRegular";
   color: #fff;
   font-size: 16px;
   border-radius: 50px;
+}
+
+.buttonTwo, .filterSec .dateAction .actionBtn button {
+  min-width: 113px;
+  height: 33px;
+  padding: 0 24px;
+  border-radius: 8px;
+  background: #007066;
+  color: #fff;
+  font-size: 14px;
+}
+
+.sendGold {
+  background-color: #CCA079;
+  height: 47px;
+  min-width: 117px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.addMissos {
+  min-width: 193px;
+  background: #007066;
+  height: 48px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 8px;
+}
+
+.addMissos span {
+  font-size: 16px;
+  color: #fff;
 }
 
 .cardUl {
@@ -260,6 +304,22 @@ input::placeholder {
   margin-bottom: 12px;
 }
 
+.addCompBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.addCompBtn img {
+  max-width: 24px;
+}
+
+.addCompBtn span {
+  font-size: 16px;
+  color: #007066;
+  margin-right: 3px;
+}
+
 .inputStyle {
   background-color: #fff;
   height: 45px;
@@ -401,6 +461,8 @@ select {
 .navbarCustom .navbar-brand img {
   height: 99px;
   width: 366px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .navbarCustom li a {
@@ -1716,7 +1778,7 @@ select {
   width: -moz-max-content;
   width: max-content;
   margin: 0 auto;
-  margin-bottom: 24px;
+  margin-bottom: 34px;
   -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
           box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
 }
@@ -1801,6 +1863,15 @@ select {
 
 .layoutLargSide .tabLastChild + .tab-content .cardInTab {
   border-radius: 5px 0 5px 5px;
+  padding-top: 37px;
+}
+
+.layoutLargSide .tabLastChild + .tab-content .cardInTab .cardUl li:last-of-type {
+  margin-bottom: 0;
+}
+
+.layoutLargSide .tabLastChild + .tab-content .cardInTab .actionBtns {
+  margin: 37px 0 57px;
 }
 
 .layoutLargSide .tabLastChild li:first-of-type a {
@@ -2322,6 +2393,411 @@ select {
   padding: 0 24px;
 }
 
+.filterSec label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #CCA079;
+  padding-left: 5px;
+  white-space: pre;
+  margin-bottom: 0;
+}
+
+.filterSec .subHeadTitle24px, .filterSec .modalCustomStyle .modal-dialog .modal-title, .modalCustomStyle .modal-dialog .filterSec .modal-title {
+  color: #007066;
+  margin-bottom: 24px;
+}
+
+.filterSec .searchSec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filterSec .searchSec .selectBoxSex,
+.filterSec .searchSec .selectInput,
+.filterSec .searchSec .searchBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filterSec .searchSec .searchBox label {
+  padding-left: 21px;
+}
+
+.filterSec .searchSec .selectBoxSex .selectInput:first-of-type {
+  padding-left: 24px;
+}
+
+.filterSec .searchSec .selectBoxSex .selectInput select {
+  background-image: url(../images/chevron-down-gold.png);
+  background-position: 10px 12px;
+  padding: 12px 24px 12px 30px;
+}
+
+.filterSec .searchSec .searchBox .inputStyle {
+  min-width: 255px;
+  background-image: url(../images/search-normal-outline.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 14px;
+  padding-right: 41px;
+}
+
+.filterSec .dateAction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 24px;
+}
+
+.filterSec .dateAction .Inputdate,
+.filterSec .dateAction .dateComp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filterSec .dateAction .Inputdate label,
+.filterSec .dateAction .dateComp label {
+  padding-left: 42px;
+}
+
+.filterSec .dateAction .dateComp .inputStyle {
+  min-width: 255px;
+}
+
+.filterSec .dateAction .dateComp .Inputdate:first-of-type {
+  padding-left: 24px;
+}
+
+.actions {
+  text-align: left;
+  padding-top: 30px;
+}
+
+.actions .addMissos span {
+  padding-right: 6px;
+}
+
+.missionContent .boxView {
+  margin-top: 40px;
+  margin-bottom: 33px;
+  padding-bottom: 0;
+  border-radius: 8px;
+}
+
+.missionContent .tableCardGreen {
+  border-radius: 0 0 8px 8px;
+}
+
+.addMission {
+  background-color: #fff;
+  border-radius: 8px 8px 0 0;
+  padding: 24px;
+}
+
+.addMission textarea,
+.addMission select,
+.addMission input {
+  background-color: #f1f0ef;
+  margin-bottom: 24px;
+}
+
+.addMission select {
+  background-image: url(../images/arrowDownBlack.svg);
+  background-position: 28px 21px;
+}
+
+.addMission textarea {
+  border: unset;
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 8px;
+  min-height: 78px;
+}
+
+.addMission textarea::-webkit-input-placeholder {
+  color: #BBBBBB;
+}
+
+.addMission textarea:-ms-input-placeholder {
+  color: #BBBBBB;
+}
+
+.addMission textarea::-ms-input-placeholder {
+  color: #BBBBBB;
+}
+
+.addMission textarea::placeholder {
+  color: #BBBBBB;
+}
+
+.addMission .subHeadTitle24px, .addMission .modalCustomStyle .modal-dialog .modal-title, .modalCustomStyle .modal-dialog .addMission .modal-title {
+  color: #007066;
+  margin-bottom: 13px;
+}
+
+.addMission .form-radio-group,
+.addMission .InputGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.addMission .form-radio-group .label,
+.addMission .InputGroup .label {
+  width: 130px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.tableCardGreen .table-responsive {
+  border-radius: 8px;
+  margin: 0;
+  border: 1px solid #fff;
+  background: #fff;
+}
+
+.tableCardGreen .table thead th {
+  color: #fff;
+  background-color: #007066;
+}
+
+.tableCardGreen .table thead th:first-of-type {
+  border-radius: 0 10px 0 0;
+}
+
+.tableCardGreen .table thead th:last-of-type {
+  border-radius: 10px 0 0 0;
+}
+
+.tableCardGreen .table-striped {
+  border: 1px solid #fff;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+.tableCardGreen .table-striped tbody tr:last-of-type th {
+  border-radius: 0 0 10px 0;
+}
+
+.tableCardGreen .table-striped tbody tr:last-of-type td:last-of-type {
+  border-radius: 0 0 0 10px;
+}
+
+.tableCardGreen .table-striped tbody tr:nth-of-type(even) {
+  background-color: unset;
+}
+
+.tableCardGreen .table-striped tbody tr:nth-of-type(even) th {
+  background-color: #f1f0ef;
+}
+
+.tableCardGreen .table-striped tbody tr:nth-of-type(even) td {
+  background-color: #f1f0ef;
+}
+
+.AddMissionPopup {
+  padding: 0 35px;
+  margin-bottom: 14px;
+}
+
+.AddMissionPopup .headTitle35px {
+  text-align: center;
+  color: #000000;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.AddMissionPopup .missionUl {
+  list-style: none;
+  padding: 0;
+}
+
+.AddMissionPopup .missionUl li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.AddMissionPopup .missionUl li strong {
+  width: 50px;
+  font-size: 18px;
+  color: #8F8F8F;
+}
+
+.AddMissionPopup .missionUl li .filepond--root,
+.AddMissionPopup .missionUl li input {
+  width: 200px;
+}
+
+.AddMissionPopup .missionUl li .filepond--root .filepond--drop-label,
+.AddMissionPopup .missionUl li input .filepond--drop-label {
+  min-height: 30px;
+  height: 35px;
+}
+
+.AddMissionPopup .missionUl li input {
+  background-color: #F6F6F6;
+  height: 35px;
+  border-radius: 8px;
+  border: unset;
+  padding: 12px 24px;
+  margin-bottom: 14px;
+  text-align: right;
+}
+
+.AddMissionPopup .missionUl li:first-of-type .spanCum {
+  font-size: 20px;
+  font-weight: 600;
+  color: #007066;
+  margin-bottom: 26px;
+  width: 200px;
+}
+
+.AddMissionPopup .missionUl li:first-of-type .spanCum:first-of-type {
+  width: 50px;
+}
+
+.AddMissionPopup .addAttSec {
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.AddMissionPopup .actions {
+  text-align: center;
+}
+
+.AddMissionPopup .actions a,
+.AddMissionPopup .actions button {
+  border-radius: 50px;
+}
+
+.AddMissionPopup .actions .addMissos {
+  margin-left: 20px;
+}
+
+.detailsMission {
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 22px;
+  padding: 24px 24px 0px;
+}
+
+.detailsMission .subHeadTitle24px, .detailsMission .modalCustomStyle .modal-dialog .modal-title, .modalCustomStyle .modal-dialog .detailsMission .modal-title {
+  color: #007066;
+  margin-bottom: 9px;
+}
+
+.detailsMission .brifeH {
+  font-size: 18px;
+  color: #8F8F8F;
+  margin-bottom: 20px;
+}
+
+.detailsMission .employeeBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.detailsMission .employeeBox .emBox {
+  margin-left: 25px;
+}
+
+.detailsMission .employeeBox .emBox img {
+  max-width: 30px;
+  margin-left: 6px;
+}
+
+.detailsMission .employeeBox .emBox span {
+  font-size: 16px;
+  color: #1D1D1B;
+}
+
+.detailsMission .InputViewGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.detailsMission .InputViewGroup .label {
+  color: #012D29;
+  font-size: 20px;
+  margin-bottom: 12px;
+  margin-left: 6px;
+  max-width: 12%;
+  width: 100%;
+}
+
+.detailsMission .InputViewGroup p {
+  color: #1D1D1B;
+  font-size: 16px;
+  margin-bottom: 12px;
+  background: #F6F6F6;
+  width: 87%;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+.detailsMission .tableCardGreen {
+  padding: 15px 0 24px 0;
+}
+
+.detailsMission .tableCardGreen td a {
+  font-size: 18px;
+  color: #0071E2;
+  text-decoration: underline;
+}
+
+.detailsMission .tableCardGreen td a:hover {
+  color: #0071E2;
+}
+
+.widthMissionPopup .modal-dialog {
+  min-height: calc(100vh - 60px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: auto;
+  max-width: 864px;
+}
+
 .radioGroup {
   padding: 0px;
 }
@@ -2645,7 +3121,7 @@ a.ui-button:active,
   }
   .inner-container-custom {
     margin-right: 0;
-    max-width: 1240px;
+    width: 95%;
   }
   .inner-container-custom > .row {
     margin-right: -30px;

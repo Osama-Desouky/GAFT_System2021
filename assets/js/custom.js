@@ -57,8 +57,8 @@ $( document ).ready(function() {
       let maxValue = $(this).attr("aria-valuemax")
       let percentageValue  = (minValue / maxValue) * 100
 
-     console.log(minValue,maxValue);
-     console.log(percentageValue);
+    //  console.log(minValue,maxValue);
+    //  console.log(percentageValue);
      $(this).attr('aria-valuenow', percentageValue).css('width', percentageValue+'%');
     })
 

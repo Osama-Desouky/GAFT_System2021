@@ -80,13 +80,15 @@
   }
   .inner-container-custom {
     margin-right: 0;
-    max-width: 1240px;
+    // max-width: 1395px;
+    width: 95%;
     > {
       .row {
         margin-right: -30px;
         margin-left: 0;
       }
     }
+    
   }
 }
 /* ----------- iPad ----------- */

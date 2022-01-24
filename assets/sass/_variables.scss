@@ -58,6 +58,10 @@ font-family: "DINRegular";
   font-size: 14px;
   // font-family: "DINMedium";
 }
+.filepond--root .filepond--credits {
+  display: none;
+}
+
 .mainBtn {
   width: 160px;
   height: 52px;
@@ -70,7 +74,37 @@ font-family: "DINRegular";
   // font-family: "DINMedium";
   border-radius: 50px;
 }
-
+.buttonTwo {
+  min-width: 113px;
+  height: 33px;
+  padding: 0 24px;
+  border-radius: 8px;
+  background: $dark-green;
+  color: #fff;
+  font-size: 14px;
+}
+.sendGold {
+  background-color: $golden-color;
+  height: 47px;
+  min-width: 117px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #fff;
+}
+.addMissos {
+  min-width: 193px;
+  background: $dark-green;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  span {
+    font-size: 16px;
+    color: #fff;
+    // padding-#{$start-direction}: 6px;
+  }
+}
 .cardUl {
   list-style: none;
   padding: 0;
