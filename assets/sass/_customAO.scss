@@ -728,14 +728,13 @@ select {
           &.active {
             background-color: unset;
             strong {
-              background-color: rgba(0, 112, 102, 0.15);
+              background-color: rgba(204, 160, 121, 0.2);
               img {
-                filter: invert(142%) sepia(31%) saturate(1524%) hue-rotate(130deg)
-                  brightness(101%) contrast(101%);
+                filter: invert(18%) sepia(51%) saturate(278%) hue-rotate(347deg) brightness(88%) contrast(86%);
               }
             }
             span {
-              color: #007066;
+              color: #cca079;
             }
           }
         }

@@ -1,0 +1,970 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- filepond CSS -->
+    <link rel="stylesheet" href="../assets/css/filepond.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!--  Font Awesome CSS -->
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <!-- custom style -->
+    <link rel="stylesheet" href="../assets/css/styleRTL.css">
+
+    <title>صفحه عرض</title>
+</head>
+
+<body>
+
+    <!-- { start menu } -->
+    <nav class="navbar navbarCustom navbar-expand-lg navbar-light">
+        <div class="container inner-container">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/images/logo-H.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">عن المعالجات التجارية </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">الدفاع عن الصادرات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">التوعية بالمعالجات التجارية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">متابعة التحقيقات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">الإعلانات و التعاميم</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="far fa-user-circle"></i>
+                            <span>مرحبا محمد</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">تعديل ملف الشخصي</a>
+                            <a class="dropdown-item" href="#">تسجيل خروج</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">شئ اخر</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- =-==-=-=-=-=-=-==-=-=-=-=-=-=-=-{ End menu }=-==-=-=-=-=-=-=-=-=-=-==-=-=-=-=- -->
+
+    <!-- { start investigation layout  } -->
+    <div class="investigationLayout layoutLargSide ">
+        <div class="container inner-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="headTitle35px">تحقيق الشكوي الاولي</h1>
+                    <!-- Start tabs parent view page -->
+                    <div class="layoutLargSide">
+                        <ul class="nav nav-pills TabParent" id="pills-tab2" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="pills-home-tab-parent1" data-toggle="pill"
+                                    href="#pills-home-parent" role="tab" aria-controls="pills-home-parent"
+                                    aria-selected="true">بيانات الطلب</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-home-tab-parent2" data-toggle="pill"
+                                    href="#pills-profile-parent" role="tab" aria-controls="pills-profile-parent"
+                                    aria-selected="false">الحالة التاريخية </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-home-tab-parent3" data-toggle="pill"
+                                    href="#pills-contact-parent" role="tab" aria-controls="pills-contact-parent"
+                                    aria-selected="false">كل الملفات</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tab2Content">
+                            <div class="tab-pane fade show active" id="pills-home-parent" role="tabpanel"
+                                aria-labelledby="pills-home-tab-parent1">
+                                <!-- Start tabs inner for view page -->
+                                <ul class="nav nav-pills  stepsSection" id="pills-tab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill"
+                                            href="#pills-home" role="tab" aria-controls="pills-home"
+                                            aria-selected="true">
+                                            <strong><img src="../assets/images/step1.svg" alt=""></strong>
+                                            <span>البيانات الاساسية</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " id="pills-profile-tab" data-toggle="pill"
+                                            href="#pills-profile" role="tab" aria-controls="pills-profile"
+                                            aria-selected="false">
+                                            <strong><img src="../assets/images/step2.svg" alt=""></strong>
+                                            <span> الشركات المقترنة </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " id="pills-contact-tab" data-toggle="pill"
+                                            href="#pills-contact" role="tab" aria-controls="pills-contact"
+                                            aria-selected="false">
+                                            <strong><img src="../assets/images/step3.svg" alt=""></strong>
+                                            <span> تمثيل الشركة </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " id="pills-contact2-tab" data-toggle="pill"
+                                            href="#pills-contact2" role="tab" aria-controls="pills-contact2"
+                                            aria-selected="false">
+                                            <strong><img src="../assets/images/step4.svg" alt=""></strong>
+                                            <span> شركات اخري تقدمت <br> بنفس الشكوي </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- End nav tabs  -->
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                        aria-labelledby="pills-home-tab">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="alert alertCustom alert-success alert-dismissible fade show"
+                                                    role="alert">
+                                                    <strong>تحقيق</strong> تحقيق الشكوي الاولي
+                                                    <button type="button" class="close" data-dismiss="alert"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End success message -->
+                                        <div class="cardInputs">
+                                            <div class="span cardTitle22px">معلومات المنتجات محل الشكوي</div>
+                                            <!-- End title -->
+                                            <div class="boxView">
+                                                <ul class="cardUl">
+                                                    <li>
+                                                        <span>نوع الشكوي</span>
+                                                        <p>مكافحة اغراق</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>وصف المنتجات محل الشكوي</span>
+                                                        <p> لبولي اثيلين عالي الكثافة هو نوع من البلاستيك الصلب يستخدم
+                                                            لتعبئة بلاستيكية أكثر
+                                                            إحكاما مثل منظفات الغسيل وكذلك
+                                                            .تطبيقات البناء أو علب القمامة. إنه يظهر مقاومة للتآكل عند
+                                                            تعرضه لمجموعة متنوعة
+                                                            من المواد</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>البنود الجمركية للمنتج محل الشكوي</span>
+                                                        <p>البنود الجمركية للمنتج محل الشكوي</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>البنود الجمركية للمنتج محل الشكوي</span>
+                                                        <p>البنود الجمركية للمنتج محل الشكوي</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>تاريخ البدء في الانتاج</span>
+                                                        <p>24/5/2021</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>متوسط حجم الانتاج</span>
+                                                        <p>20 كجم</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>النسبة من انتاج المملكة</span>
+                                                        <p>20%</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- end box view -->
+                                        </div>
+                                        <div class="cardInputs">
+                                            <div class="span cardTitle22px">بيانات الشركة</div>
+                                            <!-- End title -->
+                                            <div class="boxView">
+                                                <ul class="cardUl">
+                                                    <li>
+                                                        <span>اسم الشركة المعنية</span>
+                                                        <p>ارامكو</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>الاسم باللغة الانجليزية</span>
+                                                        <p>ARAMCO</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>اختصار الاسم الي حرفين</span>
+                                                        <p>AR</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>رقم السجل التجاري</span>
+                                                        <p>2415874</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>رقم السجل الصناعي / الزراعي</span>
+                                                        <p> 245879556 </p>
+                                                    </li>
+                                                    <li>
+                                                        <span>الموقع الالكتروني</span>
+                                                        <p>Aramco.com</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>البريد الالكتروني لاستقبال التنبيهات</span>
+                                                        <p>info@aramco.com</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- end card -->
+                                        <div class="cardInputs">
+                                            <div class="span cardTitle22px">صاحب الصلاحية بالتوقيع</div>
+                                            <!-- End title -->
+                                            <div class="boxView">
+                                                <ul class="cardUl">
+                                                    <li>
+                                                        <span>اسم صاحب الصلاحية</span>
+                                                        <p>احمد محمد الخالدي</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>وظيفته</span>
+                                                        <p>المدير العام</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>عنوانة</span>
+                                                        <p>جدة </p>
+                                                    </li>
+                                                    <li>
+                                                        <span>رقم الهاتف</span>
+                                                        <p>0102148994</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>البريد الالكتروني</span>
+                                                        <p>ahmed.alkhaldy@aramco.com</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- end box view -->
+                                        </div>
+                                        <!-- end card -->
+                                        <div class="cardInputs">
+                                            <div class="span cardTitle22px">المرفقات</div>
+                                            <!-- End title -->
+                                            <div class="boxView">
+                                                <ul class="cardUl">
+                                                    <li>
+                                                        <span>السجل التجاري</span>
+                                                        <p>21452145.pdf</p>
+                                                        <div class="actionCard">
+                                                            <a href="#" class="downloadBT">
+                                                                <img src="../assets/images/download-outline.svg" alt="">
+                                                            </a>
+                                                            <a href="#" class="viewBT">
+                                                                <img src="../assets/images/eyeIntable.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span> السجل الصناعي / الزراعي / أخرى....</span>
+                                                        <p>السجل الصناعي.pdf</p>
+                                                        <div class="actionCard">
+                                                            <a href="#" class="downloadBT">
+                                                                <img src="../assets/images/download-outline.svg" alt="">
+                                                            </a>
+                                                            <a href="#" class="viewBT">
+                                                                <img src="../assets/images/eyeIntable.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <p>السجل الزراعي.pdf</p>
+                                                        <div class="actionCard">
+                                                            <a href="#" class="downloadBT">
+                                                                <img src="../assets/images/download-outline.svg" alt="">
+                                                            </a>
+                                                            <a href="#" class="viewBT">
+                                                                <img src="../assets/images/eyeIntable.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span>خطاب التعهد موثق</span>
+                                                        <p>خطاب التعهد.pdf</p>
+                                                        <div class="actionCard">
+                                                            <a href="#" class="downloadBT">
+                                                                <img src="../assets/images/download-outline.svg" alt="">
+                                                            </a>
+                                                            <a href="#" class="viewBT">
+                                                                <img src="../assets/images/eyeIntable.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span>توكيل او تفويض موثق</span>
+                                                        <p>التوكيل.pdf</p>
+                                                        <div class="actionCard">
+                                                            <a href="#" class="downloadBT">
+                                                                <img src="../assets/images/download-outline.svg" alt="">
+                                                            </a>
+                                                            <a href="#" class="viewBT">
+                                                                <img src="../assets/images/eyeIntable.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- end box view -->
+                                        </div>
+                                        <!-- end card -->
+                                        <div class="cardInputs">
+                                            <div class="span cardTitle22px">اتخاذ القرار</div>
+                                            <!-- End title -->
+                                            <div class="boxView">
+                                                <div class="customRadio">
+                                                    <form action="">
+                                                        <p>
+                                                            <input type="radio" id="test1" name="radio-group"
+                                                                checked="">
+                                                            <label for="test1"> قبول </label>
+                                                        </p>
+                                                        <p>
+                                                            <input type="radio" id="test2" name="radio-group">
+                                                            <label for="test2">رفض </label>
+                                                        </p>
+                                                    </form>
+                                                </div>
+                                                <!-- End radio -->
+                                                <div class="InputGroup">
+                                                    <p class="label"> المرفقات</p>
+                                                    <input class="filePoundClass" type="file" name="filepond" required
+                                                        multiple />
+                                                </div>
+                                                <!-- End upload file  -->
+                                                <div class="InputGroup">
+                                                    <label class="label" for="">التعليق</label>
+                                                    <input class="inputStyle" type="text" placeholder="اضف تعليق">
+                                                </div>
+                                                <!-- End input -->
+                                                <div class="InputGroup">
+                                                    <label class="label" for="cars">قائمة</label>
+                                                    <select name="cars" id="cars">
+                                                        <option value="0">الاختيار الاول</option>
+                                                        <option value="1">الاختيار الاول1</option>
+                                                    </select>
+                                                </div>
+                                                <!-- End select -->
+                                                <div class="radioGroup">
+                                                    <p class="label">radio</p>
+                                                    <form action="#">
+                                                        <p>
+                                                            <input type="radio" id="test15" name="radio-group"
+                                                                checked="">
+                                                            <label for="test15">الاختيار الاول</label>
+                                                        </p>
+                                                        <p>
+                                                            <input type="radio" id="test25" name="radio-group">
+                                                            <label for="test25">الاختيار الاثاني</label>
+                                                        </p>
+                                                    </form>
+                                                </div>
+                                                <!-- End radio -->
+                                                <div class="checkboxGroup">
+                                                    <p class="label">checkbox</p>
+                                                    <form>
+                                                        <div class="form-radio-group">
+                                                            <input type="checkbox" id="html">
+                                                            <label for="html">الاختيار الاول</label>
+                                                        </div>
+                                                        <div class="form-radio-group">
+                                                            <input type="checkbox" id="css">
+                                                            <label for="css">الاختيار الثاني</label>
+                                                        </div>
+                                                        <div class="form-radio-group">
+                                                            <input type="checkbox" id="javascript">
+                                                            <label for="javascript">الاختيار الثالث</label>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <!-- End check box -->
+                                                <div class="actionBtns">
+                                                    <a class="sendBtn" href="#">
+                                                        <img src="../assets/images/send-2.svg" alt="">
+                                                        <span>ارسال</span>
+                                                    </a>
+                                                    <a class="addCompBtn" href="#">
+                                                        <img src="../assets/images/right-circle-gren.svg" alt="">
+                                                        <span>قبول</span>
+                                                    </a>
+                                                    <a class="closeBtn" href="#">
+                                                        <img src="../assets/images/close-circle-red.svg" alt="">
+                                                        <span>قبول</span>
+                                                    </a>
+                                                </div>
+                                                <!-- End actions -->
+                                            </div>
+                                            <!-- end box view -->
+                                        </div>
+                                        <!-- end card -->
+
+                                        <!-- start submit section -->
+                                        <div class="submtBtns">
+                                            <div class="row">
+                                                <!-- <div class="col-md-12">
+                                        <p class="errorMes">
+                                            <img src="../assets/images/info-outline.svg" alt="">
+                                            <span>هناك بعض المشاكل يرجي مراجعتها</span>
+                                        </p>
+                                    </div> -->
+                                                <div class="col-md-3">
+                                                    <a class="mainBtn disableBtn" href="">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                        <span>السابق</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <!-- <a class="saveInfo mainBtn" href="">
+                                            <span>حفظ</span>
+                                        </a> -->
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <a class="mainBtn " href="">
+                                                        <span>التالي</span>
+                                                        <i class="fas fa-arrow-left"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end submit section -->
+                                    </div>
+                                    <!-- end content nav tab -->
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                        aria-labelledby="pills-profile-tab">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="alert alertCustom alert-success alert-dismissible fade show"
+                                                    role="alert">
+                                                    <strong>تحقيق</strong> تحقيق الشكوي الاولي
+                                                    <button type="button" class="close" data-dismiss="alert"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End success message -->
+                                        <div class="accordion" id="accordionExample">
+                                            <h2 class="cardTitle22px">
+                                                قائمة الشركات المقترنة
+                                            </h2>
+                                            <!-- end title of accordion -->
+                                            <div class="card">
+                                                <div class="card-header" id="headingOne">
+                                                    <h2 class="mb-0">
+                                                        <button class="btn btn-link btn-block collapsed" type="button"
+                                                            data-toggle="collapse" data-target="#collapseOne"
+                                                            aria-expanded="true" aria-controls="collapseOne">
+                                                            <span>ارامكو</span>
+                                                            <img src="../assets/images/plus-accr.svg" alt="">
+                                                        </button>
+                                                    </h2>
+                                                </div>
+
+                                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                                    data-parent="#accordionExample">
+                                                    <div class="card-body">
+                                                        <div class="cardInputs">
+                                                            <div class="span cardTitle22px">معلومات المنتجات محل الشكوي
+                                                            </div>
+                                                            <!-- End title -->
+                                                            <div class="boxView">
+                                                                <ul class="cardUl">
+                                                                    <li>
+                                                                        <span>نوع الشكوي</span>
+                                                                        <p>مكافحة اغراق</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>وصف المنتجات محل الشكوي</span>
+                                                                        <p> لبولي اثيلين عالي الكثافة هو نوع من
+                                                                            البلاستيك الصلب يستخدم لتعبئة بلاستيكية أكثر
+                                                                            إحكاما مثل منظفات الغسيل وكذلك
+                                                                            .تطبيقات البناء أو علب القمامة. إنه يظهر
+                                                                            مقاومة للتآكل عند تعرضه لمجموعة متنوعة
+                                                                            من المواد</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>البنود الجمركية للمنتج محل الشكوي</span>
+                                                                        <p>البنود الجمركية للمنتج محل الشكوي</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>البنود الجمركية للمنتج محل الشكوي</span>
+                                                                        <p>البنود الجمركية للمنتج محل الشكوي</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>تاريخ البدء في الانتاج</span>
+                                                                        <p>24/5/2021</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>متوسط حجم الانتاج</span>
+                                                                        <p>20 كجم</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>النسبة من انتاج المملكة</span>
+                                                                        <p>20%</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <!-- end box view -->
+                                                        </div>
+                                                        <!-- end card -->
+                                                        <div class="cardInputs">
+                                                            <div class="span cardTitle22px">بيانات الشركة</div>
+                                                            <!-- End title -->
+                                                            <div class="boxView">
+                                                                <ul class="cardUl">
+                                                                    <li>
+                                                                        <span>اسم الشركة المعنية</span>
+                                                                        <p>ارامكو</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>الاسم باللغة الانجليزية</span>
+                                                                        <p>ARAMCO</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>اختصار الاسم الي حرفين</span>
+                                                                        <p>AR</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>رقم السجل التجاري</span>
+                                                                        <p>2415874</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>رقم السجل الصناعي / الزراعي</span>
+                                                                        <p> 245879556 </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>الموقع الالكتروني</span>
+                                                                        <p>Aramco.com</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>البريد الالكتروني لاستقبال
+                                                                            التنبيهات</span>
+                                                                        <p>info@aramco.com</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end card -->
+                                                        <div class="cardInputs">
+                                                            <div class="span cardTitle22px">صاحب الصلاحية بالتوقيع</div>
+                                                            <!-- End title -->
+                                                            <div class="boxView">
+                                                                <ul class="cardUl">
+                                                                    <li>
+                                                                        <span>اسم صاحب الصلاحية</span>
+                                                                        <p>احمد محمد الخالدي</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>وظيفته</span>
+                                                                        <p>المدير العام</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>عنوانة</span>
+                                                                        <p>جدة </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>رقم الهاتف</span>
+                                                                        <p>0102148994</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>البريد الالكتروني</span>
+                                                                        <p>ahmed.alkhaldy@aramco.com</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <!-- end box view -->
+                                                        </div>
+                                                        <!-- end card -->
+                                                        <div class="cardInputs">
+                                                            <div class="span cardTitle22px">المرفقات</div>
+                                                            <!-- End title -->
+                                                            <div class="boxView">
+                                                                <ul class="cardUl">
+                                                                    <li>
+                                                                        <span>السجل التجاري</span>
+                                                                        <p>21452145.pdf</p>
+                                                                        <div class="actionCard">
+                                                                            <a href="#" class="downloadBT">
+                                                                                <img src="../assets/images/download-outline.svg"
+                                                                                    alt="">
+                                                                            </a>
+                                                                            <a href="#" class="viewBT">
+                                                                                <img src="../assets/images/eyeIntable.svg"
+                                                                                    alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span> السجل الصناعي / الزراعي / أخرى....</span>
+                                                                        <p>السجل الصناعي.pdf</p>
+                                                                        <div class="actionCard">
+                                                                            <a href="#" class="downloadBT">
+                                                                                <img src="../assets/images/download-outline.svg"
+                                                                                    alt="">
+                                                                            </a>
+                                                                            <a href="#" class="viewBT">
+                                                                                <img src="../assets/images/eyeIntable.svg"
+                                                                                    alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                        <p>السجل الزراعي.pdf</p>
+                                                                        <div class="actionCard">
+                                                                            <a href="#" class="downloadBT">
+                                                                                <img src="../assets/images/download-outline.svg"
+                                                                                    alt="">
+                                                                            </a>
+                                                                            <a href="#" class="viewBT">
+                                                                                <img src="../assets/images/eyeIntable.svg"
+                                                                                    alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>خطاب التعهد موثق</span>
+                                                                        <p>خطاب التعهد.pdf</p>
+                                                                        <div class="actionCard">
+                                                                            <a href="#" class="downloadBT">
+                                                                                <img src="../assets/images/download-outline.svg"
+                                                                                    alt="">
+                                                                            </a>
+                                                                            <a href="#" class="viewBT">
+                                                                                <img src="../assets/images/eyeIntable.svg"
+                                                                                    alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>توكيل او تفويض موثق</span>
+                                                                        <p>التوكيل.pdf</p>
+                                                                        <div class="actionCard">
+                                                                            <a href="#" class="downloadBT">
+                                                                                <img src="../assets/images/download-outline.svg"
+                                                                                    alt="">
+                                                                            </a>
+                                                                            <a href="#" class="viewBT">
+                                                                                <img src="../assets/images/eyeIntable.svg"
+                                                                                    alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <!-- end box view -->
+                                                        </div>
+                                                        <!-- end card -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="headingTwo">
+                                                    <h2 class="mb-0">
+                                                        <button class="btn btn-link btn-block collapsed" type="button"
+                                                            data-toggle="collapse" data-target="#collapseTwo"
+                                                            aria-expanded="false" aria-controls="collapseTwo">
+                                                            <span>سابكو</span>
+                                                            <img src="../assets/images/plus-accr.svg" alt="">
+                                                        </button>
+                                                    </h2>
+                                                </div>
+                                                <!-- end  card -->
+                                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                                    data-parent="#accordionExample">
+                                                    <div class="card-body">
+                                                        <div class="cardInputs">
+                                                            <div class="span cardTitle22px">معلومات المنتجات محل الشكوي
+                                                            </div>
+                                                            <!-- End title -->
+                                                            <div class="boxView">
+                                                                <ul class="cardUl">
+                                                                    <li>
+                                                                        <span>نوع الشكوي</span>
+                                                                        <p>مكافحة اغراق</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>وصف المنتجات محل الشكوي</span>
+                                                                        <p> لبولي اثيلين عالي الكثافة هو نوع من
+                                                                            البلاستيك الصلب يستخدم لتعبئة بلاستيكية أكثر
+                                                                            إحكاما مثل منظفات الغسيل وكذلك
+                                                                            .تطبيقات البناء أو علب القمامة. إنه يظهر
+                                                                            مقاومة للتآكل عند تعرضه لمجموعة متنوعة
+                                                                            من المواد</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>البنود الجمركية للمنتج محل الشكوي</span>
+                                                                        <p>البنود الجمركية للمنتج محل الشكوي</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>البنود الجمركية للمنتج محل الشكوي</span>
+                                                                        <p>البنود الجمركية للمنتج محل الشكوي</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>تاريخ البدء في الانتاج</span>
+                                                                        <p>24/5/2021</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>متوسط حجم الانتاج</span>
+                                                                        <p>20 كجم</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>النسبة من انتاج المملكة</span>
+                                                                        <p>20%</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <!-- end box view -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end card -->
+                                            </div>
+                                        </div>
+                                        <!-- End accordion -->
+
+                                        <div class="cardInputs">
+                                            <div class="span cardTitle22px">اتخاذ القرار</div>
+                                            <!-- End title -->
+                                            <div class="boxView">
+                                                <div class="customRadio">
+                                                    <form action="">
+                                                        <p>
+                                                            <input type="radio" id="test1" name="radio-group"
+                                                                checked="">
+                                                            <label for="test1"> قبول </label>
+                                                        </p>
+                                                        <p>
+                                                            <input type="radio" id="test2" name="radio-group">
+                                                            <label for="test2">رفض </label>
+                                                        </p>
+                                                    </form>
+                                                </div>
+                                                <!-- End radio -->
+                                                <div class="InputGroup">
+                                                    <p class="label"> المرفقات</p>
+                                                    <input class="filePoundClass" type="file" name="filepond" required
+                                                        multiple />
+                                                </div>
+                                                <!-- End upload file  -->
+                                                <div class="InputGroup">
+                                                    <label class="label" for="">التعليق</label>
+                                                    <input class="inputStyle" type="text" placeholder="اضف تعليق">
+                                                </div>
+                                                <!-- End input -->
+                                                <div class="InputGroup">
+                                                    <label class="label" for="cars">قائمة</label>
+                                                    <select name="cars" id="cars">
+                                                        <option value="0">الاختيار الاول</option>
+                                                        <option value="1">الاختيار الاول1</option>
+                                                    </select>
+                                                </div>
+                                                <!-- End select -->
+                                                <div class="radioGroup">
+                                                    <p class="label">radio</p>
+                                                    <form action="#">
+                                                        <p>
+                                                            <input type="radio" id="test15" name="radio-group"
+                                                                checked="">
+                                                            <label for="test15">الاختيار الاول</label>
+                                                        </p>
+                                                        <p>
+                                                            <input type="radio" id="test25" name="radio-group">
+                                                            <label for="test25">الاختيار الاثاني</label>
+                                                        </p>
+                                                    </form>
+                                                </div>
+                                                <!-- End radio -->
+                                                <div class="checkboxGroup">
+                                                    <p class="label">checkbox</p>
+                                                    <form>
+                                                        <div class="form-radio-group">
+                                                            <input type="checkbox" id="html">
+                                                            <label for="html">الاختيار الاول</label>
+                                                        </div>
+                                                        <div class="form-radio-group">
+                                                            <input type="checkbox" id="css">
+                                                            <label for="css">الاختيار الثاني</label>
+                                                        </div>
+                                                        <div class="form-radio-group">
+                                                            <input type="checkbox" id="javascript">
+                                                            <label for="javascript">الاختيار الثالث</label>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <!-- End check box -->
+                                                <div class="actionBtns">
+                                                    <a class="sendBtn" href="#">
+                                                        <img src="../assets/images/send-2.svg" alt="">
+                                                        <span>ارسال</span>
+                                                    </a>
+                                                    <a class="addCompBtn" href="#">
+                                                        <img src="../assets/images/right-circle-gren.svg" alt="">
+                                                        <span>قبول</span>
+                                                    </a>
+                                                    <a class="closeBtn" href="#">
+                                                        <img src="../assets/images/close-circle-red.svg" alt="">
+                                                        <span>قبول</span>
+                                                    </a>
+                                                </div>
+                                                <!-- End actions -->
+                                            </div>
+                                            <!-- end box view -->
+                                        </div>
+                                        <!-- end card -->
+
+                                        <!-- start submit section -->
+                                        <div class="submtBtns">
+                                            <div class="row">
+                                                <!-- <div class="col-md-12">
+                                        <p class="errorMes">
+                                            <img src="../assets/images/info-outline.svg" alt="">
+                                            <span>هناك بعض المشاكل يرجي مراجعتها</span>
+                                        </p>
+                                    </div> -->
+                                                <div class="col-md-3">
+                                                    <a class="mainBtn disableBtn" href="">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                        <span>السابق</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <!-- <a class="saveInfo mainBtn" href="">
+                                            <span>حفظ</span>
+                                        </a> -->
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <a class="mainBtn " href="">
+                                                        <span>التالي</span>
+                                                        <i class="fas fa-arrow-left"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end submit section -->
+
+                                    </div>
+                                    <!-- end content nav tab -->
+                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                        aria-labelledby="pills-contact-tab">...3</div>
+                                    <!-- end content nav tab -->
+                                    <div class="tab-pane fade" id="pills-contact2" role="tabpanel"
+                                        aria-labelledby="pills-contact2-tab">...4</div>
+                                    <!-- end content nav tab -->
+                                </div>
+                                <!-- end tabs inner for view page -->
+                            </div>
+                            <!-- end parent tab 1 -->
+                            <div class="tab-pane fade" id="pills-profile-parent" role="tabpanel"
+                                aria-labelledby="pills-home-tab-parent2">2222222</div>
+                            <div class="tab-pane fade" id="pills-contact-parent" role="tabpanel"
+                                aria-labelledby="pills-home-tab-parent3">333333333333</div>
+                        </div>
+                    </div>
+                    <!-- End tabs parent view page -->
+
+
+
+                </div>
+                <!-- end col 12 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- { End investigation layout  } -->
+
+    <!-- { start footer } -->
+    <footer class="footer">
+        <div class="container  inner-container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="rightText">
+                        <span>جميع الحقوق محفوظة - الهيئة العامة للتجارة الخارجية © 2021</span>
+                        <a href="#">سياسة الخصوصية</a>
+                        <a href="#">الشروط والأحكام</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="leftText">
+
+                        <a href="#">
+                            <span>gaft_sa@</span>
+                            <span class="hoverText">
+                                <!-- <img src="../assets/images/globe.svg" alt=""> -->
+                                <i class="fas fa-globe"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span>www.gaft.gov.sa</span>
+                            <span class="hoverText">
+                                <i class="fab fa-twitter"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- =-==-=-=-=-=-=-==-=-=-=--=-=-=-=-=-{ End menu }=-==-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=- -->
+    <!-- Start loader -->
+    <div class="loader">
+        <span class="loader-inner">
+            <img src="../assets/images/Spinner-2.gif" alt="">
+        </span>
+    </div>
+    <!-- End loader -->
+    <script src="../assets/js/jQueryV3.5.js"></script>
+    <script src="../assets/js/filepond.min.js"></script>
+    <script src="../assets/js/filepondJquery.js"></script>
+    <script src="../assets/js/FilePondPluginImagePreview.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
+
+
+    <script>
+        $(function () {
+
+            // First register any plugins
+            //   $.fn.filepond.registerPlugin(FilePondPluginImagePreview);
+
+            // Turn input element into a pond
+            $('.filePoundClass').filepond({
+                labelIdle: `امسك ملفاتك و اتركها هنا او <span>تصفح</span>`,
+                imagePreviewHeight: 40
+            });
+
+            // Set allowMultiple property to true
+            $('.filePoundClass').filepond('allowMultiple', true);
+
+            // Listen for addfile event
+            $('.filePoundClass').on('FilePond:addfile', function (e) {
+                console.log('file added event', e);
+            });
+
+
+
+            // Manually add a file using the addfile method
+            //   $('.filePoundClass').first().filepond('addFile', 'index.html').then(function(file){
+            //     console.log('file added', file);
+            //   });
+
+        });
+    </script>
+</body>
+
+</html>
