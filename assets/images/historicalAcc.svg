@@ -1,0 +1,10 @@
+<svg id="historicalAcc" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="add-square">
+    <g id="Group_26677" data-name="Group 26677" transform="translate(15 6.603) rotate(45)">
+      <path id="Vector" d="M10.938,1.875h-10A.944.944,0,0,1,0,.938.944.944,0,0,1,.938,0h10a.944.944,0,0,1,.938.938A.944.944,0,0,1,10.938,1.875Z" transform="translate(0 5)" fill="#007066"/>
+      <path id="Vector-2" data-name="Vector" d="M.938,11.875A.944.944,0,0,1,0,10.938v-10A.944.944,0,0,1,.938,0a.944.944,0,0,1,.938.938v10A.944.944,0,0,1,.938,11.875Z" transform="translate(5)" fill="#007066"/>
+    </g>
+    <path id="Vector-3" data-name="Vector" d="M17.188,26.875h-7.5C2.9,26.875,0,23.975,0,17.188v-7.5C0,2.9,2.9,0,9.688,0h7.5c6.788,0,9.688,2.9,9.688,9.688v7.5C26.875,23.975,23.975,26.875,17.188,26.875Zm-7.5-25c-5.763,0-7.812,2.05-7.812,7.813v7.5C1.875,22.95,3.925,25,9.688,25h7.5C22.95,25,25,22.95,25,17.188v-7.5c0-5.763-2.05-7.812-7.812-7.812Z" transform="translate(1.563 1.563)" fill="#007066"/>
+    <path id="Vector-4" data-name="Vector" d="M0,0H30V30H0Z" fill="none" opacity="0"/>
+  </g>
+</svg>

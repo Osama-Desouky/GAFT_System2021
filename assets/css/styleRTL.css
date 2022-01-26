@@ -47,6 +47,34 @@ font-family: "DINRegular";
   display: none;
 }
 
+.replyBox .replyComent {
+  background-color: #CCA079;
+  display: inline-block;
+  padding: 9px 15px;
+  border-radius: 8px;
+}
+
+.replyBox .replyComent span {
+  font-size: 16px;
+  color: #fff;
+  padding-right: 9px;
+}
+
+.replyCmRev {
+  font-size: 16px;
+  color: #CCA079;
+  margin-bottom: 16px;
+}
+
+.replyCmRev a {
+  color: #0071E2;
+  font-size: 16px;
+}
+
+.replyCmRev a:hover {
+  color: #0071E2;
+}
+
 .mainBtn {
   width: 160px;
   height: 52px;
@@ -1838,6 +1866,10 @@ select {
           box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
 }
 
+.layoutLargSide .tabParentFromChild li a span {
+  font-size: 20px;
+}
+
 .layoutLargSide .tabParentFromChild li a img {
   max-width: 30px;
 }
@@ -2411,9 +2443,21 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.filterSec .searchSec .selectBoxSex {
+  padding-right: 24px;
+}
+
+.filterSec .searchSec .selectBoxSex .selectInput label {
+  padding-left: 30px;
+}
+
+.filterSec .searchSec .selectBoxSex .selectInput select {
+  width: 255px;
 }
 
 .filterSec .searchSec .selectBoxSex,
@@ -2480,6 +2524,10 @@ select {
 
 .filterSec .dateAction .dateComp .Inputdate:first-of-type {
   padding-left: 24px;
+}
+
+.filterSec .dateAction .dateComp .Inputdate:last-of-type label {
+  padding-left: 20px;
 }
 
 .actions {
@@ -2798,6 +2846,240 @@ select {
   max-width: 864px;
 }
 
+.historicalStatus {
+  margin-bottom: 33px;
+  padding-bottom: 0;
+  border-radius: 8px;
+}
+
+.historicalStatus .searchSec {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.historicalStatus .searchSec .selectBoxSex {
+  padding-right: 95px;
+}
+
+.historicalStatus .searchSec .selectBoxSex .selectInput label {
+  padding-left: 53px;
+}
+
+.historicalStatus .searchSec .selectBoxSex .selectInput select {
+  width: 255px;
+}
+
+.historicalStatus .dateAction .dateComp .Inputdate:first-of-type {
+  padding-left: 95px;
+}
+
+.historicalStatus .dateAction .dateComp .Inputdate:last-of-type .label {
+  padding-left: 42px;
+}
+
+.historicalStatusAccordion .card .card-header button {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  text-align: right !important;
+  position: relative;
+}
+
+.historicalStatusAccordion .card .card-header button > h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #007066;
+  margin-bottom: 15px;
+}
+
+.historicalStatusAccordion .card .card-header button .statusDateAcc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.historicalStatusAccordion .card .card-header button .statusDateAcc > div {
+  padding-left: 17px;
+}
+
+.historicalStatusAccordion .card .card-header button .statusDateAcc > div span {
+  font-size: 18px;
+  color: #000000;
+}
+
+.historicalStatusAccordion .card .card-header button .statusDateAcc > div span:first-of-type {
+  color: #CCA079;
+}
+
+.historicalStatusAccordion .card .card-header button .statusDateAcc > div.boxDate span img {
+  -webkit-filter: unset;
+          filter: unset;
+  -webkit-transform: unset;
+          transform: unset;
+  padding-right: 12px;
+}
+
+.historicalStatusAccordion .card .card-header button::after {
+  position: absolute;
+  content: "";
+  background-image: url(../images/historicalAcc.svg);
+  left: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.historicalStatusAccordion .card .card-body .detailsMission {
+  padding: 24px 0px 0px;
+}
+
+.historicalStatusAccordion .card .card-body .detailsMission .subHeadTitle24px, .historicalStatusAccordion .card .card-body .detailsMission .modalCustomStyle .modal-dialog .modal-title, .modalCustomStyle .modal-dialog .historicalStatusAccordion .card .card-body .detailsMission .modal-title {
+  color: #012D29;
+  margin-bottom: 12px;
+}
+
+.historicalStatusAccordion .card .card-body .detailsMission .employeeBox {
+  margin-bottom: 26px;
+}
+
+.historicalStatusAccordion .card .card-body .detailsMission .employeeBox .emBox:first-of-type {
+  margin-left: 40px;
+}
+
+.historicalStatusAccordion .card .card-body .detailsMission .employeeBox .emBox:first-of-type span {
+  color: #CCA079;
+}
+
+.historicalStatusAccordion .card .card-body .detailsMission .viewTextArea {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.historicalStatusAccordion .card .card-body .detailsMission .viewTextArea p {
+  min-height: 78px;
+}
+
+.historicalStatusAccordion .card .card-body .detailsMission .tableCardGreen {
+  margin-bottom: 0;
+  padding-bottom: 11px;
+}
+
+.historicalStatusAccordion .card .card-body .detailsMission .tableCardGreen .table thead th:last-of-type {
+  width: 390px;
+}
+
+.historicalStatusAccordion .card .card-body .detailsMission .tableCardGreen .table tbody tr td:last-of-type {
+  display: block;
+  min-width: unset;
+}
+
+.historicalStatusAccordion .card .card-body .detailsMission .tableCardGreen .table tbody tr td:last-of-type .form-radio-group-wrpper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.historicalStatusAccordion .card .card-body .detailsMission .tableCardGreen .table tbody tr td:last-of-type .form-radio-group-wrpper .form-radio-group :first-of-type {
+  margin-left: 15px;
+}
+
+.commentsLayout .cardLabel18px, .commentsLayout .investigationLayout .cardInputs .boxInputs .label, .investigationLayout .cardInputs .boxInputs .commentsLayout .label, .commentsLayout .filesUpload .hintLast, .filesUpload .commentsLayout .hintLast {
+  margin-bottom: 24px;
+}
+
+.commentsLayout .addComment .CmStatus,
+.commentsLayout .addComment .CmName,
+.commentsLayout .commentSec .CmStatus,
+.commentsLayout .commentSec .CmName {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 6px;
+}
+
+.commentsLayout .addComment .CmStatus,
+.commentsLayout .commentSec .CmStatus {
+  color: #CCA079;
+}
+
+.commentsLayout .addComment .CmDate img,
+.commentsLayout .commentSec .CmDate img {
+  max-width: 30px;
+  margin-top: -3px;
+}
+
+.commentsLayout .addComment .CmDate span,
+.commentsLayout .commentSec .CmDate span {
+  font-size: 16px;
+  color: #1D1D1B;
+  margin-bottom: 0px;
+}
+
+.commentsLayout .addComment .CmBox,
+.commentsLayout .commentSec .CmBox {
+  background: #F6F6F6;
+  padding: 24px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.commentsLayout .addComment .CmBox .reviewRequest,
+.commentsLayout .commentSec .CmBox .reviewRequest {
+  background: #fff;
+  min-height: 56px;
+  margin-bottom: 27px;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.commentsLayout .addComment .CmBox .reviewRequest p,
+.commentsLayout .commentSec .CmBox .reviewRequest p {
+  margin: 0;
+  color: #707070;
+  font-size: 14px;
+}
+
+.commentsLayout .addComment .CmBox .tableCardGreen,
+.commentsLayout .commentSec .CmBox .tableCardGreen {
+  background: unset;
+  margin-bottom: 24px;
+  padding: 0;
+}
+
+.commentsLayout .addComment .CmBox .tableCardGreen .label,
+.commentsLayout .commentSec .CmBox .tableCardGreen .label {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.commentsLayout .addComment .CmBox .tableCardGreen .table,
+.commentsLayout .commentSec .CmBox .tableCardGreen .table {
+  margin: 0;
+}
+
+.commentsLayout .addComment .CmBox .tableCardGreen .table .form-radio-group-wrpper,
+.commentsLayout .commentSec .CmBox .tableCardGreen .table .form-radio-group-wrpper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.commentsLayout .addComment .CmBox .tableCardGreen .table .form-radio-group-wrpper .form-radio-group:first-of-type,
+.commentsLayout .commentSec .CmBox .tableCardGreen .table .form-radio-group-wrpper .form-radio-group:first-of-type {
+  padding-left: 10px;
+}
+
+.commentsLayout .addComment .CmBox .replyBox,
+.commentsLayout .commentSec .CmBox .replyBox {
+  text-align: left;
+}
+
 .radioGroup {
   padding: 0px;
 }
@@ -3069,22 +3351,22 @@ a.ui-button:active,
 }
 
 @media (min-width: 1400px) and (max-width: 1701px) {
-  .inner-container-custom {
+  .inner-container-custom .inner-container {
     margin-right: 0;
     max-width: 1440px;
   }
-  .inner-container-custom > .row {
+  .inner-container-custom .inner-container > .row {
     margin-right: -15px;
     margin-left: 0;
   }
 }
 
 @media (min-width: 1700px) and (max-width: 2000px) {
-  .inner-container-custom {
+  .inner-container-custom .inner-container {
     margin-right: 0;
     max-width: 1750px;
   }
-  .inner-container-custom > .row {
+  .inner-container-custom .inner-container > .row {
     margin-right: -15px;
     margin-left: 0;
   }
@@ -3119,11 +3401,11 @@ a.ui-button:active,
   .container {
     border: 1px solid green;
   }
-  .inner-container-custom {
+  .inner-container-custom .inner-container {
     margin-right: 0;
     width: 95%;
   }
-  .inner-container-custom > .row {
+  .inner-container-custom .inner-container > .row {
     margin-right: -30px;
     margin-left: 0;
   }

@@ -10,30 +10,35 @@
   .inner-container {
     max-width: 1640px;
     margin: 0 auto;
-  }
+  } 
 }
 @media (min-width: 1400px) and (max-width:1701px) {
   .inner-container-custom {
-    margin-right: 0;
-    max-width: 1440px;
-    > {
-      .row {
-        margin-right: -15px;
-        margin-left: 0;
+    .inner-container {
+      margin-right: 0;
+      max-width: 1440px;
+      > {
+        .row {
+          margin-right: -15px;
+          margin-left: 0;
+        }
       }
     }
   }
 }
 @media (min-width: 1700px) and (max-width:2000px) {
   .inner-container-custom {
-    margin-right: 0;
-    max-width: 1750px;
-    > {
-      .row {
-        margin-right: -15px;
-        margin-left: 0;
+    .inner-container {
+      margin-right: 0;
+      max-width: 1750px;
+      > {
+        .row {
+          margin-right: -15px;
+          margin-left: 0;
+        }
       }
     }
+
   }
 }
 
@@ -79,16 +84,18 @@
     border: 1px solid green;
   }
   .inner-container-custom {
-    margin-right: 0;
-    // max-width: 1395px;
-    width: 95%;
-    > {
-      .row {
-        margin-right: -30px;
-        margin-left: 0;
+     .inner-container {
+      margin-right: 0;
+      // max-width: 1395px;
+      width: 95%;
+      > {
+        .row {
+          margin-right: -30px;
+          margin-left: 0;
+        }
       }
     }
-    
+
   }
 }
 /* ----------- iPad ----------- */

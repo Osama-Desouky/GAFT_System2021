@@ -138,7 +138,9 @@
 
     </nav>
     <!-- =-==-=-=-=-=-=-==-=-=-=-=-=-=-=-{ End menu }=-==-=-=-=-=-=-=-=-=-=-==-=-=-=-=- -->
-    <div class="container inner-container inner-container-custom">
+    <div class="inner-container-custom">
+        
+    <div class="container inner-container ">
         <div class="row">
             <div class="col-md-3">
                 <div class="menuSystem">
@@ -512,7 +514,8 @@
                                                         </li>
                                                     </ul>
                                                     <div class="actionBtns">
-                                                        <a class="addCompBtn" href="./ViewPageOneV2.html" target="_blank">
+                                                        <a class="addCompBtn" href="./ViewPageOneV2.html"
+                                                            target="_blank">
                                                             <img src="../assets/images/eyeIntable.svg" alt="">
                                                             <span>استعراض البيانات</span>
                                                         </a>
@@ -980,14 +983,939 @@
                             <!-- End patent tab 1 -->
                             <div class="tab-pane fade" id="pills-statues" role="tabpanel"
                                 aria-labelledby="pills-statues-tab">
-                            
-                                22222222222222222222222
-                            
+                                <!-- start (الحالة التاريخية )  -->
+                                <!-- start filter section -->
+                                <div class="historicalStatus">
+                                    <div class="filterSec boxView">
+                                        <h3 class="subHeadTitle24px"> التصفية</h3>
+                                        <div class="searchSec  ">
+                                            <div class="searchBox">
+                                                <label for=""> كلمة البحث</label>
+                                                <input type="search" id="" name="" class="inputStyle"
+                                                    placeholder="ادخل كلمة البحث">
+                                            </div>
+                                            <!-- end input seaerch -->
+                                            <div class="selectBoxSex">
+                                                <div class="selectInput">
+                                                    <label for="">العضو</label>
+                                                    <select name="" id="">
+                                                        <option value="" disabled selected>اختر عضو الفريق</option>
+                                                        <option value="0">الاختيار الاول</option>
+                                                        <option value="1">الاختيار الاول1</option>
+                                                    </select>
+                                                </div>
+                                                <!-- end select -->
+                                            </div>
+                                            <!-- end section of select -->
+                                        </div>
+                                        <div class="dateAction">
+                                            <div class="dateComp">
+                                                <div class="InputGroup Inputdate">
+                                                    <label class="label" for="">تاريخ من</label>
+                                                    <input class="inputStyle" type="date" name="" id=""
+                                                        placeholder="21-1-2021" value="" min="1997-01-01"
+                                                        max="2030-12-31">
+                                                </div>
+                                                <div class="InputGroup Inputdate">
+                                                    <label class="label" for="">تاريخ من</label>
+                                                    <input class="inputStyle" type="date" name="" id=""
+                                                        placeholder="12-7-2021" value="" min="1997-01-01"
+                                                        max="2030-12-31">
+                                                </div>
+                                            </div>
+                                            <!-- end date compenet -->
+                                            <div class="actionBtn">
+                                                <button type="submit" class="greenWhit">بحث</button>
+                                            </div>
+                                        </div>
+                                        <!-- end section of search -->
+                                    </div>
+                                </div>
+                                <!-- End filter section -->
+                                <!-- start accordion historical Status -->
+                                <div class="accordion historicalStatusAccordion" id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link btn-block text-left" type="button"
+                                                    data-toggle="collapse" data-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    <h2>الموافقة على انشاء حساب شكوى</h2>
+                                                    <div class="statusDateAcc">
+                                                        <div>
+                                                            <span>لحالة : </span>
+                                                            <span>مفتوح</span>
+                                                        </div>
+                                                        <div class="boxDate">
+                                                            <span>من</span>
+                                                            <span>
+                                                                <img src="../assets/images/calendarEmp.svg" alt="">
+                                                                21/2/2022
+                                                            </span>
+                                                        </div>
+                                                        <div class="boxDate">
+                                                            <span>الي </span>
+                                                            <span>
+                                                                <img src="../assets/images/calendarEmp.svg" alt="">
+                                                                21/2/2022
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                        </div>
+
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <!-- start details complain  -->
+                                                <div class="detailsMission">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <h1 class="subHeadTitle24px">انشاء حساب شكوى</h1>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="employeeBox">
+                                                                <div class="emBox">
+                                                                    <img src="../assets/images/employeeIconGold.svg"
+                                                                        alt="">
+                                                                    <span>مقدم الشكوى</span>
+                                                                </div>
+                                                                <div class="emBox">
+                                                                    <img src="../assets/images/calendarEmp.svg" alt="">
+                                                                    <span>21/2/2022</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="InputViewGroup viewTextArea">
+                                                                <label class="label"> وصف</label>
+                                                                <p>تفاصيل المهمة المرسلة من فريق التحقيق</p>
+                                                            </div>
+                                                            <div class="InputViewGroup">
+                                                                <label class="label">test 2 </label>
+                                                                <p>تفاصيل المهمة المرسلة من فريق التحقيق</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="tableCardSystem tableCardGreen">
+                                                                <p class="label">مرفقات المهمة</p>
+                                                                <div class="table-responsive">
+                                                                    <table class="table table-striped">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col">#</th>
+                                                                                <th scope="col">اسم المرفق</th>
+                                                                                <th scope="col">ملف عام (اختياري)</th>
+                                                                                <th scope="col">ملف سري (اجباري)</th>
+                                                                                <th scope="col">المشاركة</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th scope="row">1</th>
+                                                                                <td>ملف الشكوي</td>
+                                                                                <td><a href="#">الرابط</a></td>
+                                                                                <td><a href="#">الرابط</a></td>
+                                                                                <td>
+                                                                                    <div
+                                                                                        class="form-radio-group-wrpper">
+                                                                                        <div class="form-radio-group">
+                                                                                            <input type="checkbox"
+                                                                                                id="test1">
+                                                                                            <label for="test1"> جهات
+                                                                                                المصلحة العامة</label>
+                                                                                        </div>
+                                                                                        <div class="form-radio-group">
+                                                                                            <input type="checkbox"
+                                                                                                id="test11">
+                                                                                            <label for="test11">الجهات
+                                                                                                المعنية </label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th scope="row">2</th>
+                                                                                <td>ملف الشكوي</td>
+                                                                                <td></td>
+                                                                                <td><a href="#">الرابط</a></td>
+                                                                                <td>
+                                                                                    <div
+                                                                                        class="form-radio-group-wrpper">
+                                                                                        <div class="form-radio-group">
+                                                                                            <input type="checkbox"
+                                                                                                id="test12">
+                                                                                            <label for="test12"> جهات
+                                                                                                المصلحة العامة</label>
+                                                                                        </div>
+                                                                                        <div class="form-radio-group">
+                                                                                            <input type="checkbox"
+                                                                                                id="test13">
+                                                                                            <label for="test13">الجهات
+                                                                                                المعنية </label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <!-- end table -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End details complain  -->
+                                                <!-- start comments section -->
+                                                <div class="commentsLayout">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <h3 class="cardLabel18px">التعليقات</h3>
+                                                        </div>
+                                                        <!-- end title -->
+                                                        <div class="col-md-12 commentSec">
+                                                            <div class="row">
+                                                                <div class="col-md-2">
+                                                                    <h3 class="CmName">احمد الجارحي</h3>
+                                                                    <h4 class="CmStatus">موظف</h4>
+                                                                    <p class="CmDate">
+                                                                        <img src="../assets/images/calendarEmp.svg"
+                                                                            alt="">
+                                                                        <span>21/2/2022</span>
+                                                                    </p>
+                                                                </div>
+                                                                <!-- end box -->
+                                                                <div class="col-md-10">
+                                                                    <div class="CmBox">
+                                                                        <div class="reviewRequest">
+                                                                            <p>:سيتم مراجعة المعلومات المرسلة في الطلب
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="tableCardSystem tableCardGreen">
+                                                                            <p class="label">مرفقات المهمة</p>
+                                                                            <div class="table-responsive">
+                                                                                <table class="table table-striped">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th scope="col">#</th>
+                                                                                            <th scope="col">اسم المرفق
+                                                                                            </th>
+                                                                                            <th scope="col">ملف عام
+                                                                                                (اختياري)</th>
+                                                                                            <th scope="col">ملف سري
+                                                                                                (اجباري)</th>
+                                                                                            <th scope="col">المشاركة
+                                                                                            </th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <th scope="row">1</th>
+                                                                                            <td>ملف الشكوي</td>
+                                                                                            <td><a href="#">الرابط</a>
+                                                                                            </td>
+                                                                                            <td><a href="#">الرابط</a>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <div
+                                                                                                    class="form-radio-group-wrpper">
+                                                                                                    <div
+                                                                                                        class="form-radio-group">
+                                                                                                        <input
+                                                                                                            type="checkbox"
+                                                                                                            id="test10">
+                                                                                                        <label
+                                                                                                            for="test10">
+                                                                                                            جهات المصلحة
+                                                                                                            العامة</label>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="form-radio-group">
+                                                                                                        <input
+                                                                                                            type="checkbox"
+                                                                                                            id="test111">
+                                                                                                        <label
+                                                                                                            for="test111">الجهات
+                                                                                                            المعنية
+                                                                                                        </label>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <th scope="row">2</th>
+                                                                                            <td>ملف الشكوي</td>
+                                                                                            <td></td>
+                                                                                            <td><a href="#">الرابط</a>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <div
+                                                                                                    class="form-radio-group-wrpper">
+                                                                                                    <div
+                                                                                                        class="form-radio-group">
+                                                                                                        <input
+                                                                                                            type="checkbox"
+                                                                                                            id="test122">
+                                                                                                        <label
+                                                                                                            for="test122">
+                                                                                                            جهات المصلحة
+                                                                                                            العامة</label>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="form-radio-group">
+                                                                                                        <input
+                                                                                                            type="checkbox"
+                                                                                                            id="test133">
+                                                                                                        <label
+                                                                                                            for="test133">الجهات
+                                                                                                            المعنية
+                                                                                                        </label>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                            <!-- end table -->
+                                                                        </div>
+                                                                        <!-- end box table -->
+                                                                        <div class="replyBox">
+                                                                            <a href="#" class="replyComent">
+                                                                                <img src="../assets/images/replyIcon.svg"
+                                                                                    alt="">
+                                                                                <span>الرد</span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="replyCmRevBox">
+                                                                        <p class="replyCmRev">
+                                                                            ردا علي التعليق
+                                                                            <a href="#">سيتم مراجعة المعلومات....</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end box -->
+                                                            </div>
+                                                            <!-- end row -->
+                                                        </div>
+                                                        <!-- end commnet -->
+                                                        <div class="col-md-12 commentSec">
+                                                            <div class="row">
+                                                                <div class="col-md-2">
+                                                                    <h3 class="CmName"> احمد خالد</h3>
+                                                                    <h4 class="CmStatus">موظف</h4>
+                                                                    <p class="CmDate">
+                                                                        <img src="../assets/images/calendarEmp.svg"
+                                                                            alt="">
+                                                                        <span>21/2/2022</span>
+                                                                    </p>
+                                                                </div>
+                                                                <!-- end box -->
+                                                                <div class="col-md-10">
+                                                                    <div class="CmBox">
+                                                                        <div class="reviewRequest">
+                                                                            <p>هل تم مراجعة المعلومات المرسله ف الطلب و
+                                                                                الوضع في الاعتبار هذه المعلموات ؟ </p>
+                                                                        </div>
+                                                                        <div class="tableCardSystem tableCardGreen">
+                                                                            <p class="label">مرفقات المهمة</p>
+                                                                            <div class="table-responsive">
+                                                                                <table class="table table-striped">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th scope="col">#</th>
+                                                                                            <th scope="col">اسم المرفق
+                                                                                            </th>
+                                                                                            <th scope="col">ملف عام
+                                                                                                (اختياري)</th>
+                                                                                            <th scope="col">ملف سري
+                                                                                                (اجباري)</th>
+                                                                                            <th scope="col">المشاركة
+                                                                                            </th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <th scope="row">1</th>
+                                                                                            <td>ملف الشكوي</td>
+                                                                                            <td><a href="#">الرابط</a>
+                                                                                            </td>
+                                                                                            <td><a href="#">الرابط</a>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <div
+                                                                                                    class="form-radio-group-wrpper">
+                                                                                                    <div
+                                                                                                        class="form-radio-group">
+                                                                                                        <input
+                                                                                                            type="checkbox"
+                                                                                                            id="test105">
+                                                                                                        <label
+                                                                                                            for="test105">
+                                                                                                            جهات المصلحة
+                                                                                                            العامة</label>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="form-radio-group">
+                                                                                                        <input
+                                                                                                            type="checkbox"
+                                                                                                            id="test1115">
+                                                                                                        <label
+                                                                                                            for="test1115">الجهات
+                                                                                                            المعنية
+                                                                                                        </label>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <th scope="row">2</th>
+                                                                                            <td>ملف الشكوي</td>
+                                                                                            <td></td>
+                                                                                            <td><a href="#">الرابط</a>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <div
+                                                                                                    class="form-radio-group-wrpper">
+                                                                                                    <div
+                                                                                                        class="form-radio-group">
+                                                                                                        <input
+                                                                                                            type="checkbox"
+                                                                                                            id="test1225">
+                                                                                                        <label
+                                                                                                            for="test1225">
+                                                                                                            جهات المصلحة
+                                                                                                            العامة</label>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="form-radio-group">
+                                                                                                        <input
+                                                                                                            type="checkbox"
+                                                                                                            id="test1335">
+                                                                                                        <label
+                                                                                                            for="test1335">الجهات
+                                                                                                            المعنية
+                                                                                                        </label>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                            <!-- end table -->
+                                                                        </div>
+                                                                        <!-- end box table -->
+                                                                        <div class="replyBox">
+                                                                            <a href="#" class="replyComent">
+                                                                                <img src="../assets/images/replyIcon.svg"
+                                                                                    alt="">
+                                                                                <span>الرد</span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end box -->
+                                                            </div>
+                                                            <!-- end row -->
+                                                        </div>
+                                                        <!-- end commnet -->
+                                                        <div class="col-md-12 addComment">
+                                                            <div class="row">
+                                                                <div class="col-md-2">
+                                                                    <h3 class="CmName"> انت</h3>
+                                                                    <h4 class="CmStatus">موظف</h4>
+                                                                    <p class="CmDate">
+                                                                        <img src="../assets/images/calendarEmp.svg"
+                                                                            alt="">
+                                                                        <span>21/2/2022</span>
+                                                                    </p>
+                                                                </div>
+                                                                <!-- end box -->
+                                                                <div class="col-md-10">
+                                                                    <div class="CmBox">
+                                                                        <div class="InputGroup">
+                                                                            <input class="inputStyle" type="text"
+                                                                                placeholder="اكتب تعليقك  ">
+                                                                        </div>
+                                                                        <!-- end input -->
+                                                                        <div class="addAttSec">
+                                                                            <a class="addCompBtn " href="#"
+                                                                                data-toggle="modal"
+                                                                                data-target="#staticBackdrop">
+                                                                                <img src="../assets/images/add-square-green.svg"
+                                                                                    alt="">
+                                                                                <span>اضافة مرفق</span>
+                                                                            </a>
+                                                                        </div>
+                                                                        <!-- end action -->
+                                                                        <div class="replyBox">
+                                                                            <a href="#" class="replyComent">
+                                                                                <img src="../assets/images/replyIcon.svg"
+                                                                                    alt="">
+                                                                                <span>الرد</span>
+                                                                            </a>
+                                                                        </div>
+                                                                        <!-- end reply -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end comments section -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End card -->
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                    data-toggle="collapse" data-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    <h2>استكمال نماذج الشكوى</h2>
+                                                    <div class="statusDateAcc">
+                                                        <div>
+                                                            <span>لحالة : </span>
+                                                            <span>مفتوح</span>
+                                                        </div>
+                                                        <div class="boxDate">
+                                                            <span>من</span>
+                                                            <span>
+                                                                <img src="../assets/images/calendarEmp.svg" alt="">
+                                                                21/2/2022
+                                                            </span>
+                                                        </div>
+                                                        <div class="boxDate">
+                                                            <span>الي </span>
+                                                            <span>
+                                                                <img src="../assets/images/calendarEmp.svg" alt="">
+                                                                21/2/2022
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                        </div>
+
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <!-- start details complain  -->
+                                                <div class="detailsMission">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <h1 class="subHeadTitle24px">انشاء حساب شكوى</h1>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="employeeBox">
+                                                                <div class="emBox">
+                                                                    <img src="../assets/images/employeeIconGold.svg"
+                                                                        alt="">
+                                                                    <span>مقدم الشكوى</span>
+                                                                </div>
+                                                                <div class="emBox">
+                                                                    <img src="../assets/images/calendarEmp.svg" alt="">
+                                                                    <span>21/2/2022</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="InputViewGroup viewTextArea">
+                                                                <label class="label"> وصف</label>
+                                                                <p>تفاصيل المهمة المرسلة من فريق التحقيق</p>
+                                                            </div>
+                                                            <div class="InputViewGroup">
+                                                                <label class="label">test 2 </label>
+                                                                <p>تفاصيل المهمة المرسلة من فريق التحقيق</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="tableCardSystem tableCardGreen">
+                                                                <p class="label">مرفقات المهمة</p>
+                                                                <div class="table-responsive">
+                                                                    <table class="table table-striped">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col">#</th>
+                                                                                <th scope="col">اسم المرفق</th>
+                                                                                <th scope="col">ملف عام (اختياري)</th>
+                                                                                <th scope="col">ملف سري (اجباري)</th>
+                                                                                <th scope="col">المشاركة</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th scope="row">1</th>
+                                                                                <td>ملف الشكوي</td>
+                                                                                <td><a href="#">الرابط</a></td>
+                                                                                <td><a href="#">الرابط</a></td>
+                                                                                <td>
+                                                                                    <div
+                                                                                        class="form-radio-group-wrpper">
+                                                                                        <div class="form-radio-group">
+                                                                                            <input type="checkbox"
+                                                                                                id="test1">
+                                                                                            <label for="test1"> جهات
+                                                                                                المصلحة العامة</label>
+                                                                                        </div>
+                                                                                        <div class="form-radio-group">
+                                                                                            <input type="checkbox"
+                                                                                                id="test11">
+                                                                                            <label for="test11">الجهات
+                                                                                                المعنية </label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th scope="row">2</th>
+                                                                                <td>ملف الشكوي</td>
+                                                                                <td></td>
+                                                                                <td><a href="#">الرابط</a></td>
+                                                                                <td>
+                                                                                    <div
+                                                                                        class="form-radio-group-wrpper">
+                                                                                        <div class="form-radio-group">
+                                                                                            <input type="checkbox"
+                                                                                                id="test12">
+                                                                                            <label for="test12"> جهات
+                                                                                                المصلحة العامة</label>
+                                                                                        </div>
+                                                                                        <div class="form-radio-group">
+                                                                                            <input type="checkbox"
+                                                                                                id="test13">
+                                                                                            <label for="test13">الجهات
+                                                                                                المعنية </label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <!-- end table -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End details complain  -->
+                                                <!-- start comments section -->
+                                                <div class="commentsLayout">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <h3 class="cardLabel18px">التعليقات</h3>
+                                                        </div>
+                                                        <!-- end title -->
+                                                        <div class="col-md-12 commentSec">
+                                                            <div class="row">
+                                                                <div class="col-md-2">
+                                                                    <h3 class="CmName">احمد الجارحي</h3>
+                                                                    <h4 class="CmStatus">موظف</h4>
+                                                                    <p class="CmDate">
+                                                                        <img src="../assets/images/calendarEmp.svg"
+                                                                            alt="">
+                                                                        <span>21/2/2022</span>
+                                                                    </p>
+                                                                </div>
+                                                                <!-- end box -->
+                                                                <div class="col-md-10">
+                                                                    <div class="CmBox">
+                                                                        <div class="reviewRequest">
+                                                                            <p>:سيتم مراجعة المعلومات المرسلة في الطلب
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="tableCardSystem tableCardGreen">
+                                                                            <p class="label">مرفقات المهمة</p>
+                                                                            <div class="table-responsive">
+                                                                                <table class="table table-striped">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th scope="col">#</th>
+                                                                                            <th scope="col">اسم المرفق
+                                                                                            </th>
+                                                                                            <th scope="col">ملف عام
+                                                                                                (اختياري)</th>
+                                                                                            <th scope="col">ملف سري
+                                                                                                (اجباري)</th>
+                                                                                            <th scope="col">المشاركة
+                                                                                            </th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <th scope="row">1</th>
+                                                                                            <td>ملف الشكوي</td>
+                                                                                            <td><a href="#">الرابط</a>
+                                                                                            </td>
+                                                                                            <td><a href="#">الرابط</a>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <div
+                                                                                                    class="form-radio-group-wrpper">
+                                                                                                    <div
+                                                                                                        class="form-radio-group">
+                                                                                                        <input
+                                                                                                            type="checkbox"
+                                                                                                            id="test10">
+                                                                                                        <label
+                                                                                                            for="test10">
+                                                                                                            جهات المصلحة
+                                                                                                            العامة</label>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="form-radio-group">
+                                                                                                        <input
+                                                                                                            type="checkbox"
+                                                                                                            id="test111">
+                                                                                                        <label
+                                                                                                            for="test111">الجهات
+                                                                                                            المعنية
+                                                                                                        </label>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <th scope="row">2</th>
+                                                                                            <td>ملف الشكوي</td>
+                                                                                            <td></td>
+                                                                                            <td><a href="#">الرابط</a>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <div
+                                                                                                    class="form-radio-group-wrpper">
+                                                                                                    <div
+                                                                                                        class="form-radio-group">
+                                                                                                        <input
+                                                                                                            type="checkbox"
+                                                                                                            id="test122">
+                                                                                                        <label
+                                                                                                            for="test122">
+                                                                                                            جهات المصلحة
+                                                                                                            العامة</label>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="form-radio-group">
+                                                                                                        <input
+                                                                                                            type="checkbox"
+                                                                                                            id="test133">
+                                                                                                        <label
+                                                                                                            for="test133">الجهات
+                                                                                                            المعنية
+                                                                                                        </label>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                            <!-- end table -->
+                                                                        </div>
+                                                                        <!-- end box table -->
+                                                                        <div class="replyBox">
+                                                                            <a href="#" class="replyComent">
+                                                                                <img src="../assets/images/replyIcon.svg"
+                                                                                    alt="">
+                                                                                <span>الرد</span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="replyCmRevBox">
+                                                                        <p class="replyCmRev">
+                                                                            ردا علي التعليق
+                                                                            <a href="#">سيتم مراجعة المعلومات....</a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end box -->
+                                                            </div>
+                                                            <!-- end row -->
+                                                        </div>
+                                                        <!-- end commnet -->
+                                                        <div class="col-md-12 commentSec">
+                                                            <div class="row">
+                                                                <div class="col-md-2">
+                                                                    <h3 class="CmName"> احمد خالد</h3>
+                                                                    <h4 class="CmStatus">موظف</h4>
+                                                                    <p class="CmDate">
+                                                                        <img src="../assets/images/calendarEmp.svg"
+                                                                            alt="">
+                                                                        <span>21/2/2022</span>
+                                                                    </p>
+                                                                </div>
+                                                                <!-- end box -->
+                                                                <div class="col-md-10">
+                                                                    <div class="CmBox">
+                                                                        <div class="reviewRequest">
+                                                                            <p>هل تم مراجعة المعلومات المرسله ف الطلب و
+                                                                                الوضع في الاعتبار هذه المعلموات ؟ </p>
+                                                                        </div>
+                                                                        <div class="tableCardSystem tableCardGreen">
+                                                                            <p class="label">مرفقات المهمة</p>
+                                                                            <div class="table-responsive">
+                                                                                <table class="table table-striped">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th scope="col">#</th>
+                                                                                            <th scope="col">اسم المرفق
+                                                                                            </th>
+                                                                                            <th scope="col">ملف عام
+                                                                                                (اختياري)</th>
+                                                                                            <th scope="col">ملف سري
+                                                                                                (اجباري)</th>
+                                                                                            <th scope="col">المشاركة
+                                                                                            </th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <th scope="row">1</th>
+                                                                                            <td>ملف الشكوي</td>
+                                                                                            <td><a href="#">الرابط</a>
+                                                                                            </td>
+                                                                                            <td><a href="#">الرابط</a>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <div
+                                                                                                    class="form-radio-group-wrpper">
+                                                                                                    <div
+                                                                                                        class="form-radio-group">
+                                                                                                        <input
+                                                                                                            type="checkbox"
+                                                                                                            id="test105">
+                                                                                                        <label
+                                                                                                            for="test105">
+                                                                                                            جهات المصلحة
+                                                                                                            العامة</label>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="form-radio-group">
+                                                                                                        <input
+                                                                                                            type="checkbox"
+                                                                                                            id="test1115">
+                                                                                                        <label
+                                                                                                            for="test1115">الجهات
+                                                                                                            المعنية
+                                                                                                        </label>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <th scope="row">2</th>
+                                                                                            <td>ملف الشكوي</td>
+                                                                                            <td></td>
+                                                                                            <td><a href="#">الرابط</a>
+                                                                                            </td>
+                                                                                            <td>
+                                                                                                <div
+                                                                                                    class="form-radio-group-wrpper">
+                                                                                                    <div
+                                                                                                        class="form-radio-group">
+                                                                                                        <input
+                                                                                                            type="checkbox"
+                                                                                                            id="test1225">
+                                                                                                        <label
+                                                                                                            for="test1225">
+                                                                                                            جهات المصلحة
+                                                                                                            العامة</label>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="form-radio-group">
+                                                                                                        <input
+                                                                                                            type="checkbox"
+                                                                                                            id="test1335">
+                                                                                                        <label
+                                                                                                            for="test1335">الجهات
+                                                                                                            المعنية
+                                                                                                        </label>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                            <!-- end table -->
+                                                                        </div>
+                                                                        <!-- end box table -->
+                                                                        <div class="replyBox">
+                                                                            <a href="#" class="replyComent">
+                                                                                <img src="../assets/images/replyIcon.svg"
+                                                                                    alt="">
+                                                                                <span>الرد</span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end box -->
+                                                            </div>
+                                                            <!-- end row -->
+                                                        </div>
+                                                        <!-- end commnet -->
+                                                        <div class="col-md-12 addComment">
+                                                            <div class="row">
+                                                                <div class="col-md-2">
+                                                                    <h3 class="CmName"> انت</h3>
+                                                                    <h4 class="CmStatus">موظف</h4>
+                                                                    <p class="CmDate">
+                                                                        <img src="../assets/images/calendarEmp.svg"
+                                                                            alt="">
+                                                                        <span>21/2/2022</span>
+                                                                    </p>
+                                                                </div>
+                                                                <!-- end box -->
+                                                                <div class="col-md-10">
+                                                                    <div class="CmBox">
+                                                                        <div class="InputGroup">
+                                                                            <input class="inputStyle" type="text"
+                                                                                placeholder="اكتب تعليقك  ">
+                                                                        </div>
+                                                                        <!-- end input -->
+                                                                        <div class="addAttSec">
+                                                                            <a class="addCompBtn " href="#"
+                                                                                data-toggle="modal"
+                                                                                data-target="#staticBackdrop">
+                                                                                <img src="../assets/images/add-square-green.svg"
+                                                                                    alt="">
+                                                                                <span>اضافة مرفق</span>
+                                                                            </a>
+                                                                        </div>
+                                                                        <!-- end action -->
+                                                                        <div class="replyBox">
+                                                                            <a href="#" class="replyComent">
+                                                                                <img src="../assets/images/replyIcon.svg"
+                                                                                    alt="">
+                                                                                <span>الرد</span>
+                                                                            </a>
+                                                                        </div>
+                                                                        <!-- end reply -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end comments section -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End card -->
+                                    
+                                </div>
+                                <!-- end accordion historical Status -->
+                                <!-- End (الحالة التاريخية )  -->
+
                             </div>
                             <!-- End patent tab 2 -->
                             <div class="tab-pane fade" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">3
                             </div>
-                             <!-- End patent tab 3 -->
+                            <!-- End patent tab 3 -->
                         </div>
                     </div>
                     <!-- end tab parent -->
@@ -996,6 +1924,7 @@
             </div>
             <!-- { end left side } -->
         </div>
+    </div>
     </div>
     <!-- { start footer } -->
     <footer class="footer">

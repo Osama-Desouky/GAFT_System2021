@@ -61,7 +61,31 @@ font-family: "DINRegular";
 .filepond--root .filepond--credits {
   display: none;
 }
-
+.replyBox {
+  .replyComent {
+    background-color: #CCA079;
+    display: inline-block;
+    padding: 9px 15px;
+    border-radius: 8px;
+    span {
+      font-size: 16px;
+      color: #fff;
+      padding-right: 9px;
+    }
+  }
+}
+.replyCmRev {
+  font-size: 16px;
+  color: #CCA079;
+  margin-bottom: 16px;
+  a {
+    &:hover {
+      color: #0071E2;
+    }
+    color: #0071E2;
+    font-size: 16px;
+  }
+}
 .mainBtn {
   width: 160px;
   height: 52px;

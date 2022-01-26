@@ -1350,6 +1350,9 @@ select {
         display: inline-block;
         border-radius: 8px;
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+        span {
+          font-size: 20px;
+        }
         img {
           max-width: 30px;
         
@@ -1846,7 +1849,18 @@ select {
   }
   .searchSec {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    .selectBoxSex {
+      padding-#{$start-direction}: 24px;
+      .selectInput {
+        label {
+          padding-#{$end-direction}: 30px;
+        }
+        select {
+          width: 255px;
+        }
+      }
+    }
     .selectBoxSex,
     .selectInput,
     .searchBox {
@@ -1901,6 +1915,11 @@ select {
       .Inputdate {
         &:first-of-type {
           padding-#{$end-direction}: 24px;
+        }
+        &:last-of-type {
+          label {
+            padding-#{$end-direction}:20px;
+          }
         }
       }
     }
@@ -2174,7 +2193,227 @@ select {
     max-width: 864px;
   }
 }
+.historicalStatus {
+  margin-bottom: 33px;
+  padding-bottom: 0;
+  border-radius: 8px;
+  .searchSec {
+    justify-content: flex-start;
+    .selectBoxSex {
+      padding-#{$start-direction}: 95px;
+      .selectInput {
+        label {
+          padding-#{$end-direction}: 53px;
+        }
+        select {
+          width: 255px;
+        }
+      }
+    }
+  }
+  .dateAction {
 
+    .dateComp {
+      .Inputdate {
+        &:first-of-type {
+          padding-#{$end-direction}: 95px;
+        }
+        &:last-of-type {
+          .label {
+            padding-#{$end-direction}: 42px;
+          }
+        }
+      }
+    }
+  }
+}
+.historicalStatusAccordion {
+  .card {
+    .card-header {
+      button {
+        flex-direction: column;
+        align-items: start;
+        text-align: right !important;
+        position: relative;
+        > {
+          h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: $dark-green;
+            margin-bottom: 15px;
+          }
+        }
+        .statusDateAcc {
+          display: flex;
+          > {
+            div {
+              padding-left: 17px;
+              span {
+                font-size: 18px;
+                color: #000000;
+                &:first-of-type {
+                  color: $golden-color;
+                }
+              }
+              &.boxDate {
+                span {
+                  img {
+                    filter: unset;
+                    transform: unset;
+                    padding-#{$start-direction}: 12px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          background-image: url(../images/historicalAcc.svg);
+          #{$end-direction}: 0;
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+    .card-body {
+      .detailsMission {
+        padding: 24px 0px 0px;
+        .subHeadTitle24px {
+          color: $black-color;
+          margin-bottom: 12px;
+        }
+        .employeeBox {
+          margin-bottom: 26px;
+          .emBox {
+            &:first-of-type {
+              margin-#{$end-direction}: 40px;
+              span {
+                color: $golden-color;
+              }
+            }
+          }
+        }
+        .viewTextArea {
+          align-items: baseline;
+          p {
+            min-height: 78px;
+          }
+        }
+        .tableCardGreen {
+          margin-bottom: 0;
+          padding-bottom: 11px;
+          .table {
+            thead {
+              th {
+                &:last-of-type {
+                  width: 390px;
+                }
+              }
+            }
+            tbody {
+              tr {
+                td {
+                  &:last-of-type {
+                    display: block;
+                    min-width: unset;
+                    .form-radio-group-wrpper {
+                      display: inline-flex;
+                      width: 100%;
+                      .form-radio-group {
+                        :first-of-type {
+                          margin-#{$end-direction}: 15px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+.commentsLayout {
+  .cardLabel18px {
+    margin-bottom: 24px;
+  }
+  .addComment,
+  .commentSec {
+    .CmStatus,
+    .CmName {
+      font-size: 14px;
+      font-weight: 600;
+      color: #000000;
+      margin-bottom: 6px;
+    }
+    .CmStatus {
+      color: $golden-color;
+    }
+    .CmDate {
+      img {
+        max-width: 30px;
+        margin-top: -3px;
+      }
+      span {
+        font-size: 16px;
+        color: $black-color-two;
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .addComment,
+  .commentSec {
+    .CmBox {
+      background: #F6F6F6;
+      padding: 24px;
+      border-radius: 8px;
+      margin-bottom: 24px;
+      .reviewRequest {
+        background: #fff;
+        min-height: 56px;
+        margin-bottom: 27px;
+        border-radius: 8px;
+        padding: 12px;
+        p {
+          margin: 0;
+          color: $p-color;
+          font-size: 14px;
+        }
+      }
+      .tableCardGreen {
+        background: unset;
+        margin-bottom: 24px;
+        padding: 0;
+        .label {
+          font-size: 18px;
+          margin-bottom: 24px;
+        }
+        .table {
+          margin: 0;
+          .form-radio-group-wrpper {
+            display: flex;
+            .form-radio-group {
+              &:first-of-type {
+                padding-#{$end-direction}: 10px;
+              }
+            }
+          }
+        }
+      }
+      .replyBox {
+        text-align:#{$end-direction} ;
+      }
+    }
+  }
+}
+.addComment {
+  
+}
 // 555555555555555
 .radioGroup {
   padding: 0px;
