@@ -13,8 +13,8 @@
   } 
 }
 @media (min-width: 1400px) and (max-width:1701px) {
-  .inner-container-custom {
-    .inner-container {
+
+    .inner-container.inner-container-custom {
       margin-right: 0;
       max-width: 1440px;
       > {
@@ -24,11 +24,11 @@
         }
       }
     }
-  }
+  
 }
 @media (min-width: 1700px) and (max-width:2000px) {
-  .inner-container-custom {
-    .inner-container {
+
+    .inner-container.inner-container-custom {
       margin-right: 0;
       max-width: 1750px;
       > {
@@ -39,7 +39,7 @@
       }
     }
 
-  }
+  
 }
 
 /* ----------- fixing global issue ----------- */
@@ -83,8 +83,8 @@
   .container {
     border: 1px solid green;
   }
-  .inner-container-custom {
-     .inner-container {
+
+     .inner-container.inner-container-custom {
       margin-right: 0;
       // max-width: 1395px;
       width: 95%;
@@ -96,7 +96,7 @@
       }
     }
 
-  }
+  
 }
 /* ----------- iPad ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {

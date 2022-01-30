@@ -5,7 +5,12 @@ $(window).on("load",function() {
 })
 
 $( document ).ready(function() {
-
+    if ($(".menuSystem")[0]){
+      $(".menuSystem").parents(".inner-container").addClass("inner-container-custom")
+      
+    } else {
+      console.log("not exist") 
+    }
     $(".navbar .dropdown #navbarDropdown span").text(function(){
       
      let oldString = $(this).text().trim()
