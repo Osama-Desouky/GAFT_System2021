@@ -253,11 +253,15 @@ body {
   background-color: #f1f1f1;
 }
 
-.ms-webpart-zone, div.ms-webpart-cell-vertical-inline-table, .ms-webpart-cell-vertical, .ms-webpart-chrome-vertical {
+.ms-webpart-zone,
+div.ms-webpart-cell-vertical-inline-table,
+.ms-webpart-cell-vertical,
+.ms-webpart-chrome-vertical {
   display: block !important;
 }
 
-body, #s4-workspace {
+body,
+#s4-workspace {
   overflow: visible !important;
 }
 
@@ -298,7 +302,7 @@ input::-webkit-inner-spin-button {
   text-decoration: underline;
 }
 
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -614,7 +618,7 @@ select {
 }
 
 .navbarCustom li .notificationA .dropdown-menu .dropdown-item.visitedLink span {
-  color: #BBBBBB;
+  color: #bbbbbb;
 }
 
 .navbarCustom li .notificationA .dropdown-menu .dropdown-item.visitedLink img {
@@ -662,9 +666,9 @@ select {
   right: 0;
   width: 8px;
   height: 8px;
-  background: #E41E3F;
+  background: #e41e3f;
   border-radius: 50px;
-  border: 2px solid #E5D0D3;
+  border: 2px solid #e5d0d3;
 }
 
 .footer {
@@ -1289,7 +1293,7 @@ select {
 
 .filesUpload .downloadA span {
   font-size: 16px;
-  color: #0071E2;
+  color: #0071e2;
   margin-right: 5px;
 }
 
@@ -1313,7 +1317,7 @@ select {
 
 .submtBtns .errorMes {
   font-size: 18px;
-  color: #D5313A;
+  color: #d5313a;
   margin-bottom: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1368,7 +1372,7 @@ select {
 }
 
 .affiliatedCompanies .addCompany .addText .label {
-  color: #BBBBBB;
+  color: #bbbbbb;
   font-size: 14px;
   margin-bottom: 28px;
 }
@@ -1377,7 +1381,8 @@ select {
   text-align: left;
 }
 
-.actionBtns a, .actionBtns button {
+.actionBtns a,
+.actionBtns button {
   min-width: 110px;
   height: 47px;
   display: -webkit-inline-box;
@@ -1391,34 +1396,41 @@ select {
   margin-right: 24px;
 }
 
-.actionBtns a span, .actionBtns button span {
+.actionBtns a span,
+.actionBtns button span {
   font-size: 18px;
   margin-top: -4px;
 }
 
-.actionBtns a.addCompBtn, .actionBtns button.addCompBtn {
+.actionBtns a.addCompBtn,
+.actionBtns button.addCompBtn {
   background-color: rgba(0, 112, 102, 0.2);
 }
 
-.actionBtns a.addCompBtn span, .actionBtns button.addCompBtn span {
+.actionBtns a.addCompBtn span,
+.actionBtns button.addCompBtn span {
   color: #007066;
   padding: 0 9px;
 }
 
-.actionBtns a.sendBtn, .actionBtns button.sendBtn {
+.actionBtns a.sendBtn,
+.actionBtns button.sendBtn {
   background-color: rgba(204, 160, 121, 0.2);
 }
 
-.actionBtns a.sendBtn span, .actionBtns button.sendBtn span {
+.actionBtns a.sendBtn span,
+.actionBtns button.sendBtn span {
   color: #cca079;
   padding-right: 9px;
 }
 
-.actionBtns a.closeBtn, .actionBtns button.closeBtn {
+.actionBtns a.closeBtn,
+.actionBtns button.closeBtn {
   background-color: rgba(213, 49, 58, 0.2);
 }
 
-.actionBtns a.closeBtn span, .actionBtns button.closeBtn span {
+.actionBtns a.closeBtn span,
+.actionBtns button.closeBtn span {
   color: #d5313a;
   padding-right: 9px;
 }
@@ -1499,15 +1511,15 @@ select {
 }
 
 .EditDelete .table tbody td .Edit span {
-  color: #CCA079;
+  color: #cca079;
 }
 
 .EditDelete .table tbody td .Delete span {
-  color: #D5313A;
+  color: #d5313a;
 }
 
 .EditDelete .table tbody tr:nth-of-type(odd) {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 
 .EditDelete .actionBtns {
@@ -1551,7 +1563,7 @@ select {
 
 .deleteModel .modal-dialog .modal-body .textDeL p {
   margin-bottom: 0;
-  color: #BBBBBB;
+  color: #bbbbbb;
   font-size: 18px;
 }
 
@@ -1652,7 +1664,7 @@ select {
 
 .menuListSide {
   min-height: 976px;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   margin: 0;
   padding: 48px 23px;
   list-style: none;
@@ -1714,7 +1726,7 @@ select {
 
 .menuListSide ul li a {
   height: 48px;
-  background: #EEEEEE;
+  background: #eeeeee;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1722,7 +1734,7 @@ select {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 26px;
-  color: #BBBBBB;
+  color: #bbbbbb;
   margin-bottom: 2px;
 }
 
@@ -1822,7 +1834,7 @@ select {
 .layoutLargSide .TabParent li a {
   font-size: 20px;
   font-weight: 500;
-  color: #CCA079;
+  color: #cca079;
   background: transparent;
   padding: 16px 26px;
   border-radius: 50px;
@@ -1830,7 +1842,7 @@ select {
 }
 
 .layoutLargSide .TabParent li a.active {
-  color: #CCA079;
+  color: #cca079;
   background: #fff;
 }
 
@@ -1954,7 +1966,8 @@ select {
   margin-left: 0px;
 }
 
-.tableCardSystem .table td, .table th {
+.tableCardSystem .table td,
+.table th {
   border: 0 solid #dee2e6;
 }
 
@@ -1971,7 +1984,7 @@ select {
 .tableCardSystem .table tbody td,
 .tableCardSystem .table tbody th {
   font-size: 18px;
-  color: #8F8F8F;
+  color: #8f8f8f;
   font-weight: 500;
 }
 
@@ -1991,7 +2004,7 @@ select {
 }
 
 .tableCardSystem .table-striped tbody tr:nth-of-type(even) {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 
 .tableCardSystem .table-striped tbody tr:nth-of-type(odd) {
@@ -2025,7 +2038,7 @@ select {
 
 .requestPop .boxReq hr {
   margin: 24px 0;
-  border-top: 3px solid #F2F2F2;
+  border-top: 3px solid #f2f2f2;
 }
 
 .requestPop .boxReq .mainBtn {
@@ -2082,7 +2095,7 @@ select {
 
 .menuSystem {
   min-height: 976px;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   margin: 0;
 }
 
@@ -2176,21 +2189,21 @@ select {
 }
 
 .menuSystem .menuActions li.CloseAction a {
-  background-color: #BBBBBB;
+  background-color: #bbbbbb;
   pointer-events: none;
   text-decoration: none;
 }
 
 .menuSystem .menuActions li.CloseAction .progressSection span {
-  color: #BBBBBB;
+  color: #bbbbbb;
 }
 
 .menuSystem .menuActions li.CloseAction .progressSection .progress {
-  background-color: #BBBBBB;
+  background-color: #bbbbbb;
 }
 
 .menuSystem .menuActions li.CloseAction .progressSection .progress .progress-bar {
-  background-color: #BBBBBB;
+  background-color: #bbbbbb;
 }
 
 .backBtn {
@@ -2199,7 +2212,7 @@ select {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  background: #A1A1A1;
+  background: #a1a1a1;
   border-radius: 8px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2383,8 +2396,8 @@ select {
 .accordion .card .card-header button img {
   -webkit-filter: invert(78%) sepia(18%) saturate(766%) hue-rotate(344deg) brightness(84%) contrast(89%);
           filter: invert(78%) sepia(18%) saturate(766%) hue-rotate(344deg) brightness(84%) contrast(89%);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   -webkit-transform: rotate(47deg);
           transform: rotate(47deg);
 }
@@ -2577,19 +2590,19 @@ select {
 }
 
 .addMission textarea::-webkit-input-placeholder {
-  color: #BBBBBB;
+  color: #bbbbbb;
 }
 
 .addMission textarea:-ms-input-placeholder {
-  color: #BBBBBB;
+  color: #bbbbbb;
 }
 
 .addMission textarea::-ms-input-placeholder {
-  color: #BBBBBB;
+  color: #bbbbbb;
 }
 
 .addMission textarea::placeholder {
-  color: #BBBBBB;
+  color: #bbbbbb;
 }
 
 .addMission .subHeadTitle24px, .addMission .modalCustomStyle .modal-dialog .modal-title, .modalCustomStyle .modal-dialog .addMission .modal-title {
@@ -2690,7 +2703,7 @@ select {
 .AddMissionPopup .missionUl li strong {
   width: 50px;
   font-size: 18px;
-  color: #8F8F8F;
+  color: #8f8f8f;
 }
 
 .AddMissionPopup .missionUl li .filepond--root,
@@ -2705,7 +2718,7 @@ select {
 }
 
 .AddMissionPopup .missionUl li input {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   height: 35px;
   border-radius: 8px;
   border: unset;
@@ -2763,7 +2776,7 @@ select {
 
 .detailsMission .brifeH {
   font-size: 18px;
-  color: #8F8F8F;
+  color: #8f8f8f;
   margin-bottom: 20px;
 }
 
@@ -2785,7 +2798,7 @@ select {
 
 .detailsMission .employeeBox .emBox span {
   font-size: 16px;
-  color: #1D1D1B;
+  color: #1d1d1b;
 }
 
 .detailsMission .InputViewGroup {
@@ -2798,7 +2811,7 @@ select {
 }
 
 .detailsMission .InputViewGroup .label {
-  color: #012D29;
+  color: #012d29;
   font-size: 20px;
   margin-bottom: 12px;
   margin-left: 6px;
@@ -2807,10 +2820,10 @@ select {
 }
 
 .detailsMission .InputViewGroup p {
-  color: #1D1D1B;
+  color: #1d1d1b;
   font-size: 16px;
   margin-bottom: 12px;
-  background: #F6F6F6;
+  background: #f6f6f6;
   width: 87%;
   padding: 12px 24px;
   border-radius: 8px;
@@ -2822,12 +2835,12 @@ select {
 
 .detailsMission .tableCardGreen td a {
   font-size: 18px;
-  color: #0071E2;
+  color: #0071e2;
   text-decoration: underline;
 }
 
 .detailsMission .tableCardGreen td a:hover {
-  color: #0071E2;
+  color: #0071e2;
 }
 
 .widthMissionPopup .modal-dialog {
@@ -2946,7 +2959,7 @@ select {
   content: "";
   width: 16px;
   height: 16px;
-  background-color: #8A8A8A;
+  background-color: #8a8a8a;
   border-radius: 50%;
   right: -11px;
   bottom: 0;
@@ -3067,7 +3080,7 @@ select {
 
 .commentsLayout .addComment .CmBox,
 .commentsLayout .commentSec .CmBox {
-  background: #F6F6F6;
+  background: #f6f6f6;
   padding: 24px;
   border-radius: 8px;
   margin-bottom: 0px;
@@ -3151,7 +3164,7 @@ select {
 }
 
 .form-radio-group label:before {
-  content: '';
+  content: "";
   -webkit-appearance: none;
   background-color: transparent;
   border: 3px solid #BBBBBB;
@@ -3167,7 +3180,7 @@ select {
 }
 
 .form-radio-group input + label:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 6px;
@@ -3292,12 +3305,12 @@ a.ui-button:active,
 .validation-summary-errors ul li {
   position: relative;
   font-size: 18px;
-  color: #D5313A;
+  color: #d5313a;
   margin-bottom: 15px;
 }
 
 .validation-summary-errors ul li::before {
-  content: '';
+  content: "";
   position: absolute;
   right: -40px;
   top: 3px;
@@ -3309,7 +3322,7 @@ a.ui-button:active,
 }
 
 .navbarCustom li a.changeLang {
-  color: #CCA079 !important;
+  color: #cca079 !important;
   font-size: 14px;
 }
 
@@ -3354,11 +3367,11 @@ a.ui-button:active,
 }
 
 .ui-datepicker-prev::after {
-  content: '\f104';
+  content: "\f104";
 }
 
 .ui-datepicker-next::after {
-  content: '\f105';
+  content: "\f105";
 }
 
 .ui-datepicker .ui-datepicker-next-hover,
@@ -3376,6 +3389,20 @@ a.ui-button:active,
 .ui-datepicker .ui-datepicker-prev-hover {
   left: 2px !important;
   top: 2px !important;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .BGRegistration {
+    width: 1400px;
+    margin: 0 auto;
+  }
+  input,
+  textarea {
+    -webkit-appearance: none !important;
+  }
+  input {
+    border: 0 solid transparent;
+  }
 }
 
 /* end and adding style */
@@ -3443,7 +3470,7 @@ a.ui-button:active,
 /* ----------- start mini labtop  ----------- */
 @media (min-device-width: 1025px) and (max-device-width: 1400px) {
   .container {
-    border: 1px solid green;
+    border: 0px solid green;
   }
   .inner-container.inner-container-custom {
     margin-right: 0;

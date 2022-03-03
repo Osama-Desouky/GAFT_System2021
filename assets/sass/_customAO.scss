@@ -5,47 +5,50 @@ body {
 
 // Global class and style
 
-.ms-webpart-zone,div.ms-webpart-cell-vertical-inline-table,.ms-webpart-cell-vertical,.ms-webpart-chrome-vertical{
-	display: block!important;
+.ms-webpart-zone,
+div.ms-webpart-cell-vertical-inline-table,
+.ms-webpart-cell-vertical,
+.ms-webpart-chrome-vertical {
+  display: block !important;
 }
-body,#s4-workspace {
-	overflow:visible!important;
+body,
+#s4-workspace {
+  overflow: visible !important;
 }
-.ms-webpartzone-cell{
-	margin-bottom:0!important
+.ms-webpartzone-cell {
+  margin-bottom: 0 !important;
 }
 
 .ms-webpart-zone {
-    display: block !important
+  display: block !important;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-
-    -webkit-appearance: none;
-    margin: 0; 
+  -webkit-appearance: none;
+  margin: 0;
 }
 .filepond--root .filepond--credits[style] {
-    display: none;
+  display: none;
 }
 
-.filepond--root { 
-    margin-bottom: 0px;
-    font-family: "DINRegular";
+.filepond--root {
+  margin-bottom: 0px;
+  font-family: "DINRegular";
 }
 .filepond--root .filepond--drop-label {
-    min-height: 45px
+  min-height: 45px;
 }
 .filepond--drop-label.filepond--drop-label label {
-    font-size: 16px;
-    color: #ddd;
+  font-size: 16px;
+  color: #ddd;
 }
 .filepond--drop-label.filepond--drop-label label span {
-    color: $dark-green;
-    text-decoration: underline;
+  color: $dark-green;
+  text-decoration: underline;
 }
-input[type=number] {
-    -moz-appearance:textfield; 
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 button {
   border: unset;
@@ -59,7 +62,7 @@ input::placeholder {
   font-size: 20px;
   margin-bottom: 12px;
 }
-.addCompBtn  {
+.addCompBtn {
   display: flex;
   img {
     max-width: 24px;
@@ -154,9 +157,9 @@ select {
   width: 100%;
   padding: 12px 24px;
   margin-bottom: 14px;
-  -moz-appearance:none; /* Firefox */
-  -webkit-appearance:none; /* Safari and Chrome */
-  appearance:none;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
   font-size: 16px;
   line-height: 1.2;
   color: #bbbbbb;
@@ -179,12 +182,12 @@ select {
   overflow: hidden;
 }
 
-.loader-inner{
+.loader-inner {
   display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 // start menu
@@ -234,11 +237,10 @@ select {
           align-items: center;
           justify-content: center;
           i {
-           
             &:first-of-type {
               padding-#{$end-direction}: 6px;
               font-size: 20px;
-               margin-bottom: -8px;
+              margin-bottom: -8px;
             }
             &:last-of-type {
               padding-#{$start-direction}: 6px;
@@ -280,7 +282,7 @@ select {
         box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
         border: unset;
         padding: 0;
-        .dropdown-item{
+        .dropdown-item {
           padding: 7px 12px !important;
           text-align: center;
           border-bottom: 1px solid #f1f1f1;
@@ -306,10 +308,11 @@ select {
           }
           &.visitedLink {
             span {
-              color: #BBBBBB;
+              color: #bbbbbb;
             }
             img {
-              filter: invert(45%) sepia(10%) saturate(258%) hue-rotate(43deg) brightness(89%) contrast(100%);
+              filter: invert(45%) sepia(10%) saturate(258%) hue-rotate(43deg)
+                brightness(89%) contrast(100%);
             }
           }
         }
@@ -320,7 +323,6 @@ select {
           display: block;
           padding: 8px 0 12px;
         }
-
       }
       &.notificationB {
         button {
@@ -340,7 +342,8 @@ select {
       &.activeNotify {
         button {
           img {
-            filter: invert(35%) sepia(11%) saturate(1524%) hue-rotate(130deg) brightness(101%) contrast(101%);
+            filter: invert(35%) sepia(11%) saturate(1524%) hue-rotate(130deg)
+              brightness(101%) contrast(101%);
           }
         }
         .redNotification {
@@ -350,9 +353,9 @@ select {
             #{$start-direction}: 0;
             width: 8px;
             height: 8px;
-            background: #E41E3F;
+            background: #e41e3f;
             border-radius: 50px;
-            border: 2px solid #E5D0D3;
+            border: 2px solid #e5d0d3;
           }
         }
       }
@@ -555,11 +558,11 @@ select {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     padding: 24px 30px 48px;
     .validMatch {
-        + {
-            i {
-                color: $black-color;
-            }
+      + {
+        i {
+          color: $black-color;
         }
+      }
     }
     .goBack {
       font-size: 14px;
@@ -667,9 +670,8 @@ select {
     a {
       display: flex;
       align-items: center;
-        pointer-events: none;
-        text-decoration: none;
-
+      pointer-events: none;
+      text-decoration: none;
 
       strong {
         width: 55px;
@@ -724,13 +726,14 @@ select {
       li {
         a {
           pointer-events: unset;
-          padding: 0; 
+          padding: 0;
           &.active {
             background-color: unset;
             strong {
               background-color: rgba(204, 160, 121, 0.2);
               img {
-                filter: invert(18%) sepia(51%) saturate(278%) hue-rotate(347deg) brightness(88%) contrast(86%);
+                filter: invert(18%) sepia(51%) saturate(278%) hue-rotate(347deg)
+                  brightness(88%) contrast(86%);
               }
             }
             span {
@@ -745,16 +748,16 @@ select {
     // min-height: 800px;
   }
   .cardInputs {
-      .row {
-        margin-right: 0;
-        margin-left: 0;
-      }
-      .col-md-4,
-      .col-md-6,
-      .col-md-12 {
-        padding-right: 6px;
-        padding-left: 6px;
-      }
+    .row {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .col-md-4,
+    .col-md-6,
+    .col-md-12 {
+      padding-right: 6px;
+      padding-left: 6px;
+    }
     margin-bottom: 32px;
     .cardTitle22px {
       background-color: rgba(255, 255, 255, 0.5);
@@ -797,11 +800,10 @@ select {
           height: 22px;
           margin-#{$end-direction}: 0px;
           margin-top: 9px;
-          
         }
         .inputStyle {
-            text-align: right;
-            color: #ddd;
+          text-align: right;
+          color: #ddd;
         }
       }
     }
@@ -850,166 +852,164 @@ select {
   }
 }
 .filesUpload {
-    .cardLabel18px {
-        color: #ddd;
-        margin-bottom: 0px;
+  .cardLabel18px {
+    color: #ddd;
+    margin-bottom: 0px;
+  }
+  .downloadA {
+    margin-top: 8px;
+    display: inline-block;
+    span {
+      font-size: 16px;
+      color: #0071e2;
+      margin-#{$start-direction}: 5px;
     }
-    .downloadA {
-        margin-top: 8px;
-        display: inline-block;
-        span {
-            font-size: 16px;
-            color: #0071E2;
-            margin-#{$start-direction}: 5px;
-        }
-    }
-    .label {
-        margin-top: 22px;
-    }
-    .hint {
-        font-size: 16px;
-        color: #ddd;
-    }
-    .hintLast {
-        @extend .cardLabel18px;
-        color: $black-color;
-        text-align: center;
-    }
+  }
+  .label {
+    margin-top: 22px;
+  }
+  .hint {
+    font-size: 16px;
+    color: #ddd;
+  }
+  .hintLast {
+    @extend .cardLabel18px;
+    color: $black-color;
+    text-align: center;
+  }
 }
 .submtBtns {
   margin-bottom: 128px;
-    .errorMes {
-        font-size: 18px;
-        color: #D5313A;
-        margin-bottom: 32px;
-        display: flex;
-        align-items: center;
-        span {
-            padding-right: 10px;
-        }
+  .errorMes {
+    font-size: 18px;
+    color: #d5313a;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    span {
+      padding-right: 10px;
     }
-    .saveInfo {
-        margin: 0 auto;
-        min-width: 288px;
-        background-color: $dark-green;
+  }
+  .saveInfo {
+    margin: 0 auto;
+    min-width: 288px;
+    background-color: $dark-green;
+  }
+  .mainBtn {
+    i {
+      padding: 0 5px;
+      margin-top: 6px;
     }
-    .mainBtn {
-        i {
-            padding: 0 5px;
-            margin-top: 6px;
-        }
-        &.disableBtn {
-            background-color: #ddd;
-            pointer-events: none;
-            cursor: default;
-            text-decoration: none;
-        }
+    &.disableBtn {
+      background-color: #ddd;
+      pointer-events: none;
+      cursor: default;
+      text-decoration: none;
     }
-    .col-md-3 {
-        &:last-of-type {
-            display: flex;
-            justify-content: end;
-        }
+  }
+  .col-md-3 {
+    &:last-of-type {
+      display: flex;
+      justify-content: end;
     }
+  }
 }
 
 .affiliatedCompanies {
-    .addCompany {
-        text-align: center;
-        .addIcon {
-            padding: 15px 0 22px;
-        }
-        .addText {
-            .subHeadTitle24px {
-                color: #000;
-                margin-bottom: 14px;
-            }
-            .label {
-                color: #BBBBBB;
-                font-size: 14px;
-                margin-bottom: 28px;
-            }
-        }
-
+  .addCompany {
+    text-align: center;
+    .addIcon {
+      padding: 15px 0 22px;
     }
+    .addText {
+      .subHeadTitle24px {
+        color: #000;
+        margin-bottom: 14px;
+      }
+      .label {
+        color: #bbbbbb;
+        font-size: 14px;
+        margin-bottom: 28px;
+      }
+    }
+  }
 }
 .actionBtns {
   text-align: $end-direction;
-    a,button {
-        min-width: 110px;
-        height: 47px;
-        display: inline-flex;
-        border-radius: 8px;
-        align-items: center;
-        padding: 12px 16px;
-        margin-#{$start-direction}: 24px;
-        span {
-            font-size: 18px;
-            margin-top: -4px;
-        }
-        &.addCompBtn  {
-            background-color: rgba(0, 112, 102, 0.2);
-            span {
-                color: rgba(0, 112, 102, 1);
-                padding: 0 9px;
-            }
-
-        }
-        &.sendBtn  {
-            background-color: rgba(204, 160, 121, 0.2);
-            span {
-                color: rgba(204, 160, 121, 1);
-                padding-#{$start-direction}: 9px;
-            }
-        }
-        &.closeBtn  {
-            background-color: rgba(213, 49, 58, 0.2);
-            span {
-                color: rgba(213, 49, 58, 1);
-                padding-#{$start-direction}: 9px;
-            }
-        }
+  a,
+  button {
+    min-width: 110px;
+    height: 47px;
+    display: inline-flex;
+    border-radius: 8px;
+    align-items: center;
+    padding: 12px 16px;
+    margin-#{$start-direction}: 24px;
+    span {
+      font-size: 18px;
+      margin-top: -4px;
     }
+    &.addCompBtn {
+      background-color: rgba(0, 112, 102, 0.2);
+      span {
+        color: rgba(0, 112, 102, 1);
+        padding: 0 9px;
+      }
+    }
+    &.sendBtn {
+      background-color: rgba(204, 160, 121, 0.2);
+      span {
+        color: rgba(204, 160, 121, 1);
+        padding-#{$start-direction}: 9px;
+      }
+    }
+    &.closeBtn {
+      background-color: rgba(213, 49, 58, 0.2);
+      span {
+        color: rgba(213, 49, 58, 1);
+        padding-#{$start-direction}: 9px;
+      }
+    }
+  }
 }
 
 .modalCustomStyle {
-    .modal-dialog {
-        max-width: 1094px;
-        direction: ltr;
-        .modal-title {
-            @extend .subHeadTitle24px;
-            width: 100%;
-            color: $dark-green;
-            text-align: center;
-            padding-#{$end-direction}: 50px;
-        }
-        .modal-body {
-          
-            padding: 0;
-            .investigationLayout {
-              max-width: 1035px;
-            }
-        }
-        .cardInputs {
-            direction: rtl;
-            margin-bottom: 0;
-            .boxInputs {
-                padding: 0 24px;
-            }
-            .submtBtns {
-                margin:50px 0 47px;
-                .mainBtn {
-                    img {
-                        padding-#{$start-direction}: 8px;
-                        filter: brightness(0) invert(1);
-                    }
-                }
-            }
-        }
+  .modal-dialog {
+    max-width: 1094px;
+    direction: ltr;
+    .modal-title {
+      @extend .subHeadTitle24px;
+      width: 100%;
+      color: $dark-green;
+      text-align: center;
+      padding-#{$end-direction}: 50px;
     }
+    .modal-body {
+      padding: 0;
+      .investigationLayout {
+        max-width: 1035px;
+      }
+    }
+    .cardInputs {
+      direction: rtl;
+      margin-bottom: 0;
+      .boxInputs {
+        padding: 0 24px;
+      }
+      .submtBtns {
+        margin: 50px 0 47px;
+        .mainBtn {
+          img {
+            padding-#{$start-direction}: 8px;
+            filter: brightness(0) invert(1);
+          }
+        }
+      }
+    }
+  }
 }
 .EditDelete {
-  .table  {
+  .table {
     margin-bottom: 27px;
     tbody {
       th {
@@ -1028,23 +1028,23 @@ select {
           justify-content: end;
           span {
             font-size: 18px;
-            padding-#{$start-direction}:6px
+            padding-#{$start-direction}: 6px;
           }
         }
         .Edit {
           span {
-            color: #CCA079;
+            color: #cca079;
           }
         }
         .Delete {
           span {
-            color: #D5313A;
+            color: #d5313a;
           }
         }
       }
       tr {
         &:nth-of-type(odd) {
-          background-color: #F8F8F8;
+          background-color: #f8f8f8;
         }
       }
     }
@@ -1052,7 +1052,6 @@ select {
   .actionBtns {
     text-align: $start-direction;
   }
- 
 }
 .modal-header {
   border: unset;
@@ -1061,7 +1060,7 @@ select {
   .modal-dialog {
     max-width: 804px;
     text-align: center;
-    top:50% !important;
+    top: 50% !important;
     transform: translate(0, -60%) !important;
     .modal-header {
       border: unset;
@@ -1085,7 +1084,7 @@ select {
         }
         p {
           margin-bottom: 0;
-          color: #BBBBBB;
+          color: #bbbbbb;
           font-size: 18px;
         }
       }
@@ -1118,20 +1117,20 @@ select {
 .EditDataLayout {
   margin-bottom: 49px;
   background-color: #fff;
-   > {
-     .cardTitle22px {
-       font-size: 24px;
-       font-weight: bold;
-       padding: 27px 25px 0px 25px;
-       text-align: center;
-     }
-   }
-   h1.cardTitle22px   {
+  > {
+    .cardTitle22px {
+      font-size: 24px;
+      font-weight: bold;
+      padding: 27px 25px 0px 25px;
+      text-align: center;
+    }
+  }
+  h1.cardTitle22px {
     font-size: 24px;
     font-weight: bold;
     padding: 27px 25px 0px 25px;
     text-align: center;
-   }
+  }
   .cardInputs {
     margin-bottom: 0;
     .cardTitle22px {
@@ -1142,7 +1141,7 @@ select {
     margin: 50px 0 12px 0;
     display: flex;
     justify-content: space-between;
-    .saveEdit  {
+    .saveEdit {
       background-color: $dark-green;
       width: 200px;
       span {
@@ -1152,13 +1151,12 @@ select {
     .CloseIt {
       background-color: $black-color;
       width: 152px;
-      
     }
   }
 }
 
 .listItem {
-  background-color: rgba(117, 117, 117, .05);
+  background-color: rgba(117, 117, 117, 0.05);
   border-radius: 8px;
   height: 51px;
   display: flex;
@@ -1167,11 +1165,11 @@ select {
 
 .menuListSide {
   min-height: 976px;
-  background-color: #F8F8F8 ;
+  background-color: #f8f8f8;
   margin: 0;
   padding: 48px 23px;
   list-style: none;
-   & > {
+  & > {
     li {
       > {
         a {
@@ -1180,7 +1178,7 @@ select {
           padding: 0 26px;
           position: relative;
           img {
-            padding-#{$end-direction}:8px;
+            padding-#{$end-direction}: 8px;
             max-width: 35px;
           }
           span {
@@ -1189,7 +1187,7 @@ select {
             margin-top: -4px;
           }
           &.openLI {
-            &::after  {
+            &::after {
               position: absolute;
               font-family: "Font Awesome 5 Free";
               font-weight: 900;
@@ -1202,7 +1200,7 @@ select {
             }
           }
           &.opend {
-            background-color: rgba(204, 160, 121, 0.09) ;
+            background-color: rgba(204, 160, 121, 0.09);
             &::after,
             span {
               color: $golden-color;
@@ -1211,7 +1209,8 @@ select {
               content: "\f077";
             }
             img {
-              filter: invert(163%) sepia(90%) saturate(278%) hue-rotate(347deg) brightness(88%) contrast(86%);
+              filter: invert(163%) sepia(90%) saturate(278%) hue-rotate(347deg)
+                brightness(88%) contrast(86%);
             }
           }
         }
@@ -1219,8 +1218,7 @@ select {
     }
   }
 
-
-  ul  {
+  ul {
     list-style: none;
     padding: 0;
     // background-color: red;
@@ -1228,27 +1226,24 @@ select {
     li {
       a {
         height: 48px;
-        background: #EEEEEE;
+        background: #eeeeee;
         display: flex;
         align-items: center;
         padding: 0 26px;
-        color: #BBBBBB;
+        color: #bbbbbb;
         margin-bottom: 2px;
       }
     }
   }
-
-
 }
 
 .layoutLargSide {
-
   min-height: 850px;
-  >.tableCardSystem {
-		&:first-child {
+  > .tableCardSystem {
+    &:first-child {
       margin-top: 45px;
-		}
-	}
+    }
+  }
   &.layoutableXDV2 {
     max-width: 1360px;
     margin: 0 auto;
@@ -1279,7 +1274,7 @@ select {
       padding-top: 20px;
       .subHeadTitle24px {
         color: $dark-green;
-      } 
+      }
       .tempMun {
         span {
           font-size: 12px;
@@ -1314,14 +1309,14 @@ select {
       a {
         font-size: 20px;
         font-weight: 500;
-        color: #CCA079;
+        color: #cca079;
         background: transparent;
         padding: 16px 26px;
         border-radius: 50px;
         display: inline-block;
         &.active {
-          color: #CCA079;
-           background: #fff;
+          color: #cca079;
+          background: #fff;
         }
       }
     }
@@ -1355,13 +1350,13 @@ select {
         }
         img {
           max-width: 30px;
-        
         }
         &.active {
           color: $dark-green;
           background-color: rgba(0, 112, 102, 0.2);
           img {
-            filter: invert(6%) sepia(31%) saturate(1524%) hue-rotate(130deg) brightness(60%) contrast(101%);
+            filter: invert(6%) sepia(31%) saturate(1524%) hue-rotate(130deg)
+              brightness(60%) contrast(101%);
           }
         }
       }
@@ -1370,12 +1365,12 @@ select {
   .tabLastChild {
     border: unset;
     padding: 0;
-    a { 
+    a {
       border-radius: 0;
     }
 
-     &+.tab-content {
-       .cardInTab {
+    & + .tab-content {
+      .cardInTab {
         border-radius: 5px 0 5px 5px;
         padding-top: 37px;
         // padding-bottom: 0;
@@ -1389,9 +1384,8 @@ select {
         .actionBtns {
           margin: 37px 0 57px;
         }
-       }
-        
-     }
+      }
+    }
     li {
       &:first-of-type {
         a {
@@ -1407,12 +1401,12 @@ select {
         font-size: 18px;
         font-weight: 500;
         color: $colorBBBBBB;
-        background-color: rgba(187 , 187 , 187 , 0.1);
+        background-color: rgba(187, 187, 187, 0.1);
         padding: 11px 25px;
         display: inline-block;
         &.active {
           color: #fff;
-           background: $golden-color; 
+          background: $golden-color;
         }
       }
     }
@@ -1431,7 +1425,7 @@ select {
       text-align: $end-direction;
       // padding-#{$end-direction}: 7%;
       margin: 7px 0 20px;
-      
+
       a {
         span {
           padding: 0 9px 0 0px;
@@ -1442,10 +1436,10 @@ select {
       }
     }
   }
-
 }
 
-.tableCardSystem .table td, .table th {
+.tableCardSystem .table td,
+.table th {
   border: 0 solid #dee2e6;
 }
 .tableCardSystem .table thead th {
@@ -1458,8 +1452,8 @@ select {
 }
 .tableCardSystem .table tbody td,
 .tableCardSystem .table tbody th {
-  font-size:18px;
-  color: #8F8F8F;
+  font-size: 18px;
+  color: #8f8f8f;
   font-weight: 500;
 }
 .tableCardSystem .table tbody td .viewB {
@@ -1471,13 +1465,13 @@ select {
 .tableCardSystem .table tbody td .editB {
   // padding:0 24px
 }
-.tableCardSystem .table tbody  tr td:last-of-type {
+.tableCardSystem .table tbody tr td:last-of-type {
   min-width: 120px;
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .tableCardSystem .table-striped tbody tr:nth-of-type(even) {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 
 .tableCardSystem .table-striped tbody tr:nth-of-type(odd) {
@@ -1508,7 +1502,7 @@ select {
     }
     hr {
       margin: 24px 0;
-      border-top: 3px solid #F2F2F2;
+      border-top: 3px solid #f2f2f2;
     }
     .mainBtn {
       margin: 30px auto 47px;
@@ -1529,7 +1523,7 @@ select {
       border-radius: 5px;
     }
   }
-} 
+}
 .changedColor {
   background-color: #012d29 !important;
 }
@@ -1548,18 +1542,16 @@ select {
     width: 95%;
     height: 4px;
     margin-top: 5px;
-    background-color:rgba(204, 160, 121, .4);
+    background-color: rgba(204, 160, 121, 0.4);
     .progress-bar {
-      background-color:rgba(204, 160, 121, 1);
+      background-color: rgba(204, 160, 121, 1);
     }
   }
-
-
 }
 
 .menuSystem {
   min-height: 976px;
-  background-color: #F8F8F8 ;
+  background-color: #f8f8f8;
   margin: 0;
   .backAndTitle {
     padding: 20px 23px 10px 23px;
@@ -1574,7 +1566,7 @@ select {
       font-size: 20px;
       font-weight: 500;
       color: $golden-color;
-      display: inline-flex;     
+      display: inline-flex;
       padding: 12px 24px;
       margin-#{$start-direction}: 13px;
       border-radius: 8px;
@@ -1584,7 +1576,7 @@ select {
       }
     }
   }
-  
+
   .menuActions {
     margin: 0;
     padding: 0px 23px 50px 23px;
@@ -1619,7 +1611,8 @@ select {
         a {
           background-color: rgba(0, 112, 102, 0.2);
           img {
-            filter: invert(69%) sepia(31%) saturate(1524%) hue-rotate(130deg) brightness(69%) contrast(101%);
+            filter: invert(69%) sepia(31%) saturate(1524%) hue-rotate(130deg)
+              brightness(69%) contrast(101%);
           }
           span {
             color: $dark-green;
@@ -1629,32 +1622,31 @@ select {
         }
       }
       &.CloseAction {
-         a {
-          background-color: #BBBBBB;
+        a {
+          background-color: #bbbbbb;
           pointer-events: none;
           text-decoration: none;
-         }
-         .progressSection {
+        }
+        .progressSection {
           span {
-            color: #BBBBBB;
+            color: #bbbbbb;
           }
           .progress {
-            background-color: #BBBBBB;
-           .progress-bar {
-            background-color: #BBBBBB;
+            background-color: #bbbbbb;
+            .progress-bar {
+              background-color: #bbbbbb;
             }
           }
         }
       }
     }
-
   }
-} 
+}
 .backBtn {
   width: 57px;
   height: 52px;
   display: inline-flex;
-  background: #A1A1A1;
+  background: #a1a1a1;
   border-radius: 8px;
   align-items: center;
   justify-content: center;
@@ -1745,7 +1737,6 @@ select {
       }
     }
   }
-
 }
 
 .actionCard {
@@ -1754,7 +1745,7 @@ select {
     width: 44px;
     height: 44px;
     border-radius: 8px;
-    box-shadow: 0 0px 5px rgba(0,0,0,.05);
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.05);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -1791,17 +1782,18 @@ select {
           box-shadow: unset;
           text-decoration: unset;
         }
-         span {
+        span {
           font-size: 24px;
           color: $golden-color;
           font-weight: 500;
-         }
-         img {
-           filter: invert(78%) sepia(18%) saturate(766%) hue-rotate(344deg) brightness(84%) contrast(89%);
-           transition: .4s;
-           transform: rotate(47deg);
-         }
-         &.collapsed {
+        }
+        img {
+          filter: invert(78%) sepia(18%) saturate(766%) hue-rotate(344deg)
+            brightness(84%) contrast(89%);
+          transition: 0.4s;
+          transform: rotate(47deg);
+        }
+        &.collapsed {
           border-bottom: 0px solid #bbbbbb6b;
           padding-bottom: 0px;
           span {
@@ -1813,7 +1805,7 @@ select {
           }
         }
       }
-    } 
+    }
   }
   .card-body {
     padding-top: 0px;
@@ -1821,9 +1813,9 @@ select {
     margin-top: -10px;
     .cardInputs {
       margin-bottom: 24px;
-      .cardTitle22px { 
+      .cardTitle22px {
         padding: 0px 14px;
-        margin-bottom:24px;
+        margin-bottom: 24px;
         font-weight: bold;
       }
       .boxView {
@@ -1831,7 +1823,6 @@ select {
       }
     }
   }
-
 }
 
 .filterSec {
@@ -1894,18 +1885,17 @@ select {
         padding-#{$start-direction}: 41px;
       }
     }
-
   }
   .dateAction {
     display: flex;
     justify-content: space-between;
     padding-top: 24px;
-    .Inputdate ,
+    .Inputdate,
     .dateComp {
       display: flex;
       align-items: center;
       label {
-        padding-#{$end-direction}:42px;
+        padding-#{$end-direction}: 42px;
       }
     }
     .dateComp {
@@ -1918,14 +1908,14 @@ select {
         }
         &:last-of-type {
           label {
-            padding-#{$end-direction}:20px;
+            padding-#{$end-direction}: 20px;
           }
         }
       }
     }
     .actionBtn {
       button {
-        @extend .buttonTwo
+        @extend .buttonTwo;
       }
     }
   }
@@ -1947,11 +1937,10 @@ select {
     border-radius: 8px;
   }
   .tableCardGreen {
-    border-radius: 0 0 8px 8px ;
+    border-radius: 0 0 8px 8px;
   }
 }
 .addMission {
-
   background-color: #fff;
   border-radius: 8px 8px 0 0;
   padding: 24px;
@@ -1972,7 +1961,7 @@ select {
     border-radius: 8px;
     min-height: 78px;
     &::placeholder {
-      color: #BBBBBB;
+      color: #bbbbbb;
     }
   }
   .subHeadTitle24px {
@@ -1989,57 +1978,55 @@ select {
   }
 }
 .tableCardGreen {
-	.table-responsive {
-		border-radius: 8px;
-		margin: 0;
-		border: 1px solid #fff;
-		background: #fff;
-	}
-	.table {
-		thead {
-			th {
-				color: #fff;
+  .table-responsive {
+    border-radius: 8px;
+    margin: 0;
+    border: 1px solid #fff;
+    background: #fff;
+  }
+  .table {
+    thead {
+      th {
+        color: #fff;
         background-color: $dark-green;
-				&:first-of-type {
-					border-radius: 0 10px 0 0;
-				}
-				&:last-of-type {
-					border-radius: 10px 0 0 0;
-				}
-			}
-		}
-	}
-	.table-striped {
-		border: 1px solid #fff;
-		border-spacing: 0;
-		border-collapse: separate;
-		tbody {
-			tr {
-				&:last-of-type {
-					th {
-						border-radius: 0 0 10px 0;
-					}
-					td {
-						&:last-of-type {
-							border-radius: 0 0 0 10px;
-						}
-					}
-				}
-				&:nth-of-type(even) {
-					th {
-						background-color: #f1f0ef;
-					}
-					td {
-						background-color: #f1f0ef;
-					}
-					background-color: unset;
-				}
-			}
-		}
-	}
+        &:first-of-type {
+          border-radius: 0 10px 0 0;
+        }
+        &:last-of-type {
+          border-radius: 10px 0 0 0;
+        }
+      }
+    }
+  }
+  .table-striped {
+    border: 1px solid #fff;
+    border-spacing: 0;
+    border-collapse: separate;
+    tbody {
+      tr {
+        &:last-of-type {
+          th {
+            border-radius: 0 0 10px 0;
+          }
+          td {
+            &:last-of-type {
+              border-radius: 0 0 0 10px;
+            }
+          }
+        }
+        &:nth-of-type(even) {
+          th {
+            background-color: #f1f0ef;
+          }
+          td {
+            background-color: #f1f0ef;
+          }
+          background-color: unset;
+        }
+      }
+    }
+  }
 }
-
-
 
 .AddMissionPopup {
   padding: 0 35px;
@@ -2058,9 +2045,9 @@ select {
       flex-direction: row-reverse;
       justify-content: space-between;
       strong {
-          width: 50px;
-          font-size: 18px;
-          color: #8F8F8F;
+        width: 50px;
+        font-size: 18px;
+        color: #8f8f8f;
       }
       .filepond--root,
       input {
@@ -2073,7 +2060,7 @@ select {
         }
       }
       input {
-        background-color: #F6F6F6;
+        background-color: #f6f6f6;
         height: 35px;
         border-radius: 8px;
         border: unset;
@@ -2083,7 +2070,6 @@ select {
       }
       &:first-of-type {
         .spanCum {
-
           font-size: 20px;
           font-weight: 600;
           color: $dark-green;
@@ -2094,7 +2080,6 @@ select {
           }
         }
       }
-
     }
   }
 
@@ -2105,7 +2090,7 @@ select {
   }
   .actions {
     text-align: center;
-    a ,
+    a,
     button {
       border-radius: 50px;
     }
@@ -2125,7 +2110,7 @@ select {
   }
   .brifeH {
     font-size: 18px;
-    color: #8F8F8F;
+    color: #8f8f8f;
     margin-bottom: 20px;
   }
   .employeeBox {
@@ -2139,7 +2124,7 @@ select {
       }
       span {
         font-size: 16px;
-        color: #1D1D1B;
+        color: #1d1d1b;
       }
     }
   }
@@ -2147,7 +2132,7 @@ select {
     display: flex;
     align-items: center;
     .label {
-      color: #012D29;
+      color: #012d29;
       font-size: 20px;
       margin-bottom: 12px;
       margin-left: 6px;
@@ -2155,10 +2140,10 @@ select {
       width: 100%;
     }
     p {
-      color: #1D1D1B;
+      color: #1d1d1b;
       font-size: 16px;
       margin-bottom: 12px;
-      background: #F6F6F6;
+      background: #f6f6f6;
       width: 87%;
       padding: 12px 24px;
       border-radius: 8px;
@@ -2170,20 +2155,17 @@ select {
     td {
       a {
         font-size: 18px;
-        color: #0071E2;
+        color: #0071e2;
         text-decoration: underline;
         &:hover {
-          color: #0071E2;
+          color: #0071e2;
         }
       }
-
-  
     }
   }
-
 }
 
-.widthMissionPopup  {
+.widthMissionPopup {
   .modal-dialog {
     min-height: calc(100vh - 60px);
     display: flex;
@@ -2212,7 +2194,6 @@ select {
     }
   }
   .dateAction {
-
     .dateComp {
       .Inputdate {
         &:first-of-type {
@@ -2288,7 +2269,7 @@ select {
         content: "";
         width: 16px;
         height: 16px;
-        background-color: #8A8A8A;
+        background-color: #8a8a8a;
         border-radius: 50%;
         #{$start-direction}: -11px;
         bottom: 0;
@@ -2301,7 +2282,7 @@ select {
       }
       .detailsMission {
         padding: 0px 0px 0px;
-  
+
         .subHeadTitle24px {
           background: rgba(0, 112, 102, 0.2);
           display: inline-block;
@@ -2372,7 +2353,6 @@ select {
             }
           }
         }
-
       }
     }
   }
@@ -2408,7 +2388,7 @@ select {
   .addComment,
   .commentSec {
     .CmBox {
-      background: #F6F6F6;
+      background: #f6f6f6;
       padding: 24px;
       border-radius: 8px;
       margin-bottom: 0px;
@@ -2445,13 +2425,12 @@ select {
         }
       }
       .replyBox {
-        text-align:#{$end-direction} ;
+        text-align: #{$end-direction};
       }
     }
   }
 }
 .addComment {
-  
 }
 // 555555555555555
 .radioGroup {
@@ -2475,17 +2454,18 @@ select {
 .form-radio-group label {
   position: relative;
   cursor: pointer;
-    font-size: 16px;
+  font-size: 16px;
   color: $colorBBBBBB;
   margin-bottom: 0;
 }
 
 .form-radio-group label:before {
-  content:'';
+  content: "";
   -webkit-appearance: none;
   background-color: transparent;
   border: 3px solid $colorBBBBBB;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
   padding: 10px;
   display: inline-block;
   position: relative;
@@ -2496,7 +2476,7 @@ select {
 }
 
 .form-radio-group input + label:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 6px;
@@ -2508,18 +2488,14 @@ select {
   transform: rotate(45deg);
 }
 .form-radio-group input:checked + label {
- color: $golden-color;
+  color: $golden-color;
 }
 .form-radio-group input:checked + label::before {
-
   background-color: $golden-color;
-  border: 3px solid  $golden-color;
-
+  border: 3px solid $golden-color;
 }
 .form-radio-group input:checked + label:after {
-
   border-color: #ffffff;
-
 }
 
 /* fixing and adding style */
@@ -2592,7 +2568,6 @@ a.ui-button:active,
   color: #a3a3a3;
 }
 
-
 .addCompany .addText + .actionBtns {
   text-align: center;
 }
@@ -2610,7 +2585,7 @@ a.ui-button:active,
 }
 
 .actionBtns a.SkipBtn span {
-  padding-left: 9px
+  padding-left: 9px;
 }
 
 .validation-summary-errors ul {
@@ -2618,18 +2593,18 @@ a.ui-button:active,
   margin: 0 auto;
   width: 50%;
 
-  padding-top: 20px
+  padding-top: 20px;
 }
 
 .validation-summary-errors ul li {
   position: relative;
   font-size: 18px;
-  color: #D5313A;
+  color: #d5313a;
   margin-bottom: 15px;
 }
 
 .validation-summary-errors ul li::before {
-  content: '';
+  content: "";
   position: absolute;
   right: -40px;
   top: 3px;
@@ -2641,7 +2616,7 @@ a.ui-button:active,
 }
 
 .navbarCustom li a.changeLang {
-  color: #CCA079 !important;
+  color: #cca079 !important;
   font-size: 14px;
 }
 
@@ -2649,8 +2624,8 @@ a.ui-button:active,
   padding-right: 10px;
 }
 .actionBtns .sendBtn {
- background-color: rgba(204, 160, 121, 0.2);
-   min-width: 110px;
+  background-color: rgba(204, 160, 121, 0.2);
+  min-width: 110px;
   height: 47px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -2661,10 +2636,8 @@ a.ui-button:active,
   align-items: center;
   padding: 12px 16px;
   margin-right: 24px;
-
 }
 .actionBtns .sendBtn img {
-  
 }
 .actionBtns .sendBtn span {
   color: #007066;
@@ -2673,43 +2646,51 @@ a.ui-button:active,
   margin-top: -4px;
 }
 
-.ui-datepicker-prev::after, 
-.ui-datepicker-next::after
-{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    z-index: 9999;
-    top: 2px;
-    right: 10px;
-    font-family: "Font Awesome 5 Free";
-    color: #007066;
-    font-size: 20px;
-    cursor: pointer;
+.ui-datepicker-prev::after,
+.ui-datepicker-next::after {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: 9999;
+  top: 2px;
+  right: 10px;
+  font-family: "Font Awesome 5 Free";
+  color: #007066;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .ui-datepicker-prev::after {
-    content: '\f104';
+  content: "\f104";
 }
 .ui-datepicker-next::after {
-    content: '\f105';
-    
+  content: "\f105";
 }
 .ui-datepicker .ui-datepicker-next-hover,
 .ui-datepicker .ui-datepicker-prev-hover {
   background: transparent !important;
   font-weight: 600 !important;
-  border: unset !important
+  border: unset !important;
 }
 .ui-datepicker .ui-datepicker-next-hover {
-    right: 2px !important;
-    top: 2px !important;
+  right: 2px !important;
+  top: 2px !important;
 }
 .ui-datepicker .ui-datepicker-prev-hover {
-    left: 2px !important;
-    top: 2px !important;
-
+  left: 2px !important;
+  top: 2px !important;
 }
- 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .BGRegistration {
+    width: 1400px;
+    margin: 0 auto;
+  }
+  input,
+  textarea {
+    -webkit-appearance: none !important;
+  }
+  input {
+    border: 0 solid transparent;
+  }
+}
 /* end and adding style */
-
