@@ -1672,7 +1672,9 @@ select {
 
 .menuListSide > li > a {
   margin-bottom: 12px;
-  padding: 0 26px;
+  padding: 10px 26px;
+  height: auto;
+  min-height: 51px;
   position: relative;
 }
 

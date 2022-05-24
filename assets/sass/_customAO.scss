@@ -1174,8 +1174,11 @@ select {
       > {
         a {
           @extend .listItem;
+
           margin-bottom: 12px;
-          padding: 0 26px;
+              padding: 10px 26px;
+            height: auto;
+            min-height: 51px;
           position: relative;
           img {
             padding-#{$end-direction}: 8px;
