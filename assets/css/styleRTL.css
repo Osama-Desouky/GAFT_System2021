@@ -363,7 +363,7 @@ input::placeholder {
 }
 
 a:hover {
-  color: #fff;
+  color: #012D29;
 }
 
 .customRadio p {
@@ -450,7 +450,7 @@ select {
   /* Safari and Chrome */
   appearance: none;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 22px;
   color: #bbbbbb;
   position: relative;
   background-image: url(../images/arrow-down.svg);
@@ -1976,7 +1976,7 @@ select {
 .tableCardSystem .table thead th {
   border: 0 solid #dee2e6;
   color: #CCA079;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .tableCardSystem .table thead th:first-of-type {
@@ -2636,6 +2636,7 @@ select {
 .tableCardGreen .table thead th {
   color: #fff;
   background-color: #007066;
+  vertical-align: middle;
 }
 
 .tableCardGreen .table thead th:first-of-type {
@@ -2661,7 +2662,7 @@ select {
 }
 
 .tableCardGreen .table-striped tbody tr:nth-of-type(even) {
-  background-color: unset;
+  background-color: #f1f0ef;
 }
 
 .tableCardGreen .table-striped tbody tr:nth-of-type(even) th {
@@ -3209,9 +3210,56 @@ select {
 }
 
 /* fixing and adding style */
+.historicalStatus > .filterSec.boxView > .searchSec {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.historicalStatus > .filterSec.boxView > .searchSec > .selectBoxSex:nth-of-type(3) {
+  padding-right: 0;
+  padding-top: 20px;
+}
+
+.helpernote {
+  font-size: 12px;
+  color: #012d29cf;
+  display: inline-block;
+  -webkit-transform: translateY(-13px);
+          transform: translateY(-13px);
+}
+
+#div_AssignedMembers {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cardInputs.filesUpload > .boxInputs #btnRejectSharing.deleteAction {
+  min-width: 288px;
+  margin: 0 auto;
+}
+
+.cardInputs.filesUpload > .boxInputs .inputStyle {
+  background-color: #f1f0ef;
+}
+
 textarea {
   min-height: 150px;
   resize: none;
+}
+
+.ui-datepicker .ui-datepicker-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+  background-position: 5px 15px;
+  background-size: 15px;
 }
 
 .modalCustomStyle .customRadio label {

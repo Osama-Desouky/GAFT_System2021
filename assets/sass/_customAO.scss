@@ -83,9 +83,9 @@ input::placeholder {
   margin-bottom: 14px;
 }
 a:hover {
-  color: #fff;
+  color: #012D29;
 }
-.customRadio {
+.customRadio { 
   p {
     margin-bottom: 0;
   }
@@ -161,7 +161,7 @@ select {
   -webkit-appearance: none; /* Safari and Chrome */
   appearance: none;
   font-size: 16px;
-  line-height: 1.2;
+  line-height:22px;
   color: #bbbbbb;
   position: relative;
   background-image: url(../images/arrow-down.svg);
@@ -1448,7 +1448,7 @@ select {
 .tableCardSystem .table thead th {
   border: 0 solid #dee2e6;
   color: $golden-color;
-  font-size: 20px;
+  font-size: 18px;
 }
 .tableCardSystem .table thead th:first-of-type {
   width: 35px;
@@ -1992,6 +1992,7 @@ select {
       th {
         color: #fff;
         background-color: $dark-green;
+        vertical-align: middle;
         &:first-of-type {
           border-radius: 0 10px 0 0;
         }
@@ -2024,7 +2025,7 @@ select {
           td {
             background-color: #f1f0ef;
           }
-          background-color: unset;
+          background-color: #f1f0ef;
         }
       }
     }
@@ -2500,13 +2501,44 @@ select {
 .form-radio-group input:checked + label:after {
   border-color: #ffffff;
 }
-
+ 
 /* fixing and adding style */
+.historicalStatus > .filterSec.boxView > .searchSec {
+  flex-wrap: wrap;
+}
+.historicalStatus > .filterSec.boxView > .searchSec > .selectBoxSex:nth-of-type(3) {
+  padding-right: 0;
+  padding-top: 20px;
+}
+.helpernote {
+  font-size: 12px;
+  color: #012d29cf;
+  display: inline-block;
+  transform: translateY(-13px);
+}
+#div_AssignedMembers {
+  flex-wrap: wrap;
+}
+.cardInputs.filesUpload > .boxInputs #btnRejectSharing.deleteAction  {
+  min-width: 288px;
+    margin: 0 auto;
+}
+.cardInputs.filesUpload > .boxInputs .inputStyle {
+  background-color: #f1f0ef;
+}
 textarea {
   min-height: 150px;
   resize: none;
 }
-
+.ui-datepicker .ui-datepicker-title {
+  display: flex;
+  justify-content: space-between;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+  background-position: 5px 15px;
+  background-size: 15px;
+}
 .modalCustomStyle .customRadio label {
   font-size: 17px;
 }
