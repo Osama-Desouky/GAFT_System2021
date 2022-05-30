@@ -363,7 +363,7 @@ input::placeholder {
 }
 
 a:hover {
-  color: #012D29;
+  color: #012d29;
 }
 
 .customRadio p {
@@ -1671,8 +1671,11 @@ select {
 }
 
 .menuListSide > li > a {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   margin-bottom: 12px;
-  padding: 10px 26px;
+  padding: 12px 26px;
   height: auto;
   min-height: 51px;
   position: relative;
@@ -1681,6 +1684,7 @@ select {
 .menuListSide > li > a img {
   padding-left: 8px;
   max-width: 35px;
+  padding-top: 4px;
 }
 
 .menuListSide > li > a span {
@@ -3140,6 +3144,118 @@ select {
   text-align: left;
 }
 
+.departmentsClass {
+  padding-top: 150px;
+}
+
+.departmentsClass h1,
+.departmentsClass h2 {
+  text-align: center;
+  font-size: 35px;
+  color: #007066;
+  font-weight: bold;
+}
+
+.departmentsClass .wrapperBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 48px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.departmentsClass .wrapperBox .boxDepart {
+  max-width: 388px;
+  width: 100%;
+  background: #fff;
+  padding: 48px 24px 48px 24px;
+  text-align: center;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.departmentsClass .wrapperBox .boxDepart:not(:first-of-type) {
+  margin-right: 30px;
+}
+
+.departmentsClass .wrapperBox .boxDepart img {
+  max-height: 104px;
+}
+
+.departmentsClass .wrapperBox .boxDepart h2 {
+  font-size: 24px;
+  margin: 24px 0 0 0;
+}
+
+.dashboardReview {
+  padding-top: 112px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.dashboardReview .dashBox {
+  min-width: 250px;
+  width: 23.5%;
+  min-height: 160px;
+  background: #fff;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px;
+  margin-bottom: 24px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboardReview .dashBox .logo img {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.dashboardReview .dashBox .dashText {
+  padding-right: 12px;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.dashboardReview .dashBox .dashText h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  color: #007066;
+  margin: 0;
+  word-break: break-word;
+}
+
+.dashboardReview .dashBox .dashText p {
+  font-size: 14px;
+  color: #CCA079;
+  margin: 0;
+  word-break: break-word;
+}
+
 .radioGroup {
   padding: 0px;
 }
@@ -3210,6 +3326,13 @@ select {
 }
 
 /* fixing and adding style */
+table.dataTable thead th,
+table.dataTable thead td,
+table.dataTable tfoot th,
+table.dataTable tfoot td {
+  text-align: right;
+}
+
 .historicalStatus > .filterSec.boxView > .searchSec {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -3522,6 +3645,16 @@ a.ui-button:active,
   .container {
     border: 0px solid green;
   }
+  .temporaryAccount .formCard {
+    width: 100%;
+  }
+  .navbarCustom li a {
+    font-size: 14px;
+  }
+  .navbarCustom .navbar-brand img {
+    height: 90px;
+    width: 200px;
+  }
   .inner-container.inner-container-custom {
     margin-right: 0;
     width: 95%;
@@ -3533,8 +3666,411 @@ a.ui-button:active,
 }
 
 /* ----------- iPad ----------- */
+@media (min-width: 992px) and (max-width: 1025px) {
+  .navbarCustom .navbar-brand img {
+    height: 90px;
+    width: 200px;
+  }
+  .temporaryAccount .formCard {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .layoutLargSide .cardInTab {
+    padding: 25px;
+  }
+  .layoutLargSide .tabParentFromChild li {
+    padding-right: 20px;
+    margin-bottom: 20px;
+  }
+  .layoutLargSide .tabParentFromChild li a {
+    font-size: 18px;
+    min-width: auto;
+    padding: 16px;
+  }
+  .layoutLargSide .tabParentFromChild li a span {
+    font-size: 18px;
+  }
+  .layoutLargSide .menuSystem {
+    margin-bottom: 50px;
+  }
+  .layoutLargSide .missionContent .boxView {
+    padding-bottom: 10px;
+  }
+  .layoutLargSide .filterSec .dateAction .Inputdate label,
+  .layoutLargSide .filterSec .dateAction .dateComp label,
+  .layoutLargSide .filterSec .searchSec .selectBoxSex .selectInput label,
+  .layoutLargSide .filterSec .dateAction .Inputdate,
+  .layoutLargSide .filterSec .dateAction .dateComp,
+  .layoutLargSide .filterSec .searchSec .selectBoxSex,
+  .layoutLargSide .filterSec .searchSec .selectInput,
+  .layoutLargSide .filterSec .searchSec .searchBox,
+  .layoutLargSide .filterSec .dateAction,
+  .layoutLargSide .filterSec .searchSec {
+    display: block;
+    padding: 0 !important;
+    margin-bottom: 10px;
+  }
+  .layoutLargSide .filterSec .searchSec .selectBoxSex .selectInput select {
+    width: 100%;
+  }
+  .inner-container-custom > .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .inner-container-custom > .row > .col-md-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .inner-container-custom > .row > .col-md-9 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .historicalStatus .searchSec .selectBoxSex {
+    padding-right: 0;
+    margin-top: 10px;
+  }
+  .historicalStatus .dateAction .dateComp .Inputdate:first-of-type {
+    margin-bottom: 10px;
+  }
+  .historicalStatus .filterSec .dateAction {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .historicalStatus .filterSec .dateAction .dateComp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .filterSec .dateAction {
+    padding-top: 10px;
+  }
+  .historicalStatusAccordion .card .card-header button > h2 {
+    font-size: 20px;
+  }
+  .historicalStatusAccordion .card .card-header button .statusDateAcc > div span {
+    font-size: 16px;
+  }
+  .tableCardGreen .table-striped {
+    overflow: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbarCustom {
+    height: 100%;
+  }
+  .navbarCustom .navbar-collapse .navbar-nav {
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+  .navbarCustom .navbar-collapse .navbar-nav .notificationA {
+    display: block;
+  }
+  .navbarCustom .navbar-collapse .navbar-nav .notificationA .dropdown-menu {
+    width: 100%;
+  }
+  .navbarCustom .navbar-collapse li.dropdown {
+    padding-right: 0;
+    margin-top: 10px;
+  }
+  .navbarCustom .navbar-brand img {
+    padding: 10px 0;
+  }
+  .BGRegistration {
+    display: block;
+  }
+  .BGRegistration .rightBG {
+    max-width: unset;
+  }
+  .BGRegistration .leftBG {
+    padding-top: 50px;
+    padding-right: 0;
+    margin: 0 auto;
+  }
+  .BGRegistration .leftBG .loginSide {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .temporaryAccount .formCard {
+    width: 100%;
+  }
+  .investigationLayout .stepsSection {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: auto;
+  }
+  .investigationLayout .stepsSection a {
+    margin-bottom: 20px;
+  }
+  .classForPadiingAndHeight.affiliatedCompanies {
+    min-height: unset;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+}
+
 /* ----------- end iPad ----------- */
 /* ----------- mobile ----------- */
+@media (max-width: 767px) {
+  .layoutLargSide .tabsParentSection {
+    margin-bottom: 35px;
+  }
+  .headTitle35px {
+    font-size: 30px;
+  }
+  .subHeadTitle24px, .modalCustomStyle .modal-dialog .modal-title,
+  .paragraph24px {
+    font-size: 20px;
+  }
+  .label {
+    font-size: 18px;
+  }
+  .subParagraph14px, .BGRegistration .leftBG .loginSide .fromClass .forgetPass {
+    font-size: 12px;
+  }
+  h1.cardTitle22px {
+    font-size: 20px;
+  }
+  .mainBtn {
+    width: 130px;
+    height: 45px;
+    font-size: 12px;
+  }
+  .navbarCustom .navbar-brand img {
+    height: 90px;
+    width: 200px;
+  }
+  .navbarCustom > .inner-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .temporaryAccount .formCard .captionSec {
+    display: block;
+  }
+  .temporaryAccount .formCard .captionSec .mainBtn {
+    margin-bottom: 30px;
+  }
+  .investigationLayout .stepsSection {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: auto;
+  }
+  .investigationLayout .stepsSection a {
+    margin-bottom: 20px;
+  }
+  .investigationLayout .stepsSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .investigationLayout .stepsSection a {
+    margin-bottom: 15px;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .addCompany .addText + .actionBtns a.addCompBtn {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .requestPop .boxReq {
+    padding: 0 25px;
+  }
+  .requestPop .boxReq .subHead {
+    font-size: 20px;
+    line-height: normal;
+  }
+  .cardUl li {
+    display: block;
+  }
+  .cardUl li span {
+    min-width: unset;
+    margin-bottom: 15px;
+  }
+  .cardUl li label {
+    min-width: unset;
+    margin-bottom: 15px;
+  }
+  .cardInTab .actionBtns a {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .layoutLargSide .tabParentFromChild li {
+    padding-right: 0;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .layoutLargSide .tabParentFromChild li a {
+    width: 100%;
+    text-align: center;
+  }
+  .layoutLargSide .tabLastChild li a {
+    font-size: 14px;
+    padding: 11px 15px;
+  }
+  .historicalStatus .searchSec .searchBox .inputStyle {
+    min-width: unset;
+  }
+  .historicalStatus .filterSec .searchSec .selectBoxSex {
+    display: block;
+    width: 100%;
+  }
+  .historicalStatus .filterSec .searchSec .selectBoxSex .selectInput:first-of-type {
+    padding-left: 0;
+  }
+  .historicalStatus .filterSec .searchSec .selectBoxSex .selectInput:first-of-type select {
+    min-width: unset;
+    width: 100%;
+  }
+  .historicalStatus .filterSec .searchSec .searchBox {
+    display: block;
+    width: 100%;
+  }
+  .historicalStatus .filterSec .dateAction .Inputdate {
+    display: block;
+    width: 100%;
+  }
+  .historicalStatus .filterSec .dateAction .dateComp {
+    display: block;
+    width: 100%;
+  }
+  .historicalStatus .filterSec label {
+    margin-bottom: 5px;
+  }
+  .historicalStatus .dateAction .dateComp .Inputdate:first-of-type {
+    padding-left: 0;
+  }
+  .filterSec .searchSec .selectInput {
+    display: block;
+    width: 100%;
+  }
+  .layoutLargSide .TabParent {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .layoutLargSide .TabParent li {
+    padding-right: 12px;
+  }
+  .layoutLargSide .TabParent li a {
+    font-size: 16px;
+    padding: 13px 15px;
+  }
+  .historicalStatusAccordion .card .card-body .detailsMission .employeeBox .emBox:first-of-type {
+    margin-left: 10px;
+  }
+  .detailsMission .InputViewGroup {
+    display: block;
+  }
+  .detailsMission .InputViewGroup .label {
+    max-width: unset;
+  }
+  .detailsMission .InputViewGroup p {
+    width: 100%;
+  }
+  .tableCardSystem .table thead th {
+    font-size: 15px;
+    white-space: nowrap;
+  }
+  .tableCardSystem .table tbody td {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .tableCardSystem .table tbody th {
+    font-size: 14px;
+  }
+  .layoutLargSide .tableCardSystem .headingTB h1 {
+    font-size: 18px;
+  }
+  .layoutLargSide .tableCardSystem .headingTB a {
+    height: 40px;
+    padding: 10px 10px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .layoutLargSide .tableCardSystem .headingTB a > span {
+    padding: 0 0;
+    font-size: 12px;
+  }
+  .layoutLargSide .tableCardSystem .headingTB a > img {
+    max-width: 16px;
+  }
+  .actionBtns a.SkipBtn {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .submtBtns > .row > .col-md-6 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  .submtBtns > .row > .col-md-3:last-of-type {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+  }
+  .detailsMission .employeeBox {
+    display: block;
+  }
+  .addMission .form-radio-group {
+    display: block;
+  }
+  .addMission .form-radio-group .label {
+    width: 100%;
+  }
+  .addMission .InputGroup {
+    display: block;
+  }
+  .addMission .InputGroup .label {
+    width: 100%;
+  }
+  .addMissos {
+    min-width: auto;
+    padding: 0 12px;
+    height: 40px;
+  }
+  .addMissos span {
+    font-size: 14px;
+  }
+  .filterSec .searchSec .searchBox .inputStyle {
+    background-position: 98% 14px;
+  }
+  .footer .leftText {
+    margin-top: 13px;
+    width: 100%;
+  }
+  .footer .leftText a {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    display: inline-block;
+  }
+}
+
 /* ----------- end mobile ----------- */
 /* ----------- iPhone ----------- */
 /* ----------- end iPhone ----------- */

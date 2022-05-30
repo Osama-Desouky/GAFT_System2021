@@ -1,0 +1,17 @@
+<svg id="dashLogo1" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <g id="vuesax_linear_user-cirlce-add" data-name="vuesax/linear/user-cirlce-add">
+    <g id="user-cirlce-add">
+      <g id="Group" transform="translate(14.63 18.923)">
+        <path id="Vector" d="M13.113,6.557A6.557,6.557,0,1,1,6.557,0,6.557,6.557,0,0,1,13.113,6.557Z" transform="translate(5.553)" fill="none" stroke="#cca079" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+        <path id="Vector-2" data-name="Vector" d="M24.22,9.87C24.22,4.433,18.807,0,12.11,0S0,4.41,0,9.87" transform="translate(0 18.34)" fill="none" stroke="#cca079" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      </g>
+      <path id="Vector-3" data-name="Vector" d="M44.333,22.167A22.1,22.1,0,1,1,30.8,1.727a9.458,9.458,0,0,0-.467,2.94,9.149,9.149,0,0,0,1.353,4.807A8.6,8.6,0,0,0,33.46,11.6,9.149,9.149,0,0,0,39.667,14a8.6,8.6,0,0,0,2.917-.49A22.318,22.318,0,0,1,44.333,22.167Z" transform="translate(4.667 7)" fill="none" stroke="#cca079" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Vector-4" data-name="Vector" d="M18.667,9.333a8.385,8.385,0,0,1-.28,2.17,8.713,8.713,0,0,1-1.073,2.637,9.1,9.1,0,0,1-5.063,4.037,8.6,8.6,0,0,1-2.917.49,9.149,9.149,0,0,1-6.207-2.4A8.6,8.6,0,0,1,1.353,14.14,9.149,9.149,0,0,1,0,9.333a9.458,9.458,0,0,1,.467-2.94,9.2,9.2,0,0,1,2.17-3.57A9.321,9.321,0,0,1,9.333,0a9.2,9.2,0,0,1,6.93,3.1A9.3,9.3,0,0,1,18.667,9.333Z" transform="translate(35 2.333)" fill="none" stroke="#007066" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <g id="Group-2" data-name="Group" transform="translate(40.857 8.213)">
+        <path id="Vector-5" data-name="Vector" d="M6.953,0H0" transform="translate(0 3.407)" fill="none" stroke="#007066" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+        <path id="Vector-6" data-name="Vector" d="M0,0V6.977" transform="translate(3.477)" fill="none" stroke="#007066" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      </g>
+      <path id="Vector-7" data-name="Vector" d="M0,0H56V56H0Z" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

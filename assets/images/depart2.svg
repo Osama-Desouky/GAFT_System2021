@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104">
+  <g id="depart2" transform="translate(-1374 -464)">
+    <circle id="Ellipse_11764" data-name="Ellipse 11764" cx="52" cy="52" r="52" transform="translate(1374 464)" fill="#007066" opacity="0.1"/>
+    <g id="timer_linear" data-name="timer/linear" transform="translate(1398 488)">
+      <g id="vuesax_linear_timer" data-name="vuesax/linear/timer">
+        <g id="timer">
+          <path id="Vector" d="M40.833,20.417A20.417,20.417,0,1,1,20.417,0,20.424,20.424,0,0,1,40.833,20.417Z" transform="translate(7.583 10.5)" fill="none" stroke="#007066" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+          <path id="Vector-2" data-name="Vector" d="M0,0V11.667" transform="translate(28 18.667)" fill="none" stroke="#cca079" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+          <path id="Vector-3" data-name="Vector" d="M0,0H14" transform="translate(21 4.667)" fill="none" stroke="#cca079" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+          <path id="Vector-4" data-name="Vector" d="M0,0H56V56H0Z" fill="none" opacity="0"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

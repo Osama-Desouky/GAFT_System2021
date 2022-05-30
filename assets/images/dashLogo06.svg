@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="dashLogo06" transform="translate(-2205 323)">
+    <circle id="Ellipse_11765" data-name="Ellipse 11765" cx="40" cy="40" r="40" transform="translate(2205 -323)" fill="#007066" opacity="0.1"/>
+    <g id="eye_shield-search_linear" data-name="eye/shield-search/linear" transform="translate(2217 -311)">
+      <g id="vuesax_linear_shield-search" data-name="vuesax/linear/shield-search">
+        <g id="shield-search">
+          <path id="Vector" d="M40.087,19.956v-8A8.1,8.1,0,0,0,35.21,4.906L23.567.542a11.713,11.713,0,0,0-7.047,0L4.877,4.929A8.1,8.1,0,0,0,0,11.952V29.289a11.344,11.344,0,0,0,4.037,8.027l10.033,7.49a9.833,9.833,0,0,0,5.973,1.867" transform="translate(7.957 4.661)" fill="none" stroke="#007066" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+          <path id="Vector-2" data-name="Vector" d="M18.667,9.333A9.333,9.333,0,1,1,9.333,0,9.333,9.333,0,0,1,18.667,9.333Z" transform="translate(28 28)" fill="none" stroke="#cca079" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+          <path id="Vector-3" data-name="Vector" d="M0,0H56V56H0Z" transform="translate(56 56) rotate(180)" fill="none" opacity="0"/>
+          <path id="Vector-4" data-name="Vector" d="M.5.5H.516" transform="translate(48.494 48.5)" fill="none" stroke="#cca079" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

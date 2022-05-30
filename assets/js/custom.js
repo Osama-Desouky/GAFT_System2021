@@ -67,6 +67,12 @@ $( document ).ready(function() {
      $(this).attr('aria-valuenow', percentageValue).css('width', percentageValue+'%');
     })
 
+    // toggle show / hid password
+    $(".toggle-password").click(function() {
+      let shown = $(this).toggleClass('shown')
+      shown.hasClass('shown') ?  $(this).attr('src', '../assets/images/showPassword.svg') :  $(this).attr('src', '../assets/images/eye-off-2.svg');
+    });
+    
 });
 
 

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="dashLogo03" transform="translate(-2205 323)">
+    <circle id="Ellipse_11765" data-name="Ellipse 11765" cx="40" cy="40" r="40" transform="translate(2205 -323)" fill="#007066" opacity="0.1"/>
+    <g id="buildings-2_linear" data-name="buildings-2/linear" transform="translate(2217 -311)">
+      <g id="vuesax_linear_buildings-2" data-name="vuesax/linear/buildings-2">
+        <g id="buildings-2">
+          <path id="Vector" d="M10.967,37.333H5.017C1.68,37.333,0,35.653,0,32.317V5.017C0,1.68,1.68,0,5.017,0H15.05c3.337,0,5.017,1.68,5.017,5.017V9.333" transform="translate(4.667 4.667)" fill="none" stroke="#cca079" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+          <path id="Vector-2" data-name="Vector" d="M0,9.333V5.017C0,1.68,1.68,0,5.017,0H15.05c3.337,0,5.017,1.68,5.017,5.017v27.3c0,3.337-1.68,5.017-5.017,5.017H9.263" transform="translate(31.267 4.667)" fill="none" stroke="#cca079" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+          <path id="Vector-3" data-name="Vector" d="M0,0H56V56H0Z" fill="none" opacity="0"/>
+          <path id="Vector-4" data-name="Vector" d="M24.9,5.647v26.04c0,3.757-1.867,5.647-5.623,5.647H5.647C1.89,37.333,0,35.443,0,31.687V5.647C0,1.89,1.89,0,5.647,0H19.273C23.03,0,24.9,1.89,24.9,5.647Z" transform="translate(15.633 14)" fill="none" stroke="#007066" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+          <path id="Vector-5" data-name="Vector" d="M0,0H9.333" transform="translate(23.333 25.667)" fill="none" stroke="#007066" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+          <path id="Vector-6" data-name="Vector" d="M0,0H9.333" transform="translate(23.333 32.667)" fill="none" stroke="#007066" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+          <path id="Vector-7" data-name="Vector" d="M0,7V0" transform="translate(28 44.333)" fill="none" stroke="#007066" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

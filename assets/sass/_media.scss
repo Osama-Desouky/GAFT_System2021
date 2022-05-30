@@ -1,8 +1,8 @@
 @media (min-width: 1400px) {
   .inner-container {
     max-width: 1340px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-#{$end-direction}: 0;
+    padding-#{$start-direction}: 0;
   }
 }
 
@@ -10,36 +10,35 @@
   .inner-container {
     max-width: 1640px;
     margin: 0 auto;
-  } 
+  }
 }
-@media (min-width: 1400px) and (max-width:1701px) {
 
-    .inner-container.inner-container-custom {
-      margin-right: 0;
-      max-width: 1440px;
-      > {
-        .row {
-          margin-right: -15px;
-          margin-left: 0;
-        }
+@media (min-width: 1400px) and (max-width: 1701px) {
+  .inner-container.inner-container-custom {
+    margin-#{$start-direction}: 0;
+    max-width: 1440px;
+
+    > {
+      .row {
+        margin-#{$start-direction}: -15px;
+        margin-#{$end-direction}: 0;
       }
     }
-  
+  }
 }
-@media (min-width: 1700px) and (max-width:2000px) {
 
-    .inner-container.inner-container-custom {
-      margin-right: 0;
-      max-width: 1750px;
-      > {
-        .row {
-          margin-right: -15px;
-          margin-left: 0;
-        }
+@media (min-width: 1700px) and (max-width: 2000px) {
+  .inner-container.inner-container-custom {
+    margin-#{$start-direction}: 0;
+    max-width: 1750px;
+
+    > {
+      .row {
+        margin-#{$start-direction}: -15px;
+        margin-#{$end-direction}: 0;
       }
     }
-
-  
+  }
 }
 
 /* ----------- fixing global issue ----------- */
@@ -47,33 +46,33 @@
   .container {
     // border: 1px solid red;
   }
+
   .navbarCustom li a {
     font-size: 13px;
   }
+
   //   .BGRegistration .rightBG .boxReq {
   //       margin: 110px 70px 30px;
   //   }
   .BGRegistration .leftBG {
-    padding-right: 82px;
+    padding-#{$start-direction}: 82px;
   }
-
 }
 
 @media (min-width: 1401px) and (max-width: 1700px) {
-
   .navbarCustom li.dropdown a.nav-link {
-      width: 190px;
-      // border: 1px solid red
+    width: 190px;
+    // border: 1px solid red
   }
 
   .navbarCustom .navbar-brand img {
-      height: 65px;
-      width: 250px;
+    height: 65px;
+    width: 250px;
   }
 
   .navbarCustom li a {
-      font-size: 12px;
-      padding-right: 10px !important;
+    font-size: 12px;
+    padding-#{$start-direction}: 10px !important;
   }
 }
 
@@ -84,30 +83,576 @@
     border: 0px solid green;
   }
 
-     .inner-container.inner-container-custom {
-      margin-right: 0;
-      // max-width: 1395px;
-      width: 95%;
-      > {
-        .row {
-          margin-right: -30px;
-          margin-left: 0;
-        }
+  .temporaryAccount {
+    .formCard {
+      width: 100%;
+    }
+  }
+  .navbarCustom {
+    li {
+      a {
+        font-size: 14px;
       }
     }
+    .navbar-brand {
+      img {
+        height: 90px;
+        width: 200px;
+      }
+    }
+  }
+  .inner-container.inner-container-custom {
+    margin-#{$start-direction}: 0;
+    // max-width: 1395px;
+    width: 95%;
 
-  
+    > {
+      .row {
+        margin-#{$start-direction}: -30px;
+        margin-#{$end-direction}: 0;
+      }
+    }
+  }
 }
+
 /* ----------- iPad ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
 }
-@media (max-width: 992px) {
+// fixing issue of menu
+@media (min-width: 992px) and (max-width: 1025px) {
+  .navbarCustom {
+    .navbar-brand {
+      img {
+        height: 90px;
+        width: 200px;
+      }
+    }
+  }
+  .temporaryAccount {
+    .formCard {
+      width: 100%;
+    }
+  }
 }
+// fixing issue of side bar
+@media (max-width: 1250px) {
+  .layoutLargSide {
+    .cardInTab {
+      padding: 25px;
+    }
+    .tabParentFromChild {
+      li {
+        a {
+          font-size: 18px;
+          min-width: auto;
+          padding: 16px;
+          span {
+            font-size: 18px;
+          }
+        }
+        padding-#{$start-direction}: 20px;
+        margin-bottom: 20px;
+      }
+    }
+    // .TabParent {
+    //   width: 100%;
+    // }
+    .menuSystem {
+      margin-bottom: 50px;
+    }
+    .missionContent .boxView {
+      padding-bottom: 10px;
+    }
+    .filterSec .dateAction .Inputdate label,
+    .filterSec .dateAction .dateComp label,
+    .filterSec .searchSec .selectBoxSex .selectInput label,
+    .filterSec .dateAction .Inputdate,
+    .filterSec .dateAction .dateComp,
+    .filterSec .searchSec .selectBoxSex,
+    .filterSec .searchSec .selectInput,
+    .filterSec .searchSec .searchBox,
+    .filterSec .dateAction,
+    .filterSec .searchSec {
+      display: block;
+      padding: 0 !important;
+      margin-bottom: 10px;
+    }
+    .filterSec .searchSec .selectBoxSex .selectInput select {
+      width: 100%;
+    }
+  }
+
+  .inner-container-custom {
+    > .row {
+      flex-direction: column-reverse;
+      > .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      > .col-md-9 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  .historicalStatus {
+    .searchSec {
+      .selectBoxSex {
+        padding-#{$start-direction}: 0;
+        margin-top: 10px;
+      }
+    }
+    .dateAction {
+      .dateComp {
+        .Inputdate {
+          &:first-of-type {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    .filterSec {
+      .dateAction {
+        .dateComp {
+          flex-direction: column;
+          align-items: start;
+        }
+        flex-direction: column;
+        align-items: start;
+      }
+    }
+  }
+  .filterSec {
+    .dateAction {
+      padding-top: 10px;
+    }
+  }
+  .historicalStatusAccordion {
+    .card {
+      .card-header {
+        button {
+          > h2 {
+            font-size: 20px;
+          }
+          .statusDateAcc {
+            > div {
+              span {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .tableCardGreen {
+    .table-striped {
+      overflow: auto;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .navbarCustom {
+    height: 100%;
+    .navbar-collapse {
+      .navbar-nav {
+        padding-#{$start-direction}: 0;
+        padding-bottom: 20px;
+        .notificationA {
+          display: block;
+          .dropdown-menu {
+            width: 100%;
+          }
+        }
+      }
+      li {
+        &.dropdown {
+          padding-#{$start-direction}: 0;
+          margin-top: 10px;
+        }
+      }
+    }
+    .navbar-brand {
+      img {
+        padding: 10px 0;
+      }
+    }
+  }
+  .BGRegistration {
+    display: block;
+    .rightBG {
+      max-width: unset;
+    }
+    .leftBG {
+      padding-top: 50px;
+      padding-#{$start-direction}: 0;
+      margin: 0 auto;
+      .loginSide {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .temporaryAccount {
+    .formCard {
+      width: 100%;
+    }
+  }
+  .investigationLayout {
+    .stepsSection {
+      flex-wrap: wrap;
+      height: auto;
+      a {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .classForPadiingAndHeight.affiliatedCompanies {
+    min-height: unset;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+}
+
 /* ----------- end iPad ----------- */
 
 /* ----------- mobile ----------- */
 @media (max-width: 767px) {
+  .layoutLargSide {
+    .tabsParentSection {
+      margin-bottom: 35px;
+    }
+  }
+
+  .headTitle35px {
+    font-size: 30px;
+  }
+  .subHeadTitle24px,
+  .paragraph24px {
+    font-size: 20px;
+  }
+  .label {
+    font-size: 18px;
+  }
+  .subParagraph14px {
+    font-size: 12px;
+  }
+  h1.cardTitle22px {
+    font-size: 20px;
+  }
+  .mainBtn {
+    width: 130px;
+    height: 45px;
+    font-size: 12px;
+  }
+  .navbarCustom .navbar-brand img {
+    height: 90px;
+    width: 200px;
+  }
+  .navbarCustom {
+    > .inner-container {
+      padding-#{$end-direction}: 15px;
+      padding-#{$start-direction}: 15px;
+    }
+  }
+  .temporaryAccount {
+    .formCard {
+      .captionSec {
+        display: block;
+        .mainBtn {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+  .investigationLayout {
+    .stepsSection {
+      flex-wrap: wrap;
+      height: auto;
+      a {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .investigationLayout {
+    .stepsSection {
+      flex-direction: column;
+      align-items: start;
+      a {
+        margin-bottom: 15px;
+        transform: scale(0.9);
+      }
+    }
+  }
+  .addCompany {
+    .addText {
+      + {
+        .actionBtns {
+          a.addCompBtn {
+            transform: scale(0.9);
+          }
+        }
+      }
+    }
+  }
+  .requestPop {
+    .boxReq {
+      padding: 0 25px;
+      .subHead {
+        font-size: 20px;
+        line-height: normal;
+      }
+    }
+  }
+  .cardUl {
+    li {
+      display: block;
+      span {
+        min-width: unset;
+        margin-bottom: 15px;
+      }
+      label {
+        min-width: unset;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .cardInTab {
+    .actionBtns {
+      a {
+        width: 100%;
+        margin: 0 0 10px 0;
+      }
+    }
+  }
+  .layoutLargSide {
+    .tabParentFromChild {
+      li {
+        padding-#{$start-direction}: 0;
+        margin-bottom: 10px;
+        width: 100%;
+        a {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+    .tabLastChild {
+      li {
+        a {
+          font-size: 14px;
+          padding: 11px 15px;
+        }
+      }
+    }
+  }
+  .historicalStatus {
+    .searchSec {
+      .searchBox {
+        .inputStyle {
+          min-width: unset;
+        }
+      }
+    }
+    .filterSec {
+      .searchSec {
+        .selectBoxSex {
+          .selectInput {
+            &:first-of-type {
+              padding-#{$end-direction}: 0;
+              select {
+                min-width: unset;
+                width: 100%;
+              }
+            }
+          }
+          display: block;
+          width: 100%;
+        }
+        .searchBox {
+          display: block;
+          width: 100%;
+        }
+      }
+      .dateAction {
+        .Inputdate {
+          display: block;
+          width: 100%;
+        }
+        .dateComp {
+          display: block;
+          width: 100%;
+        }
+      }
+      label {
+        margin-bottom: 5px;
+      }
+    }
+    .dateAction {
+      .dateComp {
+        .Inputdate {
+          &:first-of-type {
+            padding-#{$end-direction}: 0;
+          }
+        }
+      }
+    }
+  }
+  .filterSec {
+    .searchSec {
+      .selectInput {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  .layoutLargSide {
+    .TabParent {
+      li {
+        a {
+          font-size: 16px;
+          padding: 13px 15px;
+        }
+        padding-#{$start-direction}: 12px;
+      }
+      width: fit-content;
+      justify-content: center;
+    }
+  }
+  .historicalStatusAccordion {
+    .card {
+      .card-body {
+        .detailsMission {
+          .employeeBox {
+            .emBox {
+              &:first-of-type {
+                margin-#{$end-direction}: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .detailsMission {
+    .InputViewGroup {
+      display: block;
+      .label {
+        max-width: unset;
+      }
+      p {
+        width: 100%;
+      }
+    }
+  }
+  .tableCardSystem {
+    .table {
+      thead {
+        th {
+          font-size: 15px;
+          white-space: nowrap;
+        }
+      }
+      tbody {
+        td {
+          font-size: 14px;
+          white-space: nowrap;
+        }
+        th {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .layoutLargSide {
+    .tableCardSystem {
+      .headingTB {
+        h1 {
+          font-size: 18px;
+        }
+        a {
+          height: 40px;
+          padding: 10px 10px;
+          justify-content: space-around;
+          > span {
+            padding: 0 0;
+            font-size: 12px;
+          }
+          > img {
+            max-width: 16px;
+          }
+        }
+      }
+    }
+  }
+  .actionBtns {
+    a.SkipBtn {
+      transform: scale(0.9);
+    }
+  }
+  .submtBtns {
+    > .row {
+      > .col-md-6 {
+        order: 3;
+        transform: translateY(-30px);
+      }
+      > .col-md-3 {
+        &:last-of-type {
+          transform: translateY(-45px);
+        }
+      }
+    }
+  }
+  .detailsMission {
+    .employeeBox {
+      display: block;
+    }
+  }
+  .addMission {
+    .form-radio-group {
+      display: block;
+      .label {
+        width: 100%;
+      }
+    }
+    .InputGroup {
+      display: block;
+      .label {
+        width: 100%;
+      }
+    }
+  }
+  .addMissos {
+    min-width: auto;
+    padding: 0 12px;
+    height: 40px;
+    span {
+      font-size: 14px;
+    }
+  }
+  .filterSec {
+    .searchSec {
+      .searchBox {
+        .inputStyle {
+          background-position: 98% 14px;
+        }
+      }
+    }
+  }
+  
+  .footer {
+    .leftText {
+      margin-top: 13px;
+      width: 100%;
+      a {
+        transform: scale(0.9);
+        display: inline-block;
+      }
+    }
+  }
 }
+
 /* ----------- end mobile ----------- */
 /* ----------- iPhone ----------- */
 @media (max-width: 374px) {
