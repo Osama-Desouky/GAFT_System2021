@@ -2589,6 +2589,9 @@ select {
 }
 
 /* fixing and adding style */
+.navbarCustom li.dropdown {
+  height: 100%;
+}
 table.dataTable thead th,
 table.dataTable thead td,
 table.dataTable tfoot th,
