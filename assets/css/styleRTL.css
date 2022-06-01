@@ -5,6 +5,10 @@ font-family: "DINMedium";
 font-family: "DINRegular";
 
 */
+div .greenBg {
+  background-color: #007066;
+}
+
 .headTitle35px {
   font-size: 35px;
   color: #CCA079;
@@ -91,6 +95,10 @@ font-family: "DINRegular";
   color: #fff;
   font-size: 16px;
   border-radius: 50px;
+}
+
+.mainBtn:hover {
+  color: #fff;
 }
 
 .buttonTwo, .filterSec .dateAction .actionBtn button {
@@ -251,6 +259,10 @@ ol li {
 body {
   font-family: "DINRegular";
   background-color: #f1f1f1;
+}
+
+.dropdown-divider {
+  border-top: 1px solid #e9ecefa3;
 }
 
 .ms-webpart-zone,
@@ -531,7 +543,7 @@ select {
 }
 
 .navbarCustom li.dropdown a.nav-link {
-  background-color: #cca0794a;
+  background-color: rgba(0, 112, 102, 0.2);
   border-radius: 50px;
   color: #CCA079 !important;
   padding: 8px 24px 11px 18px !important;
@@ -544,6 +556,15 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.navbarCustom li.dropdown a.nav-link span {
+  color: #007066;
+  font-weight: 400;
+}
+
+.navbarCustom li.dropdown a.nav-link i {
+  color: #007066;
 }
 
 .navbarCustom li.dropdown a.nav-link i:first-of-type {
@@ -562,9 +583,27 @@ select {
   content: unset;
 }
 
+.navbarCustom li.dropdown .dropdown-menu {
+  border: unset;
+  padding: 21px 24px;
+  border-radius: 8px;
+  -webkit-box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.1);
+          box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.1);
+  right: 25px;
+  min-width: 261px;
+  top: 60px;
+}
+
 .navbarCustom li.dropdown .dropdown-menu .dropdown-item {
   text-align: right;
   font-size: 16px;
+  color: #007066 !important;
+  padding: 0 0 10px 0 !important;
+}
+
+.navbarCustom li.dropdown .dropdown-menu .dropdown-item img {
+  max-width: 24px;
+  margin-left: 12px;
 }
 
 .navbarCustom li.dropdown .dropdown-menu .dropdown-item:hover {
@@ -573,6 +612,11 @@ select {
 
 .navbarCustom li.dropdown .dropdown-menu .dropdown-item:active {
   background-color: unset;
+}
+
+.navbarCustom li.dropdown .dropdown-menu .dropdown-divider + .dropdown-item {
+  color: #012D29 !important;
+  padding: 0 !important;
 }
 
 .navbarCustom li .notificationA button {
@@ -3254,6 +3298,76 @@ select {
   color: #CCA079;
   margin: 0;
   word-break: break-word;
+}
+
+.wrapper404 {
+  padding-bottom: 250px;
+}
+
+.wrapper404 .boxCenter {
+  background: #fff;
+  border-radius: 8px;
+  width: 75%;
+  margin: 63px auto 0 auto;
+  padding: 31px 24px 24px;
+  text-align: center;
+  -webkit-box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper404 .boxCenter.for404Just {
+  padding-top: 0;
+}
+
+.wrapper404 .boxCenter > img {
+  max-height: 480px;
+}
+
+.wrapper404 .boxCenter > img:last-of-type {
+  width: 100%;
+  margin-top: 72px;
+}
+
+.wrapper404 .boxCenter .textHind {
+  padding: 24px 0 48px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper404 .boxCenter .textHind p {
+  font-size: 30px;
+  text-transform: capitalize;
+  color: #CCA079;
+  width: 47%;
+}
+
+.wrapper404 .boxCenter .textHind p:first-of-type {
+  text-align: right;
+}
+
+.wrapper404 .boxCenter .textHind p:last-of-type {
+  text-align: left;
+}
+
+.wrapper404 .boxCenter .actinSectio {
+  margin-bottom: 25px;
+}
+
+.wrapper404 .boxCenter .actinSectio a {
+  width: auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0 24px;
+  min-width: 205px;
+}
+
+.wrapper404 .boxCenter .actinSectio a.greenBg {
+  margin-left: 24px;
 }
 
 .radioGroup {

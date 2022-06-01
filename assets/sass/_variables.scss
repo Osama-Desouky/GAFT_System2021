@@ -24,7 +24,9 @@ font-family: "DINMedium";
 font-family: "DINRegular";
 
 */
-
+div .greenBg {
+  background-color: $dark-green;
+}
 .headTitle35px {
     font-size: 35px;
     // font-family: "DINMedium";
@@ -87,6 +89,9 @@ font-family: "DINRegular";
   }
 }
 .mainBtn {
+  &:hover {
+    color: #fff;
+  }
   width: 160px;
   height: 52px;
   display: flex;
