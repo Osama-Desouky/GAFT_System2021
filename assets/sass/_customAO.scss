@@ -1582,6 +1582,69 @@ select {
     }
   }
 }
+.progressSectionV2 {
+  .progress {
+    overflow: unset;
+    height: 10px;
+    margin-top: 5px;
+    background-color: #fff;
+    border-radius: 8px;
+    .progress-bar {
+      background-color: $dark-green;
+      border-radius: 8px;
+       overflow: unset;
+       position: relative;
+       span {
+     
+        position: absolute;
+        content: "";
+        width: auto;
+        height: auto;
+        top: -50px;
+        background:$golden-color;
+        z-index: 999999999999;
+        padding: 6px 10px 10px 10px;
+        #{$end-direction}: -56px;
+        display: inline-flex;
+        min-height: 32px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        font-size: 14px;
+        color: #fff;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+        width: 110px;
+        &::before,
+        &::after {
+          position: absolute;
+          content: "";
+        }
+        &::before {
+          bottom: -38px;
+          background-image: url(../images/btnProg.svg);
+          width: 30px;
+          height: 30px;
+          #{$end-direction}: 35px;
+        }
+        &::after {
+          bottom: -10px;
+          #{$end-direction}: 44px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 10px 10px 0 10px;
+          border-color: $golden-color transparent transparent transparent;
+        }
+       }
+    }
+
+  }
+  span {
+    &:last-of-type {
+      padding-right: 10px;
+    }
+  }
+}
 
 .menuSystem {
   min-height: 976px;
@@ -1676,6 +1739,30 @@ select {
     }
   }
 }
+
+.menuSystem {
+  .menuActions {
+    .progressSectionV2 {
+      padding: 25px 0 0;
+      .progress {
+        height: 8px ;
+        .progress-bar-custom {
+          span {
+            transform: scale(.7);
+            top: -41px;
+          }
+        }
+      }
+      span {
+        font-size: 14px;
+        font-weight: normal;
+      }
+    }
+  }
+
+
+}
+
 .backBtn {
   width: 57px;
   height: 52px;
