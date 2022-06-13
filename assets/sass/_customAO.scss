@@ -1584,6 +1584,19 @@ select {
 }
 .progressSectionV2 {
   .progress {
+    &:hover {
+      .progress-bar  {
+        span {
+          strong {
+            visibility: visible;
+          }
+          &::after {
+            visibility: visible;
+          }
+
+        }
+      }
+    }
     overflow: unset;
     height: 10px;
     margin-top: 5px;
@@ -1601,26 +1614,38 @@ select {
         width: auto;
         height: auto;
         top: -50px;
-        background:$golden-color;
+    
         z-index: 999999999999;
-        padding: 6px 10px 10px 10px;
+       
         #{$end-direction}: -56px;
         display: inline-flex;
-        min-height: 32px;
+      
         align-items: center;
         justify-content: center;
-        border-radius: 25px;
+        
         font-size: 14px;
         color: #fff;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+      
         width: 110px;
+        min-height: 32px;
+        padding: 0;
+        strong {
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+          background:$golden-color;
+          padding: 6px 10px 10px 10px;
+          visibility: hidden;
+          min-height: 32px;
+          display: inline-flex;
+          align-items: center;
+          border-radius: 25px;
+        }
         &::before,
         &::after {
           position: absolute;
           content: "";
         }
         &::before {
-          bottom: -38px;
+          bottom: -36px;
           background-image: url(../images/btnProg.svg);
           width: 30px;
           height: 30px;
@@ -1634,17 +1659,52 @@ select {
           border-style: solid;
           border-width: 10px 10px 0 10px;
           border-color: $golden-color transparent transparent transparent;
+          visibility: hidden;
         }
+
        }
     }
 
   }
   span {
     &:last-of-type {
-      padding-right: 10px;
+      padding-right: 15px;
     }
   }
 }
+.progressSectionV2 .progress .progress-bar.prog80 {
+  background-color: #f07f30;
+}
+.progressSectionV2 .progress .progress-bar.prog100 {
+  background-color: #e53232;
+}
+
+
+
+.paginationCm {
+	padding: 0;
+  justify-content: center;
+	li {
+		width: 30px;
+		height: 30px;
+		border: 1px solid #f1f1f1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 5px;
+		margin: 0 5px;
+		a {
+			color: #757575;
+      font-size: 16px;
+		}
+		a.active {
+			color: #2f8a82;
+		}
+	}
+}
+
+
+
 
 .menuSystem {
   min-height: 976px;
@@ -1743,14 +1803,18 @@ select {
 .menuSystem {
   .menuActions {
     .progressSectionV2 {
-      padding: 25px 0 0;
+      // padding: 25px 0 0;
       .progress {
         height: 8px ;
         .progress-bar-custom {
           span {
             transform: scale(.7);
             top: -41px;
+            &::before {
+              bottom: -38px;
+            }
           }
+   
         }
       }
       span {

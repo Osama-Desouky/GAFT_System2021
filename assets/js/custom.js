@@ -64,6 +64,12 @@ $( document ).ready(function() {
 
     //  console.log(minValue,maxValue);
     //  console.log(percentageValue);
+
+     if(percentageValue >= 80 && percentageValue <= 99.9) {
+      $(this).addClass('prog80')
+     }else if(percentageValue >= 100) {
+      $(this).removeClass('prog80').addClass('prog100')
+     }
      $(this).attr('aria-valuenow', percentageValue).css('width', percentageValue+'%');
     })
 

@@ -2151,6 +2151,14 @@ select {
   border-radius: 8px;
 }
 
+.progressSectionV2 .progress:hover .progress-bar span strong {
+  visibility: visible;
+}
+
+.progressSectionV2 .progress:hover .progress-bar span::after {
+  visibility: visible;
+}
+
 .progressSectionV2 .progress .progress-bar {
   background-color: #007066;
   border-radius: 8px;
@@ -2164,26 +2172,38 @@ select {
   width: auto;
   height: auto;
   top: -50px;
-  background: #CCA079;
   z-index: 999999999999;
-  padding: 6px 10px 10px 10px;
   left: -56px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-height: 32px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 25px;
   font-size: 14px;
   color: #fff;
+  width: 110px;
+  min-height: 32px;
+  padding: 0;
+}
+
+.progressSectionV2 .progress .progress-bar span strong {
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
-  width: 110px;
+  background: #CCA079;
+  padding: 6px 10px 10px 10px;
+  visibility: hidden;
+  min-height: 32px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
 }
 
 .progressSectionV2 .progress .progress-bar span::before, .progressSectionV2 .progress .progress-bar span::after {
@@ -2192,7 +2212,7 @@ select {
 }
 
 .progressSectionV2 .progress .progress-bar span::before {
-  bottom: -38px;
+  bottom: -36px;
   background-image: url(../images/btnProg.svg);
   width: 30px;
   height: 30px;
@@ -2207,10 +2227,52 @@ select {
   border-style: solid;
   border-width: 10px 10px 0 10px;
   border-color: #CCA079 transparent transparent transparent;
+  visibility: hidden;
 }
 
 .progressSectionV2 span:last-of-type {
-  padding-right: 10px;
+  padding-right: 15px;
+}
+
+.progressSectionV2 .progress .progress-bar.prog80 {
+  background-color: #f07f30;
+}
+
+.progressSectionV2 .progress .progress-bar.prog100 {
+  background-color: #e53232;
+}
+
+.paginationCm {
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.paginationCm li {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.paginationCm li a {
+  color: #757575;
+  font-size: 16px;
+}
+
+.paginationCm li a.active {
+  color: #2f8a82;
 }
 
 .menuSystem {
@@ -2326,10 +2388,6 @@ select {
   background-color: #bbbbbb;
 }
 
-.menuSystem .menuActions .progressSectionV2 {
-  padding: 25px 0 0;
-}
-
 .menuSystem .menuActions .progressSectionV2 .progress {
   height: 8px;
 }
@@ -2338,6 +2396,10 @@ select {
   -webkit-transform: scale(0.7);
           transform: scale(0.7);
   top: -41px;
+}
+
+.menuSystem .menuActions .progressSectionV2 .progress .progress-bar-custom span::before {
+  bottom: -38px;
 }
 
 .menuSystem .menuActions .progressSectionV2 span {
