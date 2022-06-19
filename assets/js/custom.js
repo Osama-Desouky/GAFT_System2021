@@ -21,7 +21,8 @@ $( document ).ready(function() {
     
     // AO show and hide password 
     $(".toggle-password").click(function() {
-        var input = $($(this).attr("toggle"));
+        // var input = $($(this).attr("toggle"));
+        let input = $(".InputGroupPass .inputStyle")
         if (input.attr("type") == "password") {
           input.attr("type", "text");
         } else {

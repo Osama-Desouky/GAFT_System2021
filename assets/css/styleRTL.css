@@ -19,7 +19,7 @@ div .greenBg {
   color: #007066;
 }
 
-.cardLabel18px, .investigationLayout .cardInputs .boxInputs .label, .filesUpload .hintLast {
+.cardLabel18px, .investigationLayout .cardInputs .boxInputs .label, .investigationLayout .cardInputs .boxInputs .forgetPassword .loginSide .sentEm, .forgetPassword .loginSide .investigationLayout .cardInputs .boxInputs .sentEm, .filesUpload .hintLast {
   font-size: 18px;
   color: #012D29;
 }
@@ -42,7 +42,7 @@ div .greenBg {
   line-height: 1.8;
 }
 
-.label {
+.label, .forgetPassword .loginSide .sentEm {
   color: #BBBBBB;
   font-size: 14px;
 }
@@ -342,7 +342,7 @@ input::placeholder {
   font-size: 16px;
 }
 
-.label {
+.label, .forgetPassword .loginSide .sentEm {
   color: #012D29;
   font-size: 20px;
   margin-bottom: 12px;
@@ -628,7 +628,7 @@ select {
 }
 
 .navbarCustom li .notificationA .dropdown-menu {
-  width: 261px;
+  width: 330px;
   right: 0;
   top: 51px;
   border-radius: 0px 0px 8px 8px;
@@ -642,10 +642,18 @@ select {
   padding: 7px 12px !important;
   text-align: center;
   border-bottom: 1px solid #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
 }
 
 .navbarCustom li .notificationA .dropdown-menu .dropdown-item span {
   color: #007066;
+  white-space: pre-line;
 }
 
 .navbarCustom li .notificationA .dropdown-menu .dropdown-item img {
@@ -931,6 +939,7 @@ select {
 
 .temporaryAccount {
   background-color: #007066;
+  min-height: calc(100vh - 261px);
   position: relative;
 }
 
@@ -972,7 +981,7 @@ select {
   text-align: center;
 }
 
-.temporaryAccount .formCard .label {
+.temporaryAccount .formCard .label, .temporaryAccount .formCard .forgetPassword .loginSide .sentEm, .forgetPassword .loginSide .temporaryAccount .formCard .sentEm {
   font-size: 18px;
 }
 
@@ -1243,7 +1252,7 @@ select {
   background: #f6f6f6;
 }
 
-.investigationLayout .cardInputs .boxInputs .label span {
+.investigationLayout .cardInputs .boxInputs .label span, .investigationLayout .cardInputs .boxInputs .forgetPassword .loginSide .sentEm span, .forgetPassword .loginSide .investigationLayout .cardInputs .boxInputs .sentEm span {
   color: #CCA079;
 }
 
@@ -1260,7 +1269,7 @@ select {
   padding-left: 48px;
 }
 
-.investigationLayout .cardInputs .boxInputs .customRadio p.label {
+.investigationLayout .cardInputs .boxInputs .customRadio p.label, .investigationLayout .cardInputs .boxInputs .customRadio .forgetPassword .loginSide p.sentEm, .forgetPassword .loginSide .investigationLayout .cardInputs .boxInputs .customRadio p.sentEm {
   width: 100%;
   margin-bottom: 12px;
   padding-left: 0px;
@@ -1325,7 +1334,7 @@ select {
           transform: scale(0.6);
 }
 
-.filesUpload .cardLabel18px, .filesUpload .investigationLayout .cardInputs .boxInputs .label, .investigationLayout .cardInputs .boxInputs .filesUpload .label, .filesUpload .hintLast {
+.filesUpload .cardLabel18px, .filesUpload .investigationLayout .cardInputs .boxInputs .label, .investigationLayout .cardInputs .boxInputs .filesUpload .label, .filesUpload .investigationLayout .cardInputs .boxInputs .forgetPassword .loginSide .sentEm, .investigationLayout .cardInputs .boxInputs .forgetPassword .loginSide .filesUpload .sentEm, .filesUpload .forgetPassword .loginSide .investigationLayout .cardInputs .boxInputs .sentEm, .forgetPassword .loginSide .investigationLayout .cardInputs .boxInputs .filesUpload .sentEm, .filesUpload .hintLast {
   color: #ddd;
   margin-bottom: 0px;
 }
@@ -1341,7 +1350,7 @@ select {
   margin-right: 5px;
 }
 
-.filesUpload .label {
+.filesUpload .label, .filesUpload .forgetPassword .loginSide .sentEm, .forgetPassword .loginSide .filesUpload .sentEm {
   margin-top: 22px;
 }
 
@@ -1415,7 +1424,7 @@ select {
   margin-bottom: 14px;
 }
 
-.affiliatedCompanies .addCompany .addText .label {
+.affiliatedCompanies .addCompany .addText .label, .affiliatedCompanies .addCompany .addText .forgetPassword .loginSide .sentEm, .forgetPassword .loginSide .affiliatedCompanies .addCompany .addText .sentEm {
   color: #bbbbbb;
   font-size: 14px;
   margin-bottom: 28px;
@@ -2025,6 +2034,7 @@ select {
   border: 0 solid #dee2e6;
   color: #CCA079;
   font-size: 18px;
+  text-align: right;
 }
 
 .tableCardSystem .table thead th:first-of-type {
@@ -2831,8 +2841,10 @@ select {
   display: flex;
 }
 
-.addMission .form-radio-group .label,
-.addMission .InputGroup .label {
+.addMission .form-radio-group .label, .addMission .form-radio-group .forgetPassword .loginSide .sentEm, .forgetPassword .loginSide .addMission .form-radio-group .sentEm,
+.addMission .InputGroup .label,
+.addMission .InputGroup .forgetPassword .loginSide .sentEm,
+.forgetPassword .loginSide .addMission .InputGroup .sentEm {
   width: 130px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -3025,7 +3037,7 @@ select {
           align-items: center;
 }
 
-.detailsMission .InputViewGroup .label {
+.detailsMission .InputViewGroup .label, .detailsMission .InputViewGroup .forgetPassword .loginSide .sentEm, .forgetPassword .loginSide .detailsMission .InputViewGroup .sentEm {
   color: #012d29;
   font-size: 20px;
   margin-bottom: 12px;
@@ -3102,7 +3114,7 @@ select {
   padding-left: 95px;
 }
 
-.historicalStatus .dateAction .dateComp .Inputdate:last-of-type .label {
+.historicalStatus .dateAction .dateComp .Inputdate:last-of-type .label, .historicalStatus .dateAction .dateComp .Inputdate:last-of-type .forgetPassword .loginSide .sentEm, .forgetPassword .loginSide .historicalStatus .dateAction .dateComp .Inputdate:last-of-type .sentEm {
   padding-left: 42px;
 }
 
@@ -3261,7 +3273,7 @@ select {
   margin-left: 15px;
 }
 
-.commentsLayout .cardLabel18px, .commentsLayout .investigationLayout .cardInputs .boxInputs .label, .investigationLayout .cardInputs .boxInputs .commentsLayout .label, .commentsLayout .filesUpload .hintLast, .filesUpload .commentsLayout .hintLast {
+.commentsLayout .cardLabel18px, .commentsLayout .investigationLayout .cardInputs .boxInputs .label, .investigationLayout .cardInputs .boxInputs .commentsLayout .label, .commentsLayout .investigationLayout .cardInputs .boxInputs .forgetPassword .loginSide .sentEm, .investigationLayout .cardInputs .boxInputs .forgetPassword .loginSide .commentsLayout .sentEm, .commentsLayout .forgetPassword .loginSide .investigationLayout .cardInputs .boxInputs .sentEm, .forgetPassword .loginSide .investigationLayout .cardInputs .boxInputs .commentsLayout .sentEm, .commentsLayout .filesUpload .hintLast, .filesUpload .commentsLayout .hintLast {
   margin-bottom: 24px;
 }
 
@@ -3324,8 +3336,10 @@ select {
   padding: 0;
 }
 
-.commentsLayout .addComment .CmBox .tableCardGreen .label,
-.commentsLayout .commentSec .CmBox .tableCardGreen .label {
+.commentsLayout .addComment .CmBox .tableCardGreen .label, .commentsLayout .addComment .CmBox .tableCardGreen .forgetPassword .loginSide .sentEm, .forgetPassword .loginSide .commentsLayout .addComment .CmBox .tableCardGreen .sentEm,
+.commentsLayout .commentSec .CmBox .tableCardGreen .label,
+.commentsLayout .commentSec .CmBox .tableCardGreen .forgetPassword .loginSide .sentEm,
+.forgetPassword .loginSide .commentsLayout .commentSec .CmBox .tableCardGreen .sentEm {
   font-size: 18px;
   margin-bottom: 24px;
 }
@@ -3725,7 +3739,7 @@ a.ui-button:active,
   transform: translateY(-1px);
 }
 
-.filesUpload .cardLabel18px, .filesUpload .investigationLayout .cardInputs .boxInputs .label, .investigationLayout .cardInputs .boxInputs .filesUpload .label, .filesUpload .hintLast,
+.filesUpload .cardLabel18px, .filesUpload .investigationLayout .cardInputs .boxInputs .label, .investigationLayout .cardInputs .boxInputs .filesUpload .label, .filesUpload .investigationLayout .cardInputs .boxInputs .forgetPassword .loginSide .sentEm, .investigationLayout .cardInputs .boxInputs .forgetPassword .loginSide .filesUpload .sentEm, .filesUpload .forgetPassword .loginSide .investigationLayout .cardInputs .boxInputs .sentEm, .forgetPassword .loginSide .investigationLayout .cardInputs .boxInputs .filesUpload .sentEm, .filesUpload .hintLast,
 .filesUpload .hint {
   color: #a3a3a3;
 }
@@ -3861,6 +3875,33 @@ a.ui-button:active,
 }
 
 /* end and adding style */
+.forgetPassword {
+  margin: 0 auto;
+  min-height: calc(100vh - 261px);
+  width: 50%;
+}
+
+.forgetPassword .loginSide {
+  background: #fff;
+  border-radius: 8px;
+  width: 100%;
+  margin: 63px auto 0 auto;
+  padding: 31px 24px 24px;
+  text-align: center;
+  -webkit-box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+}
+
+.forgetPassword .loginSide .sentEm {
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+.forgetPassword .loginSide .inputStyle {
+  margin: 20px 0;
+  background-color: #f8f8f8;
+}
+
 @media (min-width: 1400px) {
   .inner-container {
     max-width: 1340px;
@@ -4122,7 +4163,7 @@ a.ui-button:active,
   .paragraph24px {
     font-size: 20px;
   }
-  .label {
+  .label, .forgetPassword .loginSide .sentEm {
     font-size: 18px;
   }
   .subParagraph14px, .BGRegistration .leftBG .loginSide .fromClass .forgetPass {
@@ -4268,7 +4309,7 @@ a.ui-button:active,
   .detailsMission .InputViewGroup {
     display: block;
   }
-  .detailsMission .InputViewGroup .label {
+  .detailsMission .InputViewGroup .label, .detailsMission .InputViewGroup .forgetPassword .loginSide .sentEm, .forgetPassword .loginSide .detailsMission .InputViewGroup .sentEm {
     max-width: unset;
   }
   .detailsMission .InputViewGroup p {
@@ -4322,13 +4363,16 @@ a.ui-button:active,
   .addMission .form-radio-group {
     display: block;
   }
-  .addMission .form-radio-group .label {
+  .addMission .form-radio-group .label, .addMission .form-radio-group .forgetPassword .loginSide .sentEm, .forgetPassword .loginSide .addMission .form-radio-group .sentEm {
     width: 100%;
   }
   .addMission .InputGroup {
     display: block;
   }
-  .addMission .InputGroup .label {
+  
+  .addMission .InputGroup .label,
+  .addMission .InputGroup .forgetPassword .loginSide .sentEm,
+  .forgetPassword .loginSide .addMission .InputGroup .sentEm {
     width: 100%;
   }
   .addMissos {
